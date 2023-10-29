@@ -1,9 +1,18 @@
-@import "./header";
+@import "../css/normolize.css";
+@import "../css/nulling-styles.css";
+@import "../css/fonts.css";
 @media(min-width:320px){
+	body{
+		font-family: 'Gotham Pro Regular',sans-serif;
+		font-size: 14px;
+		color: #243976;
+		background-color: #fff;
+	}
 	.center{
 		padding: 0 15px;
 	}
 }
+@import "./header";
 
 .center{
 	max-width: 1180px;
