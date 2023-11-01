@@ -18,6 +18,7 @@
     background: url(../../images/header/background.png) no-repeat center/cover;
   }
   .header-wrapper {
+    margin: 0 0 32px;
     min-width: 280px;
     width: 100%;
     display: flex;
@@ -92,7 +93,7 @@
     position: relative;
     z-index: 6;
     width: 40px;
-    height: 36px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -162,7 +163,7 @@
     margin: 0 0 20px 0;
   }
   .color-blue {
-    color: #49B3F7;
+    color: #49b3f7;
   }
   .header__banner-txt {
     min-width: 280px;
@@ -212,7 +213,8 @@
     justify-content: space-between;
     align-items: center;
   }
-  .contact-us__telegramm, .contact-us__whatsapp {
+  .contact-us__telegramm,
+.contact-us__whatsapp {
     display: block;
     width: 40px;
     height: 40px;
@@ -227,9 +229,109 @@
     background: url(../../images/watsapp-icon.svg);
   }
 }
+.online-learning {
+  padding: 40px 0 50px;
+}
+
+.online-learning__info-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.online-learning__info-wrapper .online-learning__title {
+  font-family: "ALS Schlange Sans Bold", sans-serif;
+  margin: 0 0 30px;
+  text-align: center;
+  font-size: 28px;
+  line-height: 29px;
+}
+
+.online-learning__list {
+  margin: 0 0 50px;
+  min-width: 270px;
+  min-height: 470px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.online-learning__list .online-learning__item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  padding: 0 0 0 100px;
+  min-height: 70px;
+  font-family: "Gotham Pro Medium", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+.online-learning__list .online-learning__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  background-image: url(/images/online-learnig/item-icon1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.online-learning__list .online-learning__item:nth-child(2)::before {
+  background-image: url(/images/online-learnig/item-icon2.svg);
+}
+.online-learning__list .online-learning__item:nth-child(3)::before {
+  background-image: url(/images/online-learnig/item-icon3.svg);
+}
+.online-learning__list .online-learning__item:nth-child(4)::before {
+  background-image: url(/images/online-learnig/item-icon4.svg);
+}
+.online-learning__list .online-learning__item:nth-child(5)::before {
+  background-image: url(/images/online-learnig/item-icon5.svg);
+}
+
 .center {
+  margin: 0 auto;
   max-width: 1180px;
   width: 100%;
   padding: 0 20px;
   box-sizing: border-box;
+}
+
+.promotion {
+  min-width: 280px;
+  width: 100%;
+  min-height: 445px;
+  padding: 30px 20px 17px;
+  background-color: #eff2fd;
+  border-radius: 25px;
+}
+.promotion .promotion__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promotion__description-wrapper .promotion__title {
+  margin: 0 0 20px;
+  text-align: center;
+  font-family: "ALS Schlange Sans Bold", sans-serif;
+  font-size: 20px;
+  line-height: 21px;
+}
+.promotion__description-wrapper .promotion__text {
+  margin: 0 0 15px;
+  text-align: center;
+  font-family: "Gotham Pro Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.promotion__image-wrapper {
+  margin: 0 0 15px;
+  width: 86px;
+  height: 129px;
+  background: url(/images/online-learnig/promotion-girl.png) no-repeat center/cover;
 }
