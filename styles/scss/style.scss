@@ -2,21 +2,18 @@
 @import "../css/nulling-styles.css";
 @import "../css/fonts.css";
 @import "./variables";
-@media (min-width: 320px) {
-  body {
-    font-family: "Gotham Pro Regular", sans-serif;
-    font-size: 14px;
-    color: #243976;
-    background-color: #fff;
-  }
-  .center {
-    padding: 0 15px;
-  }
+body {
+  font-family: "Gotham Pro Regular", sans-serif;
+  font-size: 14px;
+  color: #243976;
+  background-color: #fff;
+}
+.center {
+  padding: 0 15px;
 }
 @import "./header";
 @import "./online-learning";
 @import "./online-lessons";
-
 
 .center {
   margin: 0 auto;
@@ -60,6 +57,6 @@
   margin: 0 0 15px;
   width: 86px;
   height: 129px;
-  background: url(../../images/online-learnig/promotion-girl.png) no-repeat center /
-    cover;
+  background: url(../../images/online-learnig/promotion-girl.png) no-repeat
+    center / cover;
 }
