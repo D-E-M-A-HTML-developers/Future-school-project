@@ -1,9 +1,0 @@
-@mixin button($_padd, $_bordR, $_backg, $_fonS, $_linH){
-    font-family: 'Gotham Pro Bold', sans-serif;
-    color: #fff;
-    padding: $_padd;
-    border-radius: $_bordR;
-    background: $_backg;
-    font-size: $_fonS;
-    line-height: $_linH;     
-}

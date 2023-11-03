@@ -1,8 +1,17 @@
 $border-color: #{"#c5cff399"};
-%main-titles{
-    font-family: "ALS Schlange Sans Bold", sans-serif;
-    margin: 0 0 30px;
-    text-align: center;
-    font-size: 28px;
-    line-height: 29px;
+%main-titles {
+  font-family: "ALS Schlange Sans Bold", sans-serif;
+  margin: 0 0 30px;
+  text-align: center;
+  font-size: 28px;
+  line-height: 29px;
+}
+@mixin button($_padd, $_bordR, $_backg, $_fonS, $_linH) {
+  font-family: "Gotham Pro Bold", sans-serif;
+  color: #fff;
+  padding: $_padd;
+  border-radius: $_bordR;
+  background: $_backg;
+  font-size: $_fonS;
+  line-height: $_linH;
 }
