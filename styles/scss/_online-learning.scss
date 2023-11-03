@@ -6,11 +6,7 @@
   flex-direction: column;
 
   .online-learning__title {
-    font-family: "ALS Schlange Sans Bold", sans-serif;
-    margin: 0 0 30px;
-    text-align: center;
-    font-size: 28px;
-    line-height: 29px;
+    @extend %main-titles;
   }
 }
 .online-learning__list {
@@ -41,22 +37,22 @@
       left: 0;
       width: 70px;
       height: 70px;
-      background-image: url(/images/online-learnig/item-icon1.svg);
+      background-image: url(../../images/online-learnig/item-icon1.svg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
     }
     &:nth-child(2)::before {
-      background-image: url(/images/online-learnig/item-icon2.svg);
+      background-image: url(../../images/online-learnig/item-icon2.svg);
     }
     &:nth-child(3)::before {
-      background-image: url(/images/online-learnig/item-icon3.svg);
+      background-image: url(../../images/online-learnig/item-icon3.svg);
     }
     &:nth-child(4)::before {
-      background-image: url(/images/online-learnig/item-icon4.svg);
+      background-image: url(/Future-school-project/images/online-learnig/item-icon4.svg);
     }
     &:nth-child(5)::before {
-      background-image: url(/images/online-learnig/item-icon5.svg);
+      background-image: url(../../images/online-learnig/item-icon5.svg);
     }
   }
 }
