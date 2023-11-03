@@ -1,6 +1,14 @@
 @import "../css/normolize.css";
 @import "../css/nulling-styles.css";
 @import "../css/fonts.css";
+.online-lessons__title, .online-learning__info-wrapper .online-learning__title {
+  font-family: "ALS Schlange Sans Bold", sans-serif;
+  margin: 0 0 30px;
+  text-align: center;
+  font-size: 28px;
+  line-height: 29px;
+}
+
 @media (min-width: 320px) {
   body {
     font-family: "Gotham Pro Regular", sans-serif;
@@ -12,6 +20,14 @@
     padding: 0 15px;
   }
 }
+.online-lessons__title, .online-learning__info-wrapper .online-learning__title {
+  font-family: "ALS Schlange Sans Bold", sans-serif;
+  margin: 0 0 30px;
+  text-align: center;
+  font-size: 28px;
+  line-height: 29px;
+}
+
 @media (min-width: 320px) {
   .header {
     padding: 14px 0 17px 0;
@@ -214,7 +230,7 @@
     align-items: center;
   }
   .contact-us__telegramm,
-.contact-us__whatsapp {
+  .contact-us__whatsapp {
     display: block;
     width: 40px;
     height: 40px;
@@ -237,14 +253,6 @@
   display: flex;
   flex-direction: column;
 }
-.online-learning__info-wrapper .online-learning__title {
-  font-family: "ALS Schlange Sans Bold", sans-serif;
-  margin: 0 0 30px;
-  text-align: center;
-  font-size: 28px;
-  line-height: 29px;
-}
-
 .online-learning__list {
   margin: 0 0 50px;
   min-width: 270px;
@@ -273,22 +281,67 @@
   left: 0;
   width: 70px;
   height: 70px;
-  background-image: url(/images/online-learnig/item-icon1.svg);
+  background-image: url(../../images/online-learnig/item-icon1.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .online-learning__list .online-learning__item:nth-child(2)::before {
-  background-image: url(/images/online-learnig/item-icon2.svg);
+  background-image: url(../../images/online-learnig/item-icon2.svg);
 }
 .online-learning__list .online-learning__item:nth-child(3)::before {
-  background-image: url(/images/online-learnig/item-icon3.svg);
+  background-image: url(../../images/online-learnig/item-icon3.svg);
 }
 .online-learning__list .online-learning__item:nth-child(4)::before {
-  background-image: url(/images/online-learnig/item-icon4.svg);
+  background-image: url(/Future-school-project/images/online-learnig/item-icon4.svg);
 }
 .online-learning__list .online-learning__item:nth-child(5)::before {
-  background-image: url(/images/online-learnig/item-icon5.svg);
+  background-image: url(../../images/online-learnig/item-icon5.svg);
+}
+
+.online-lessons {
+  padding: 0 0 50px 0;
+}
+
+.online-lessons__img {
+  width: 170px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url(../../images/online-lesson/img1.png);
+  margin: 0 0 20px 0;
+}
+
+.online-lessons__item:nth-child(2) > .online-lessons__img {
+  background-image: url(../../images/online-lesson/img2.png);
+}
+
+.online-lessons__item:nth-child(3) > .online-lessons__img {
+  background-image: url(../../images/online-lesson/img3.png);
+}
+
+.online-lessons__item:nth-child(4) > .online-lessons__img {
+  background-image: url(../../images/online-lesson/img4.png);
+}
+
+.online-lessons__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.online-lessons__item > h3 {
+  font-family: "Gotham Pro Regular", sans-serif;
+  text-align: center;
+  font-size: 20px;
+  line-height: 20.6px;
+  margin: 0 0 10px 0;
+}
+.online-lessons__item p {
+  text-align: center;
+  font-size: 15px;
+  line-height: 23.55px;
+  margin: 0 0 40px 0;
 }
 
 .center {
@@ -333,5 +386,5 @@
   margin: 0 0 15px;
   width: 86px;
   height: 129px;
-  background: url(/images/online-learnig/promotion-girl.png) no-repeat center/cover;
+  background: url(../../images/online-learnig/promotion-girl.png) no-repeat center/cover;
 }
