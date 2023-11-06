@@ -2,6 +2,7 @@
 @import "../css/nulling-styles.css";
 @import "../css/fonts.css";
 @import "./variables";
+@import "animation-hover.css";
 body {
   font-family: "Gotham Pro Regular", sans-serif;
   font-size: 14px;
@@ -14,6 +15,7 @@ body {
 @import "./header";
 @import "./online-learning";
 @import "./online-lessons";
+@import "./lesson-advantages";
 
 .center {
   margin: 0 auto;
