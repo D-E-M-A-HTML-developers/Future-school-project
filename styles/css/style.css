@@ -1,8 +1,9 @@
+@charset "UTF-8";
 @import "../css/normolize.css";
 @import "../css/nulling-styles.css";
 @import "../css/fonts.css";
 @import "animation-hover.css";
-.lesson-advantages__title, .online-lessons__title, .online-learning__info-wrapper .online-learning__title {
+.compare-schools__title, .lesson-advantages__title, .online-lessons__title, .online-learning__info-wrapper .online-learning__title {
   font-family: "ALS Schlange Sans Bold", sans-serif;
   margin: 0 0 30px;
   text-align: center;
@@ -451,6 +452,81 @@ body {
   margin: 0 0 14px 0;
   font-size: 16px;
   line-height: 16px;
+}
+
+.compare-schools {
+  padding: 50px 0 50px 0;
+}
+
+.compare-schools__wrp {
+  max-width: 280px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.compare-schools__about-schools {
+  max-width: 260px;
+  width: 100%;
+  min-height: 450px;
+  border-radius: 15px;
+  background: linear-gradient(180deg, #EFF2FD 0%, #FCFCFC 100%);
+  padding: 20px 0 5px;
+  filter: drop-shadow(3.9065108299px 11.7195320129px 31.2520866394px rgba(30, 35, 66, 0.15));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.compare-schools__about-schools.compare-schools__about-schools_blue {
+  max-width: 280px;
+  min-height: 439px;
+  padding: 25px 0 5px;
+  background: linear-gradient(27deg, #4271DF 16.72%, #789CF1 95.45%);
+  margin: -73px 0 0;
+}
+.compare-schools__about-schools.compare-schools__about-schools_blue h3 {
+  color: #FFFFFF;
+  font-size: 26px;
+}
+.compare-schools__about-schools.compare-schools__about-schools_blue li {
+  max-width: 248px;
+  width: 100%;
+  color: #F8F9FF;
+  margin: 0 0 13px 0;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.about-schools__title {
+  font-family: "ALS Schlange Sans Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24.768px;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+.about-schools__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 217px;
+  width: 100%;
+  line-height: 21px;
+  margin: 0 0 10px 0;
+  padding-left: 29px;
+  position: relative;
+}
+.about-schools__item span {
+  font-family: "Gotham Pro Bold", sans-serif;
+}
+.about-schools__item::before {
+  content: "	●";
+  position: absolute;
+  font-size: 21px;
+  left: 0;
 }
 
 .center {
