@@ -3,7 +3,7 @@
 @import "../css/nulling-styles.css";
 @import "../css/fonts.css";
 @import "animation-hover.css";
-.compare-schools__title, .lesson-advantages__title, .online-lessons__title, .online-learning__info-wrapper .online-learning__title {
+.advantages-school__title, .compare-schools__title, .lesson-advantages__title, .online-lessons__title, .online-learning__info-wrapper .online-learning__title {
   font-family: "ALS Schlange Sans Bold", sans-serif;
   margin: 0 0 30px;
   text-align: center;
@@ -455,7 +455,7 @@ body {
 }
 
 .compare-schools {
-  padding: 50px 0 50px 0;
+  padding: 50px 0;
 }
 
 .compare-schools__wrp {
@@ -527,6 +527,67 @@ body {
   position: absolute;
   font-size: 21px;
   left: 0;
+}
+
+.advantages-school {
+  padding: 0 0 50px;
+}
+.advantages-school .promotion__image-wrapper {
+  background-image: url("../../images/advantages-school/boy.svg");
+  width: 84px;
+  height: 128px;
+}
+
+.advantages-school__item, .advantages-school__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages-school__list {
+  gap: 40px;
+  margin: 0 0 50px;
+}
+
+.advantages-school__item .advantages-school__image {
+  width: 100px;
+  height: 100px;
+  background-image: url("../../images/advantages-school/img1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 0 0 20px;
+}
+.advantages-school__item:nth-child(2) .advantages-school__image {
+  background-image: url("../../images/advantages-school/img2.svg");
+}
+.advantages-school__item:nth-child(3) .advantages-school__image {
+  background-image: url("../../images/advantages-school/img3.svg");
+}
+.advantages-school__item:nth-child(4) .advantages-school__image {
+  background-image: url("../../images/advantages-school/img4.svg");
+}
+.advantages-school__item:nth-child(5) .advantages-school__image {
+  background-image: url("../../images/advantages-school/img5.svg");
+}
+.advantages-school__item:nth-child(6) .advantages-school__image {
+  background-image: url("../../images/advantages-school/img6.svg");
+}
+.advantages-school__item h3 {
+  font-family: "Gotham Pro Regular", sans-serif;
+  text-align: center;
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+.advantages-school__item p {
+  text-align: center;
+  font-size: 15px;
+  line-height: 18px;
+}
+.advantages-school__item:first-child p {
+  line-height: 23.58px;
 }
 
 .center {
