@@ -3,7 +3,7 @@
 @import "../css/nulling-styles.css";
 @import "../css/fonts.css";
 @import "animation-hover.css";
-.advantages-school__title, .compare-schools__title, .lesson-advantages__title, .online-lessons__title, .online-learning__info-wrapper .online-learning__title {
+.education-price__title, .advantages-school__title, .compare-schools__title, .lesson-advantages__title, .online-lessons__title, .online-learning__info-wrapper .online-learning__title {
   font-family: "ALS Schlange Sans Bold", sans-serif;
   margin: 0 0 30px;
   text-align: center;
@@ -588,6 +588,92 @@ body {
 }
 .advantages-school__item:first-child p {
   line-height: 23.58px;
+}
+
+.education-price {
+  padding: 30px 0 40px;
+  background: #eff2fd;
+}
+
+.education-price__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+.education-price__list .education-price__card {
+  border-radius: 25px 25px 0px 50px;
+  max-width: 280px;
+  width: 100%;
+  min-height: 490px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: #fff;
+  padding: 42px 18px 26px 20px;
+  box-sizing: border-box;
+}
+
+.price-card .price-card__heading {
+  font-family: "Gotham Pro Regular", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 21px;
+  color: #243976;
+  margin: 0 0 10px 0;
+}
+.price-card .price-card__subtitle {
+  max-width: 204px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  background: linear-gradient(27deg, #4271df 16.72%, #789cf1 95.45%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 0 20px 0;
+}
+
+.price-card__list {
+  max-width: 243px;
+  width: 100%;
+  min-height: 292px;
+  padding: 0 0 0 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 0 0 18px 0;
+}
+.price-card__list .price-card__item {
+  max-width: 173px;
+  width: 100%;
+  min-height: 32px;
+  line-height: 14px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.price-card__list .price-card__item::before {
+  position: absolute;
+  content: "";
+  background: url(../../images/education-price/radiobutton.svg) no-repeat center/cover;
+  width: 24px;
+  height: 24px;
+  top: 4px;
+  left: -32px;
+}
+
+.price-card__btn {
+  margin: 0 auto;
+  font-family: "Gotham Pro Bold", sans-serif;
+  color: #fff;
+  padding: 11px 44px;
+  border-radius: 50px;
+  background: linear-gradient(356deg, #4271df 0%, #789cf1 100%);
+  font-size: 12px;
+  line-height: 12px;
+  box-sizing: border-box;
 }
 
 .center {
