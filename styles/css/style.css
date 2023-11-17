@@ -595,13 +595,18 @@ body {
   background: #eff2fd;
 }
 
+.education-price__title {
+  margin: 0 0 80px 0;
+}
+
 .education-price__list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 80px;
+  gap: 89px;
 }
 .education-price__list .education-price__card {
+  position: relative;
   border-radius: 25px 25px 0px 50px;
   max-width: 280px;
   width: 100%;
@@ -612,25 +617,47 @@ body {
   box-sizing: border-box;
 }
 
+.education-price__card .price-card__image {
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  width: 88px;
+  height: 134px;
+  background-image: url(../../images/education-price/girl-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.education-price__card:nth-child(2) .price-card__image {
+  background-image: url(../../images/education-price/girl-2.png);
+  height: 191.44px;
+  right: -11px;
+}
+.education-price__card:nth-child(3) .price-card__image {
+  background-image: url(../../images/education-price/girl-3.png);
+  width: 86.13px;
+  height: 241px;
+}
+
 .price-card .price-card__heading {
   font-family: "Gotham Pro Regular", sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 21px;
   color: #243976;
-  margin: 0 0 10px 0;
+  margin: 0 0 8px 0;
 }
 .price-card .price-card__subtitle {
   max-width: 204px;
   width: 100%;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 17px;
+  line-height: 18px;
   background: linear-gradient(27deg, #4271df 16.72%, #789cf1 95.45%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 0 0 20px 0;
+  margin: 0 0 16px 0;
 }
 
 .price-card__list {
@@ -660,20 +687,51 @@ body {
   background: url(../../images/education-price/radiobutton.svg) no-repeat center/cover;
   width: 24px;
   height: 24px;
-  top: 4px;
   left: -32px;
 }
 
-.price-card__btn {
+.price-card__btn-wrp {
   margin: 0 auto;
+  max-width: 160px;
+  min-height: 32px;
+}
+.price-card__btn-wrp .price-card__btn {
   font-family: "Gotham Pro Bold", sans-serif;
   color: #fff;
-  padding: 11px 44px;
+  padding: 10px 44px;
   border-radius: 50px;
   background: linear-gradient(356deg, #4271df 0%, #789cf1 100%);
   font-size: 12px;
   line-height: 12px;
+  font-family: "Gotham Pro Regular", sans-serif;
+  display: block;
   box-sizing: border-box;
+  box-shadow: 0px 4px 20px 0px #648ceb;
+}
+
+.price-card__banner {
+  width: 209px;
+  position: absolute;
+  top: -49px;
+  right: 10px;
+  font-family: "Gotham Pro Bold", sans-serif;
+  color: #fff;
+  padding: 20px 30px;
+  border-radius: 25px;
+  background: linear-gradient(315deg, #864ff1 0%, #49b3f7 100%);
+  font-size: 26px;
+  line-height: 37px;
+  font-family: "Gotham Pro Medium", sans-serif;
+}
+.price-card__banner > span span:first-child {
+  font-size: 24px;
+  margin-right: 3px;
+}
+.price-card__banner > span span:last-child {
+  vertical-align: bottom;
+  font-family: "Gotham Pro Regular", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .center {
