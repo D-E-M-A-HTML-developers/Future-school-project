@@ -3,7 +3,7 @@
 @import "../css/nulling-styles.css";
 @import "../css/fonts.css";
 @import "animation-hover.css";
-.education-price__title, .advantages-school__title, .compare-schools__title, .lesson-advantages__title, .online-lessons__title, .online-learning__info-wrapper .online-learning__title {
+.education-document .education-document__title, .education-price__title, .advantages-school__title, .compare-schools__title, .lesson-advantages__title, .online-lessons__title, .online-learning__info-wrapper .online-learning__title {
   font-family: "ALS Schlange Sans Bold", sans-serif;
   margin: 0 0 30px;
   text-align: center;
@@ -732,6 +732,35 @@ body {
   font-family: "Gotham Pro Regular", sans-serif;
   font-size: 14px;
   line-height: 20px;
+}
+
+.education-document {
+  padding: 50px 0;
+}
+.education-document .education-document__wrp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.education-document .education-document__title {
+  max-width: 265px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 30px;
+}
+.education-document .education-document__txt {
+  max-width: 549px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 17px;
+  text-align: center;
+}
+.education-document .education-document__img {
+  min-width: 280px;
+  width: 100%;
+  min-height: 247px;
+  background: url(../../images/educatuin-document/picture.png) no-repeat center/contain;
 }
 
 .center {

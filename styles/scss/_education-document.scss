@@ -1,0 +1,29 @@
+.education-document {
+    padding:50px 0;
+    .education-document__wrp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .education-document__title {
+        max-width: 265px;
+        width: 100%;
+        @extend %main-titles;
+        text-align: center;
+        margin: 0 auto 30px;
+    }
+    .education-document__txt {
+        max-width: 549px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 17px;
+        text-align: center;
+    }
+    .education-document__img {
+        min-width: 280px;
+        width: 100%;
+        min-height: 247px;
+        background: url(../../images/educatuin-document/picture.png) no-repeat center /contain;
+    } 
+}
