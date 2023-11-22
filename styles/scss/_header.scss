@@ -42,7 +42,7 @@
   border-radius: 0px 0px 15px 15px;
   border-top: 1px solid $border-color;
   padding: 120px 20px 75px;
-  background-color: #eff2fd;
+  background-color: $background-light-blue;
 
   .menu-list {
     position: relative;
@@ -81,9 +81,9 @@
 }
 
 .menu-link {
-  font-family: "Gotham Pro Medium", sans-serif;
+  font-family: "Gotham500", sans-serif;
   line-height: 16px;
-  color: #243976;
+  color: $text-color-blue;
   font-size: 16px;
 }
 
@@ -104,7 +104,7 @@
   justify-content: center;
   border-radius: 90px;
   box-shadow: 0px 6px 21px 0px rgba(104, 130, 245, 0.67);
-  background: linear-gradient(315deg, #864ff1 0%, #49b3f7 100%);
+  background: $color-gradient01;
   cursor: pointer;
   caret-color: transparent;
 }
@@ -171,13 +171,7 @@
   justify-content: space-between;
 }
 .button {
-  @include button(
-    8px 30px,
-    15px,
-    linear-gradient(356deg, #4271df 0%, #789cf1 100%),
-    12px,
-    14px
-  );
+  @include button(8px 30px, 15px, $color-gradient02, 12px, 14px);
 }
 /* END-modile-menu */
 .header__banner-image {
@@ -190,7 +184,7 @@
   min-width: 280px;
   width: 100%;
   min-height: 72px;
-  font-family: "ALS Schlange Sans Bold", sans-serif;
+  font-family: "ALSSchlangesans-Bold", sans-serif;
   font-size: 34px;
   line-height: 34px;
   text-align: center;
@@ -202,24 +196,18 @@
 .header__banner-txt {
   min-width: 280px;
   width: 100%;
-  font-family: "Gotham Pro Regular", sans-serif;
+  font-family: "Gotham400", sans-serif;
   font-size: 15px;
   line-height: 24.78px;
   text-align: center;
   margin: 0 0 10px 0;
 }
 .header__banner-txt_bold {
-  font-family: "Gotham Pro Bold", sans-serif;
+  font-family: "Gotham700", sans-serif;
   margin: 0 0 48px 0;
 }
 .sign-up-lesson__btn {
-  @include button(
-    21px 35px,
-    90px,
-    linear-gradient(315deg, #864ff1 0%, #49b3f7 100%),
-    11px,
-    13px
-  );
+  @include button(21px 35px, 90px, $color-gradient01, 11px, 13px);
   box-shadow: 0px 6px 21px 0px rgba(104, 130, 245, 0.67);
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -236,7 +224,7 @@
   min-height: 105px;
 }
 .contact-us__txt {
-  font-family: "Gotham Pro Regular", sans-serif;
+  font-family: "Gotham400", sans-serif;
   color: #737373;
   line-height: 23.128px;
   font-size: 14px;
