@@ -3,12 +3,12 @@
 @import "../css/nulling-styles.css";
 @import "../css/fonts.css";
 @import "animation-hover.css";
-.education-document .education-document__title, .education-price__title, .advantages-school__title, .compare-schools__title, .lesson-advantages__title, .online-lessons__title, .online-learning__info-wrapper .online-learning__title {
+.slider__card-info .slider__card-title, .reviews__title, .education-document .education-document__title, .education-price__title, .advantages-school__title, .compare-schools__title, .lesson-advantages__title, .online-lessons__title, .online-learning__info-wrapper .online-learning__title {
   font-family: "ALSSchlangesans-Bold", sans-serif;
   margin: 0 0 30px;
   text-align: center;
   font-size: 28px;
-  line-height: 29px;
+  line-height: 28px;
 }
 
 body {
@@ -761,6 +761,122 @@ body {
   width: 100%;
   min-height: 247px;
   background: url(../../images/educatuin-document/picture.png) no-repeat center/contain;
+}
+
+.reviews__title {
+  max-width: 280px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 30px;
+}
+
+.reviews__slider {
+  width: 100%;
+  min-height: 357px;
+  overflow: hidden;
+  margin: 0 auto 30px;
+}
+
+.slider__line {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  background-color: transparent;
+  transition: all 1s;
+  margin: 0 0 30px 0;
+}
+
+.slider__card {
+  min-width: 280px;
+  width: 100%;
+  min-height: 277px;
+  border-radius: 20px;
+  border: 5px solid #4c75a3;
+  padding: 15px 15px 25px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 14px 22px 40px 0px rgba(30, 35, 66, 0.28);
+}
+.slider__card .slider__card-text {
+  line-height: 16px;
+  font-size: 12px;
+}
+
+.slider__card-info {
+  position: relative;
+  min-width: 139px;
+  width: 100%;
+  min-height: 61px;
+  padding: 0 0 0 50px;
+}
+.slider__card-info .slider__card-title {
+  text-align: left;
+  line-height: 20px;
+  font-size: 20px;
+  margin: 0 0 5px 0;
+}
+.slider__card-info .slider__card-subtitle {
+  margin: 0 0 5px 0;
+}
+.slider__card-info .slider__card-link {
+  position: relative;
+  line-height: 18px;
+  text-decoration: underline;
+  font-size: 14px;
+  color: #4271df;
+  background: linear-gradient(27deg, #4271df 16.72%, #789cf1 95.45%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.slider__card-info .slider__card-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.4px;
+  background: linear-gradient(27deg, #4271df 16.72%, #789cf1 95.45%);
+}
+.slider__card-info::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url(../../images/reviews/vk-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  left: 0;
+  top: 0;
+}
+
+.slider__buttons-wrp {
+  max-width: 130px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.slider__btn-prev {
+  transform: rotate(-90deg);
+  background-color: transparent;
+  border: none;
+}
+.slider__btn-prev img {
+  width: 50px;
+}
+
+.slider__btn-next {
+  transform: rotate(90deg);
+  background-color: transparent;
+  border: none;
+}
+.slider__btn-next img {
+  width: 50px;
 }
 
 .center {
