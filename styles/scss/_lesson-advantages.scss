@@ -1,12 +1,12 @@
 .lesson-advantages {
-  background-color: #eff2fd;
+  background-color: $background-light-blue;
   padding: 28px 0 22px;
   box-sizing: border-box;
 }
 .lesson-advantages__title {
   @extend %main-titles;
   font-weight: 400;
-  color: #243976;
+  color: $text-color-blue;
   min-width: 300px;
   padding: 0 10px;
   box-sizing: border-box;

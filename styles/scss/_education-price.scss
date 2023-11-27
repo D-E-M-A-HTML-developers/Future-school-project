@@ -1,6 +1,6 @@
 .education-price {
   padding: 30px 0 40px;
-  background: #eff2fd;
+  background: $background-light-blue;
 }
 
 .education-price__title {
@@ -53,11 +53,11 @@
 }
 .price-card {
   .price-card__heading {
-    font-family: "Gotham Pro Regular", sans-serif;
+    font-family: "Gotham400", sans-serif;
     font-weight: 600;
     font-size: 20px;
     line-height: 21px;
-    color: #243976;
+    color: $text-color-blue;
     margin: 0 0 8px 0;
   }
   .price-card__subtitle {
@@ -66,7 +66,7 @@
     font-weight: 500;
     font-size: 17px;
     line-height: 18px;
-    background: linear-gradient(27deg, #4271df 16.72%, #789cf1 95.45%);
+    background: $color-gradient01;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -108,14 +108,8 @@
   max-width: 160px;
   min-height: 32px;
   .price-card__btn {
-    @include button(
-      10px 44px,
-      50px,
-      linear-gradient(356deg, #4271df 0%, #789cf1 100%),
-      12px,
-      12px
-    );
-    font-family: "Gotham Pro Regular", sans-serif;
+    @include button(10px 44px, 50px, $color-gradient02, 12px, 12px);
+    font-family: "Gotham400", sans-serif;
     display: block;
     box-sizing: border-box;
     box-shadow: 0px 4px 20px 0px #648ceb;
@@ -126,14 +120,8 @@
   position: absolute;
   top: -49px;
   right: 10px;
-  @include button(
-    20px 30px,
-    25px,
-    linear-gradient(315deg, #864ff1 0%, #49b3f7 100%),
-    26px,
-    37px
-  );
-  font-family: "Gotham Pro Medium", sans-serif;
+  @include button(20px 30px, 25px, $color-gradient01, 26px, 37px);
+  font-family: "Gotham500", sans-serif;
   > span {
     span:first-child {
       font-size: 24px;
@@ -141,7 +129,7 @@
     }
     span:last-child {
       vertical-align: bottom;
-      font-family: "Gotham Pro Regular", sans-serif;
+      font-family: "Gotham400", sans-serif;
       font-size: 14px;
       line-height: 20px;
     }
