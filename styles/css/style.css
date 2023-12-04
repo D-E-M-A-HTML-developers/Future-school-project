@@ -767,7 +767,7 @@ body {
   max-width: 280px;
   width: 100%;
   text-align: center;
-  margin: 0 auto 30px;
+  margin: 0 auto;
 }
 
 .reviews__slider {
@@ -780,13 +780,13 @@ body {
 .slider__line {
   display: flex;
   align-items: center;
-  gap: 50px;
   background-color: transparent;
   transition: all 1s;
-  margin: 0 0 30px 0;
+  margin: 30px 0;
 }
 
 .slider__card {
+  margin: 0 0 0 20px;
   min-width: 280px;
   width: 100%;
   min-height: 277px;
