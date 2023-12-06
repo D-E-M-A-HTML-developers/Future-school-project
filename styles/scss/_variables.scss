@@ -22,3 +22,14 @@ $background-light-blue: #eff2fd;
   font-size: $_fonS;
   line-height: $_linH;
 }
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flexSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
