@@ -1,60 +1,70 @@
-.reviews__title {
-  max-width: 280px;
-  width: 100%;
-  @extend %main-titles;
-  text-align: center;
-  margin: 0 auto;
+.reviews {
+  &__title {
+    max-width: 280px;
+    width: 100%;
+    @extend %main-titles;
+    text-align: center;
+    margin: 0 auto;
+  }
 }
-
-.reviews__slider {
-  // position: relative;
+.slider {
   width: 100%;
   min-height: 357px;
   overflow: hidden;
   margin: 0 auto 30px;
-}
-.slider__line {
-  display: flex;
-  align-items: center;
-  background-color: transparent;
-  transition: all 1s;
-  margin: 30px 0;
-}
-.slider__card {
-  margin: 0 0 0 20px;
-  min-width: 280px;
-  width: 100%;
-  min-height: 277px;
-  border-radius: 20px;
-  border: 5px solid #4c75a3;
-  padding: 15px 15px 25px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 20px;
-  box-shadow: 14px 22px 40px 0px rgba(30, 35, 66, 0.28);
-  .slider__card-text {
+  &__line {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    transition: all 1s;
+    margin: 30px 0;
+  }
+  &__card {
+    margin: 0 0 0 20px;
+    min-width: 280px;
+    width: 100%;
+    min-height: 277px;
+    border-radius: 20px;
+    border: 5px solid #4c75a3;
+    padding: 15px 15px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 14px 22px 40px 0px rgba(30, 35, 66, 0.28);
+  }
+  &__card-text {
     line-height: 16px;
     font-size: 12px;
   }
-}
-.slider__card-info {
-  position: relative;
-  min-width: 139px;
-  width: 100%;
-  min-height: 61px;
-  padding: 0 0 0 50px;
-  .slider__card-title {
+  &__card-info {
+    position: relative;
+    min-width: 139px;
+    width: 100%;
+    min-height: 61px;
+    padding: 0 0 0 50px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-image: url(../../images/reviews/vk-icon.svg);
+      @include backgroundCenterCover;
+      left: 0;
+      top: 0;
+    }
+  }
+  &__card-title {
     @extend %main-titles;
     text-align: left;
     line-height: 20px;
     font-size: 20px;
     margin: 0 0 5px 0;
   }
-  .slider__card-subtitle {
+  &__card-subtitle {
     margin: 0 0 5px 0;
   }
-  .slider__card-link {
+  &__card-link {
     position: relative;
     line-height: 18px;
     text-decoration: underline;
@@ -74,41 +84,27 @@
       background: $color-gradient02;
     }
   }
-  &::before {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background-image: url(../../images/reviews/vk-icon.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    left: 0;
-    top: 0;
+  &__buttons-wrp {
+    max-width: 130px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
   }
-}
-
-.slider__buttons-wrp {
-  max-width: 130px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-}
-.slider__btn-prev {
-  transform: rotate(-90deg);
-  background-color: transparent;
-  border: none;
-  img {
-    width: 50px;
+  &__btn-prev {
+    transform: rotate(-90deg);
+    background-color: transparent;
+    border: none;
+    img {
+      width: 50px;
+    }
   }
-}
-
-.slider__btn-next {
-  transform: rotate(90deg);
-  background-color: transparent;
-  border: none;
-  img {
-    width: 50px;
+  &__btn-next {
+    transform: rotate(90deg);
+    background-color: transparent;
+    border: none;
+    img {
+      width: 50px;
+    }
   }
 }
