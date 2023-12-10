@@ -62,3 +62,42 @@ body {
       center / cover;
   }
 }
+.sign-up-lesson {
+  @include flexSpaceBetween;
+  flex-direction: column;
+  min-height: 105px;
+  &__btn-wrp {
+    height: 54px;
+  }
+  &__btn {
+    @include button(21px 35px, 90px, $color-gradient01, 11px, 13px);
+    box-shadow: 0px 6px 21px 0px rgba(104, 130, 245, 0.67);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    display: block;
+  }
+}
+
+.contact-us {
+  width: 199px;
+  @include flexSpaceBetween;
+  &__txt {
+    font-family: "Gotham400", sans-serif;
+    color: #737373;
+    line-height: 23.128px;
+    font-size: 14px;
+  }
+  &__telegramm,
+  &__whatsapp {
+    display: block;
+    width: 40px;
+    height: 40px;
+    @include backgroundCenterCover;
+  }
+  &__telegramm {
+    background: url(../../images/telegramm-icon.svg);
+  }
+  &__whatsapp {
+    background: url(../../images/watsapp-icon.svg);
+  }
+}

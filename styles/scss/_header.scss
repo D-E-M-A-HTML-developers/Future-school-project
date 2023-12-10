@@ -162,79 +162,38 @@
   @include button(8px 30px, 15px, $color-gradient02, 12px, 14px);
 }
 /* END-modile-menu */
-.header__banner-image {
-  min-width: 280px;
-  width: 100%;
-  min-height: 167px;
-  margin: 0 0 40px 0;
+.header__banner {
+  &-image {
+    min-width: 280px;
+    width: 100%;
+    min-height: 167px;
+    margin: 0 0 40px 0;
+  }
+  &-title {
+    min-width: 280px;
+    width: 100%;
+    min-height: 72px;
+    font-family: "ALSSchlangesans-Bold", sans-serif;
+    font-size: 34px;
+    line-height: 34px;
+    text-align: center;
+    margin: 0 0 20px 0;
+  }
+  &-txt {
+    min-width: 280px;
+    width: 100%;
+    font-family: "Gotham400", sans-serif;
+    font-size: 15px;
+    line-height: 24.78px;
+    text-align: center;
+    margin: 0 0 10px 0;
+  }
+  &-txt_bold {
+    font-family: "Gotham700", sans-serif;
+    margin: 0 0 48px 0;
+  }
 }
-.header__banner-title {
-  min-width: 280px;
-  width: 100%;
-  min-height: 72px;
-  font-family: "ALSSchlangesans-Bold", sans-serif;
-  font-size: 34px;
-  line-height: 34px;
-  text-align: center;
-  margin: 0 0 20px 0;
-}
+
 .color-blue {
   color: #49b3f7;
-}
-.header__banner-txt {
-  min-width: 280px;
-  width: 100%;
-  font-family: "Gotham400", sans-serif;
-  font-size: 15px;
-  line-height: 24.78px;
-  text-align: center;
-  margin: 0 0 10px 0;
-}
-.header__banner-txt_bold {
-  font-family: "Gotham700", sans-serif;
-  margin: 0 0 48px 0;
-}
-.sign-up-lesson__btn {
-  @include button(21px 35px, 90px, $color-gradient01, 11px, 13px);
-  box-shadow: 0px 6px 21px 0px rgba(104, 130, 245, 0.67);
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  display: block;
-}
-.btn-wrp {
-  height: 54px;
-}
-.sign-up-lesson {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 105px;
-}
-.contact-us__txt {
-  font-family: "Gotham400", sans-serif;
-  color: #737373;
-  line-height: 23.128px;
-  font-size: 14px;
-}
-.contact-us {
-  display: flex;
-  width: 199px;
-  justify-content: space-between;
-  align-items: center;
-}
-.contact-us__telegramm,
-.contact-us__whatsapp {
-  display: block;
-  width: 40px;
-  height: 40px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.contact-us__telegramm {
-  background: url(../../images/telegramm-icon.svg);
-}
-.contact-us__whatsapp {
-  background: url(../../images/watsapp-icon.svg);
 }
