@@ -1,17 +1,50 @@
 $border-color: #{"#c5cff399"};
+$text-color-blue: #243976;
+$text-color-white01: #f8f9ff;
+
+$color-gradient01: linear-gradient(273deg, #864ff1 0%, #49b3f7 100%);
+$color-gradient02: linear-gradient(27deg, #4271df 16.72%, #789cf1 95.45%);
+
+$background-light-blue: #eff2fd;
 %main-titles {
-  font-family: "ALS Schlange Sans Bold", sans-serif;
+  font-family: "ALSSchlangesans-Bold", sans-serif;
   margin: 0 0 30px;
   text-align: center;
   font-size: 28px;
-  line-height: 29px;
+  line-height: 28px;
 }
 @mixin button($_padd, $_bordR, $_backg, $_fonS, $_linH) {
-  font-family: "Gotham Pro Bold", sans-serif;
+  font-family: "Gotham700", sans-serif;
   color: #fff;
   padding: $_padd;
   border-radius: $_bordR;
   background: $_backg;
   font-size: $_fonS;
   line-height: $_linH;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flexColumnCenter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin flexSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin backgroundCenterCover {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@mixin backgroundCenterContain {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }

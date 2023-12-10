@@ -4,9 +4,9 @@
 @import "./variables";
 @import "animation-hover.css";
 body {
-  font-family: "Gotham Pro Regular", sans-serif;
+  font-family: "Gotham400", sans-serif;
   font-size: 14px;
-  color: #243976;
+  color: $text-color-blue;
   background-color: #fff;
 }
 .center {
@@ -18,6 +18,9 @@ body {
 @import "./lesson-advantages";
 @import "./compare-schools";
 @import "./advantages-school";
+@import "./education-price";
+@import "./education-document";
+@import "./reviews";
 
 .center {
   margin: 0 auto;
@@ -31,36 +34,70 @@ body {
   width: 100%;
   min-height: 445px;
   padding: 30px 20px 17px;
-  background-color: #eff2fd;
+  background-color: $background-light-blue;
   border-radius: 25px;
 
-  .promotion__wrapper {
+  &__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-}
-.promotion__description-wrapper {
-  .promotion__title {
+  &__title {
     margin: 0 0 20px;
     text-align: center;
-    font-family: "ALS Schlange Sans Bold", sans-serif;
+    font-family: "ALSSchlangesans-Bold", sans-serif;
     font-size: 20px;
     line-height: 21px;
   }
-  .promotion__text {
+  &__text {
     margin: 0 0 15px;
     text-align: center;
-    font-family: "Gotham Pro Regular", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
     line-height: 18px;
   }
+  &__image-wrapper {
+    margin: 0 0 15px;
+    width: 86px;
+    height: 129px;
+    background: url(../../images/online-learnig/promotion-girl.png) no-repeat
+      center / cover;
+  }
 }
-.promotion__image-wrapper {
-  margin: 0 0 15px;
-  width: 86px;
-  height: 129px;
-  background: url(../../images/online-learnig/promotion-girl.png) no-repeat
-    center / cover;
+.sign-up-lesson {
+  @include flexSpaceBetween;
+  flex-direction: column;
+  min-height: 105px;
+  &__btn-wrp {
+    height: 54px;
+  }
+  &__btn {
+    @include button(21px 35px, 90px, $color-gradient01, 11px, 13px);
+    box-shadow: 0px 6px 21px 0px rgba(104, 130, 245, 0.67);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    display: block;
+  }
+}
+
+.contact-us {
+  width: 199px;
+  @include flexSpaceBetween;
+  &__txt {
+    font-family: "Gotham400", sans-serif;
+    color: #737373;
+    line-height: 23.128px;
+    font-size: 14px;
+  }
+  &__telegramm,
+  &__whatsapp {
+    display: block;
+    width: 40px;
+    height: 40px;
+    @include backgroundCenterCover;
+  }
+  &__telegramm {
+    background: url(../../images/telegramm-icon.svg);
+  }
+  &__whatsapp {
+    background: url(../../images/watsapp-icon.svg);
+  }
 }

@@ -1,0 +1,27 @@
+.education-document {
+    padding:50px 0;
+    &__wrp {
+        @include flexColumnCenter;
+        gap: 30px;
+    }
+    &__title {
+        max-width: 265px;
+        width: 100%;
+        @extend %main-titles;
+        text-align: center;
+        margin: 0 auto 30px;
+    }
+    &__txt {
+        max-width: 549px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 17px;
+        text-align: center;
+    }
+    &__img {
+        min-width: 280px;
+        width: 100%;
+        min-height: 247px;
+        background: url(../../images/educatuin-document/picture.png) no-repeat center /contain;
+    } 
+}
