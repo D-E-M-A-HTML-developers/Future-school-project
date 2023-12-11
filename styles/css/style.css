@@ -693,7 +693,7 @@ body {
   margin: 30px 0;
 }
 .slider__card {
-  margin: 0 0 0 20px;
+  margin: 0 20px 0 20px;
   min-width: 280px;
   width: 100%;
   min-height: 277px;
