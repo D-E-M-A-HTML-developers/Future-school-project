@@ -782,6 +782,83 @@ body {
   width: 50px;
 }
 
+.accordion {
+  padding: 50px 0;
+}
+.accordion__item {
+  filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.accordion__input {
+  display: none;
+}
+.accordion__input:checked ~ .accordion__body {
+  display: block;
+  margin: 0 0 15px;
+}
+.accordion__input:checked ~ .accordion__button {
+  margin: 0;
+  padding: 20px 13px;
+  border-radius: 25px 25px 0 0;
+  border-left: 15px solid #243976;
+}
+.accordion__input:checked + .accordion__button > span {
+  transform: rotate(45deg);
+}
+.accordion__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 20px 13px 20px 28px;
+  background-color: #eff2fd;
+  border-radius: 25px;
+  color: #243976;
+  font-family: "ALSSchlangesans-Bold";
+  font-size: 18px;
+  line-height: 18px;
+  cursor: pointer;
+}
+.accordion__button:not(:last-child) {
+  margin: 0 0 15px;
+}
+.accordion__button span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: url(../../images/accordion/plus.png) no-repeat center/cover;
+}
+.accordion__body {
+  padding: 0 13px 37px;
+  border-left: 15px solid #243976;
+  border-radius: 0 0 25px 25px;
+  background-color: #eff2fd;
+  display: none;
+  transition: all 0.8s ease-in-out;
+}
+.accordion__text {
+  color: #243976;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0 0 15px;
+}
+.accordion__text span {
+  font-family: "Gotham700";
+}
+.accordion__text-list-wrp > .accordion__text {
+  margin: 0;
+}
+.accordion__text-list {
+  padding-left: 22px;
+  margin: 0 0 20px;
+}
+.accordion__text-item {
+  list-style: disc;
+  color: #243976;
+  font-size: 12px;
+  line-height: 15.6px;
+}
+
 .center {
   margin: 0 auto;
   max-width: 1180px;
