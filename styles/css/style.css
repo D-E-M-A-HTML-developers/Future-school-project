@@ -19,7 +19,94 @@ body {
 }
 
 .center {
-  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1180px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.promotion {
+  min-width: 280px;
+  width: 100%;
+  min-height: 445px;
+  padding: 30px 20px 17px;
+  background-color: #eff2fd;
+  border-radius: 25px;
+}
+.promotion__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.promotion__title {
+  margin: 0 0 20px;
+  text-align: center;
+  font-family: "ALSSchlangesans-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 21px;
+}
+.promotion__text {
+  margin: 0 0 15px;
+  text-align: center;
+  line-height: 18px;
+}
+.promotion__image-wrapper {
+  margin: 0 0 15px;
+  width: 86px;
+  height: 129px;
+  background: url(../../images/online-learnig/promotion-girl.png) no-repeat center/cover;
+}
+
+.sign-up-lesson {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  min-height: 105px;
+}
+.sign-up-lesson__btn-wrp {
+  height: 54px;
+}
+.sign-up-lesson__btn {
+  font-family: "Gotham700", sans-serif;
+  color: #fff;
+  padding: 21px 35px;
+  border-radius: 90px;
+  background: linear-gradient(273deg, #864ff1 0%, #49b3f7 100%);
+  font-size: 11px;
+  line-height: 13px;
+  box-shadow: 0px 6px 21px 0px rgba(104, 130, 245, 0.67);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  display: block;
+}
+
+.contact-us {
+  width: 199px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-us__txt {
+  font-family: "Gotham400", sans-serif;
+  color: #737373;
+  line-height: 23.128px;
+  font-size: 14px;
+}
+.contact-us__telegramm, .contact-us__whatsapp {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.contact-us__telegramm {
+  background: url(../../images/telegramm-icon.svg);
+}
+.contact-us__whatsapp {
+  background: url(../../images/watsapp-icon.svg);
 }
 
 .header {
@@ -858,95 +945,4 @@ body {
   color: #243976;
   font-size: 12px;
   line-height: 15.6px;
-}
-
-.center {
-  margin: 0 auto;
-  max-width: 1180px;
-  width: 100%;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-
-.promotion {
-  min-width: 280px;
-  width: 100%;
-  min-height: 445px;
-  padding: 30px 20px 17px;
-  background-color: #eff2fd;
-  border-radius: 25px;
-}
-.promotion__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.promotion__title {
-  margin: 0 0 20px;
-  text-align: center;
-  font-family: "ALSSchlangesans-Bold", sans-serif;
-  font-size: 20px;
-  line-height: 21px;
-}
-.promotion__text {
-  margin: 0 0 15px;
-  text-align: center;
-  line-height: 18px;
-}
-.promotion__image-wrapper {
-  margin: 0 0 15px;
-  width: 86px;
-  height: 129px;
-  background: url(../../images/online-learnig/promotion-girl.png) no-repeat center/cover;
-}
-
-.sign-up-lesson {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  min-height: 105px;
-}
-.sign-up-lesson__btn-wrp {
-  height: 54px;
-}
-.sign-up-lesson__btn {
-  font-family: "Gotham700", sans-serif;
-  color: #fff;
-  padding: 21px 35px;
-  border-radius: 90px;
-  background: linear-gradient(273deg, #864ff1 0%, #49b3f7 100%);
-  font-size: 11px;
-  line-height: 13px;
-  box-shadow: 0px 6px 21px 0px rgba(104, 130, 245, 0.67);
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  display: block;
-}
-
-.contact-us {
-  width: 199px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.contact-us__txt {
-  font-family: "Gotham400", sans-serif;
-  color: #737373;
-  line-height: 23.128px;
-  font-size: 14px;
-}
-.contact-us__telegramm, .contact-us__whatsapp {
-  display: block;
-  width: 40px;
-  height: 40px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.contact-us__telegramm {
-  background: url(../../images/telegramm-icon.svg);
-}
-.contact-us__whatsapp {
-  background: url(../../images/watsapp-icon.svg);
 }
