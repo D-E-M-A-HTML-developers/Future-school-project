@@ -9,38 +9,19 @@
     margin: 0 auto;
     @include flexColumnCenter;
   }
-  &__about-schools {
-    max-width: 260px;
-    width: 100%;
-    min-height: 450px;
-    border-radius: 15px;
-    background: linear-gradient(180deg, #eff2fd 0%, #fcfcfc 100%);
-    padding: 20px 0 5px;
-    filter: drop-shadow(
-      3.906510829925537px 11.719532012939453px 31.252086639404297px
-        rgba(30, 35, 66, 0.15)
-    );
-    @include flexColumnCenter;
-    &.compare-schools__about-schools_blue {
-      max-width: 280px;
-      min-height: 439px;
-      padding: 25px 0 5px;
-      background: $color-gradient02;
-      margin: -73px 0 0;
-      h3 {
-        color: #ffffff;
-        font-size: 26px;
-      }
-      li {
-        max-width: 248px;
-        width: 100%;
-        color: $text-color-white01;
-        margin: 0 0 13px 0;
-        line-height: 24px;
-        font-size: 16px;
-      }
-    }
-  }
+}
+.about-schools {
+  max-width: 260px;
+  width: 100%;
+  min-height: 450px;
+  border-radius: 15px;
+  background: linear-gradient(180deg, #eff2fd 0%, #fcfcfc 100%);
+  padding: 20px 0 5px;
+  filter: drop-shadow(
+    3.906510829925537px 11.719532012939453px 31.252086639404297px
+      rgba(30, 35, 66, 0.15)
+  );
+  @include flexColumnCenter;
   &__title {
     font-family: "ALSSchlangesans-Bold", sans-serif;
     font-size: 24px;
@@ -49,22 +30,46 @@
     margin: 0 0 15px 0;
     text-align: center;
   }
-}
-.about-schools__item {
-  @include flexColumnCenter;
-  max-width: 217px;
-  width: 100%;
-  line-height: 21px;
-  margin: 0 0 10px 0;
-  padding-left: 29px;
-  position: relative;
-  span {
-    font-family: "Gotham700", sans-serif;
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 217px;
+    width: 100%;
+    line-height: 21px;
+    margin: 0 0 10px 0;
+    padding-left: 29px;
+    position: relative;
+
+    span {
+      font-family: "Gotham700", sans-serif;
+    }
+
+    &::before {
+      content: "\25CF";
+      position: absolute;
+      font-size: 21px;
+      left: 0;
+    }
   }
-  &::before {
-    content: "	\25CF";
-    position: absolute;
-    font-size: 21px;
-    left: 0;
+  &--online {
+    max-width: 280px;
+    min-height: 439px;
+    padding: 25px 0 5px;
+    background: $color-gradient02;
+    margin: -73px 0 0;
+    .about-schools__title {
+      color: #ffffff;
+      font-size: 26px;
+    }
+    .about-schools__item {
+      max-width: 248px;
+      width: 100%;
+      color: $text-color-white01;
+      margin: 0 0 13px 0;
+      line-height: 24px;
+      font-size: 16px;
+    }
   }
 }
