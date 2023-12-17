@@ -748,32 +748,36 @@
 			<div class="center">
 				<div class="application__wrapper">
 					<div class="application__offer">
-						<h2 class="application__title">Все еще сомневаетесь?</h2>
+						<h2 class="application__title">Все еще <span>сомневаетесь?</span></h2>
 						<p class="application__text">Всегда страшно переходить на&nbsp;что-то новое и&nbsp;неизведанное, потому
 							мы&nbsp;предоставляем нашим
 							клиентам возможность попробовать обучаться первую неделю абсолютно бесплатно.</p>
 					</div>
 					<div class="application__form-wrapper">
 						<div class="application__card-form">
-							<form action="#">
-								<div>
-									<input class="application__input" type="text">
+							<form class="application-form" action="#" method="get" id="application-form"
+								enctype="multipart/form-data">
+								<div class="application__input-wrapper">
+									<input class="application__input" type="text" name="class" placeholder="Класс">
+								</div>
+								<div class="application__input-wrapper">
+									<input class="application__input" type="text" name="parent-name" placeholder="Имя родителя">
+								</div>
+								<div class="application__input-wrapper">
+									<input class="application__input" type="tel" name="phone" placeholder="Телефон родителя">
 								</div>
 								<div>
-									<input class="application__input" type="text">
+									<button class="application__button">Оставить заявку</button>
 								</div>
-								<div>
-									<input class="application__input" type="tel">
-								</div>
-								<div>
-									<button class="application__button"></button>
-								</div>
+								<p class="application__agreement-text">
+									Нажимая кнопку, вы&nbsp;даете <span>согласие на&nbsp;обработку своих персональных данных</span>
+								</p>
 							</form>
-							<a class="application__link" href=""></a>
 						</div>
 					</div>
 					<div class="application__image-wrapper">
-						<img class="application__image" src="#" alt="#">
+						<img class="application__image" src="images/application/application-image.png"
+							alt="Изображение девочки за партой">
 					</div>
 				</div>
 			</div>
