@@ -1,0 +1,85 @@
+.footer {
+    padding: 30px 0 14px;
+    background: #EFF2FD;
+    &__logo {
+        margin: 0 0 30px 0;
+    }
+    &__wrp {
+        max-width: 254px;
+        width: 100%;
+        height: 107px;
+        @include flexSpaceBetween;
+        align-items: normal;
+        margin: 0 0 20px 0;
+    }
+    &__block {
+        &--classes {
+            width: 70px;
+            min-height: 107px;
+        }
+        &--documents {
+            width: 125px;
+            height: 86px;
+        }
+        &--social {
+            width: 121px;
+            height: 76px;
+            margin: 0 0 30px 0;
+        }
+    }
+    &__title {
+        font-size: 16px;
+        line-height: 16.48px;
+        &--classes {
+            margin: 0 0 10px 0;
+        }
+        &--documents {
+            margin: 0 0 31px 0;
+        }
+        &--social {
+            margin: 0 0 26px 0;
+        }
+    }
+    &__list {
+        &--social{
+            max-width: 119px;
+            height: 39px;
+            @include flexSpaceBetween;
+        }
+    }
+    &__link {
+        line-height: 27px;
+        &--documents {
+            display: flex;
+            align-items: center;
+            padding-left: 50px;
+            position: relative;
+            &::before {
+                content: '';
+                width: 40px;
+                height: 51px;
+                position: absolute;
+                background: url(../../images/footer/lic.svg);
+                @include backgroundCenterContain;
+                left: 0;
+            }
+        }
+        &--social {
+            display: block;
+            width: 34px;
+            height: 34px;
+        }
+        &--telegram {
+            background: url(../../images/icon/telegramm-icon.svg);
+            @include backgroundCenterContain;
+        }
+        &--youtube {
+            background: url(../../images/icon/youtube.svg);
+            @include backgroundCenterContain;
+        }
+        &--vk {
+            background: url(../../images/icon/vk-icon.svg);
+            @include backgroundCenterContain;
+        }
+    }
+}
