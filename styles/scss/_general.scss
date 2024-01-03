@@ -77,9 +77,9 @@ body {
     @include backgroundCenterCover;
   }
   &__telegramm {
-    background: url(../../images/telegramm-icon.svg);
+    background: url(../../images/icon/telegramm-icon.svg);
   }
   &__whatsapp {
-    background: url(../../images/watsapp-icon.svg);
+    background: url(../../images/icon/watsapp-icon.svg);
   }
 }
