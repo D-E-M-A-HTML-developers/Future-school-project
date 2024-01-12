@@ -55,7 +55,7 @@ body {
     @include button(21px 35px, 90px, $color-gradient01, 11px, 13px);
     box-shadow: 0px 6px 21px 0px rgba(104, 130, 245, 0.67);
     text-transform: uppercase;
-    letter-spacing: 0.12em;
+    letter-spacing: 1.375px;
     display: block;
   }
 }
@@ -81,5 +81,18 @@ body {
   }
   &__whatsapp {
     background: url(../../images/icon/watsapp-icon.svg);
+  }
+}
+
+@media (min-width: 415px) {
+  .sign-up-lesson {
+    height: 122px;
+    &__btn-wrp {
+       height: 67px;
+      //  width: 273px
+    }
+    &__btn {
+      padding: 27px 57px;
+    }
   }
 }
