@@ -78,7 +78,7 @@ body {
   line-height: 13px;
   box-shadow: 0px 6px 21px 0px rgba(104, 130, 245, 0.67);
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 1.375px;
   display: block;
 }
 
@@ -109,6 +109,17 @@ body {
   background: url(../../images/icon/watsapp-icon.svg);
 }
 
+@media (min-width: 415px) {
+  .sign-up-lesson {
+    height: 122px;
+  }
+  .sign-up-lesson__btn-wrp {
+    height: 67px;
+  }
+  .sign-up-lesson__btn {
+    padding: 27px 57px;
+  }
+}
 .header {
   padding: 14px 0 17px 0;
   background: url(../../images/header/background.png) no-repeat center/cover;
@@ -259,6 +270,7 @@ body {
 }
 
 .button {
+  display: block;
   font-family: "Gotham700", sans-serif;
   color: #fff;
   padding: 8px 30px;
@@ -303,6 +315,37 @@ body {
   color: #49b3f7;
 }
 
+@media (min-width: 415px) {
+  .header {
+    padding: 15px 0 27px;
+  }
+  .logo, .logo__link, .logo__image {
+    max-width: 170px;
+    height: 48px;
+  }
+  .mobile-menu__burger {
+    width: 43px;
+    height: 43px;
+  }
+  .mobile-menu__burger-element, .mobile-menu__burger-element::before, .mobile-menu__burger-element::after {
+    width: 17px;
+    height: 2px;
+  }
+  .menu-list {
+    margin: 0 0 30px;
+  }
+  .menu-list::before {
+    top: -38px;
+  }
+  .header__banner-title {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0 0 30px;
+  }
+  .header__banner-txt_bold {
+    margin: 0 0 25px 0;
+  }
+}
 .online-learning {
   padding: 40px 0 50px;
 }
