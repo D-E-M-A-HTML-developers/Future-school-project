@@ -200,27 +200,26 @@
   color: #49b3f7;
 }
 
-@media (min-width: 415px) {
-  .header{
-    padding: 15px 0 27px ;
+@media (min-width: 320px) {
+  .header {
+    padding: 15px 0 27px;
   }
   .logo {
     max-width: 170px;
     height: 48px;
   }
   .mobile-menu {
-    &__burger{
+    &__burger {
       width: 43px;
       height: 43px;
-      &-element{
+      &-element {
         width: 17px;
         height: 2px;
       }
     }
-   
   }
   .menu-list {
-    margin:0 0 30px;
+    margin: 0 0 30px;
     &::before {
       top: -38px;
     }
@@ -231,10 +230,8 @@
       line-height: 40px;
       margin: 0 0 30px;
     }
-      &-txt_bold {
+    &-txt_bold {
       margin: 0 0 25px 0;
     }
   }
-  
-    
 }

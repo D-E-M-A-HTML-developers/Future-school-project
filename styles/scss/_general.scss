@@ -5,17 +5,22 @@ body {
   background-color: #fff;
 }
 .center {
-  margin: 0 auto;
-  max-width: 1180px;
-  width: 100%;
   padding: 0 20px;
   box-sizing: border-box;
+}
+@media (min-width: 1000px) {
+  .center {
+    margin: 0 auto;
+    padding: 0 50px;
+    max-width: 1140px;
+    width: 100%;
+  }
 }
 .promotion {
   min-width: 280px;
   width: 100%;
   min-height: 445px;
-  padding: 30px 20px 17px;
+  padding: 30px 20px 20px;
   background-color: $background-light-blue;
   border-radius: 25px;
 
@@ -41,7 +46,7 @@ body {
     width: 86px;
     height: 129px;
     background: url(../../images/online-learnig/promotion-girl.png) no-repeat
-      center / cover;
+      center / contain;
   }
 }
 .sign-up-lesson {
@@ -84,15 +89,49 @@ body {
   }
 }
 
-@media (min-width: 415px) {
+@media (min-width: 320px) {
   .sign-up-lesson {
-    height: 122px;
+    min-height: 122px;
     &__btn-wrp {
-       height: 67px;
-      //  width: 273px
+      height: 67px;
     }
     &__btn {
-      padding: 27px 57px;
+      padding: 27px 56px;
+    }
+  }
+  .promotion {
+    min-height: 316px;
+    &__description-wrapper {
+      grid-area: description;
+    }
+    &__image-wrapper {
+      grid-area: image;
+    }
+    .sign-up-lesson {
+      grid-area: sign-up;
+    }
+    &__wrapper {
+      display: grid;
+      grid-template-columns: 79px 1fr;
+      column-gap: 17px;
+      grid-template-areas:
+        "image description"
+        "sign-up sign-up";
+    }
+    &__title {
+      text-align: start;
+      font-size: 24px;
+      line-height: 24px;
+      margin: 0 0 10px;
+    }
+    &__text {
+      text-align: start;
+      font-size: 16px;
+      line-height: 16.512px;
+      margin: 0 0 20px;
+    }
+    &__image-wrapper {
+      height: 119px;
     }
   }
 }
