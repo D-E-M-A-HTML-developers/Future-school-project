@@ -23,39 +23,23 @@
   }
   &__card {
     min-width: 280px;
-    padding: 15px 10px 20px 50px;
+    padding: 15px 10px 20px 10px;
     box-sizing: border-box;
-    &:nth-child(1) .lesson-advantages__text::before {
-      width: 21px;
-      height: 27px;
-      top: 6px;
-      left: -38px;
-      background: url(../../images/lesson-advantages/decor-1.svg) no-repeat
-        center / cover;
-    }
     &:nth-child(3) .lesson-advantages__text::before {
-      width: 25px;
-      height: 24px;
-      top: 1px;
-      left: -39px;
-      background: url(../../images/lesson-advantages/decor-2.svg) no-repeat
-        center / cover;
+      transform: rotate(-93.41deg) ;
     }
     &:nth-child(4) .lesson-advantages__text::before {
-      width: 34px;
-      height: 16px;
-      top: 7px;
-      left: -43px;
-      background: url(../../images/lesson-advantages/decor-3.svg) no-repeat
-        center / cover;
+      transform: rotate(131.21deg) ;
     }
   }
   &__name {
     margin: 0 0 14px 0;
     font-size: 16px;
     line-height: 16px;
+    padding: 0 0 0 40px;
   }
   &__text {
+    padding: 0 0 0 40px;
     position: relative;
     line-height: 18px;
     &::before {
@@ -63,6 +47,24 @@
       content: "";
       top: 0px;
       left: -10px;
+      background: url(../../images/lesson-advantages/decor-1.svg) no-repeat center / contain;
+      width:35px;
+      height: 30px;
     }
   }
+}
+@media(min-width:320px){
+  .lesson-advantages{
+    &__title{
+      font-size: 24px;
+      line-height: 24px;
+    }
+    &__name{
+      font-size: 17px;
+      line-height: 17px;
+    }
+    &__image{
+      height: 227px;
+    }
+}
 }
