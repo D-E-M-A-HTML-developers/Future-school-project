@@ -43,5 +43,27 @@
       line-height: 23.55px;
       margin: 0 0 40px 0;
     }
+    &:last-child p{
+      margin :0;
+    }
+
+      
+    } 
+}
+@media (min-width: 320px){
+  .online-lessons{
+    &__title{
+      font-size: 34px;
+      line-height: 34px;
+    }
+    &__img{
+      width: 173px;
+      height: 156px;
+      margin: 0 0 30px 0;
+    }
+    &__item p{
+      line-height: 22.5px;
+    }
+   
   }
 }
