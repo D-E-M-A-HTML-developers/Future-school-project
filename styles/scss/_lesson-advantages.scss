@@ -26,10 +26,10 @@
     padding: 15px 10px 20px 10px;
     box-sizing: border-box;
     &:nth-child(3) .lesson-advantages__text::before {
-      transform: rotate(-93.41deg) ;
+      transform: rotate(-102.41deg);
     }
     &:nth-child(4) .lesson-advantages__text::before {
-      transform: rotate(131.21deg) ;
+      transform: rotate(131.21deg);
     }
   }
   &__name {
@@ -45,26 +45,33 @@
     &::before {
       position: absolute;
       content: "";
-      top: 0px;
+      top: 2px;
       left: -10px;
-      background: url(../../images/lesson-advantages/decor-1.svg) no-repeat center / contain;
-      width:35px;
-      height: 30px;
+      background: url(../../images/lesson-advantages/decor-1.svg) no-repeat
+        center / contain;
+      width: 35px;
+      height: 35px;
     }
   }
 }
-@media(min-width:320px){
-  .lesson-advantages{
-    &__title{
-      font-size: 24px;
-      line-height: 24px;
+@media (min-width: 320px) {
+  .lesson-advantages {
+    &__title {
+      font-size: 36px;
+      line-height: 36px;
     }
-    &__name{
+    &__cards-wrapper {
+      margin: 0 0 25px 0;
+    }
+    &__card {
+      padding: 15px 10px 15px 10px;
+    }
+    &__name {
       font-size: 17px;
       line-height: 17px;
     }
-    &__image{
+    &__image {
       height: 227px;
     }
-}
+  }
 }
