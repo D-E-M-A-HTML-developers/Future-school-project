@@ -1,19 +1,27 @@
 @media (hover: hover) {
-  .lesson-advantages__card:hover {
-    border-radius: 25px;
-    box-shadow: 5px 15px 40px 0px rgba(30, 35, 66, 0.15);
-    background: #fff;
-  }
+	.lesson-advantages__card:hover {
+		border-radius: 25px;
+		box-shadow: 5px 15px 40px 0px rgba(30, 35, 66, 0.15);
+		background: #fff;
+		padding: 18px 10px 12px 10px;
+	}
 
-  .lesson-advantages__card:hover .lesson-advantages__name {
-    background: linear-gradient(315deg, #864ff1 0%, #49b3f7 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+	.lesson-advantages__card:hover .lesson-advantages__name {
+		background: linear-gradient(315deg, #864ff1 0%, #49b3f7 100%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		padding: 0 0 0 56px;
+	}
 
-  .lesson-advantages__card:hover .lesson-advantages__text {
-    font-size: 15px;
-    line-height: 19.5px;
-  }
+	.lesson-advantages__card:hover .lesson-advantages__text {
+		font-size: 15px;
+		line-height: 19.5px;
+		padding: 0 0 0 56px;
+	}
+
+	.lesson-advantages__card:hover .lesson-advantages__text::before {
+		height: 39px;
+		left: 0px;
+	}
 }
