@@ -11,8 +11,29 @@ $background-light-blue: #eff2fd;
   margin: 0 0 30px;
   text-align: center;
   font-size: 28px;
-  line-height: 28px;
+  line-height: 100%;
 }
+@media (min-width: 320px) {
+  %main-titles {
+    font-size: 34px;
+  }
+}
+@media (min-width: 480px) {
+  %main-titles {
+    font-size: 38px;
+  }
+}
+@media (min-width: 768px) {
+  %main-titles {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1000px) {
+  %main-titles {
+    font-size: 50px;
+  }
+}
+
 @mixin button($_padd, $_bordR, $_backg, $_fonS, $_linH) {
   font-family: "Gotham700", sans-serif;
   color: #fff;
