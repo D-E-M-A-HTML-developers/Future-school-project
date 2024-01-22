@@ -26,7 +26,7 @@
     font-family: "ALSSchlangesans-Bold", sans-serif;
     font-size: 24px;
     font-weight: 400;
-    line-height: 24.768px;
+    line-height: 100%;
     margin: 0 0 15px 0;
     text-align: center;
   }
@@ -70,6 +70,31 @@
       margin: 0 0 13px 0;
       line-height: 24px;
       font-size: 16px;
+    }
+  }
+}
+
+@media (min-width: 320px) {
+  .compare-schools {
+    &__wrp {
+      max-width: 345px;
+    }
+  }
+
+  .about-schools {
+    max-width: 310px;
+    &--online {
+      max-width: 345px;
+      margin: -58px 0 0;
+
+      .about-schools__title {
+        font-size: 34px;
+      }
+    }
+
+    &__title {
+      font-size: 32px;
+      margin: 0 0 30px;
     }
   }
 }
