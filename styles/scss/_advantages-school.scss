@@ -50,8 +50,21 @@
       font-size: 15px;
       line-height: 18px;
     }
-    &:first-child p {
-      line-height: 23.58px;
+  }
+}
+@media (min-width: 320px){
+  .advantages-school__item .advantages-school {
+    &__image{
+      width: 125px;
+      height: 125px;
+      margin: 0 0 30px;
+    }
+    &__subtitle{
+      font-size: 20px;
+      line-height: 20px;
+    }
+    &__txt {
+      line-height: 22.5px;
     }
   }
 }

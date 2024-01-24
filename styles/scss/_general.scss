@@ -62,6 +62,8 @@ body {
     text-transform: uppercase;
     letter-spacing: 1.375px;
     display: block;
+    white-space: nowrap;
+    max-width: 273px;
   }
 }
 
@@ -93,7 +95,7 @@ body {
   .sign-up-lesson {
     min-height: 122px;
     &__btn-wrp {
-      height: 67px;
+     height: 67px;
     }
     &__btn {
       padding: 27px 56px;
@@ -133,5 +135,9 @@ body {
     &__image-wrapper {
       height: 119px;
     }
-  }
+    &__btn {
+      @include button(27px 44px, 90px, $color-gradient01, 11px, 13px);
+      max-width: 273px;
+   }
+}
 }
