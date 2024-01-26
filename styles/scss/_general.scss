@@ -63,7 +63,6 @@ body {
     letter-spacing: 1.375px;
     display: block;
     white-space: nowrap;
-    max-width: 273px;
   }
 }
 
@@ -95,12 +94,33 @@ body {
   .sign-up-lesson {
     min-height: 122px;
     &__btn-wrp {
-     height: 67px;
+      height: 67px;
     }
     &__btn {
       padding: 27px 56px;
     }
   }
+  .promotion {
+    min-height: 316px;
+    &__title {
+      font-size: 24px;
+      line-height: 24px;
+      margin: 0 0 10px;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 16.512px;
+      margin: 0 0 20px;
+    }
+    &__image-wrapper {
+      height: 119px;
+    }
+    &__btn {
+      @include button(27px 44px, 90px, $color-gradient01, 11px, 13px);
+    }
+  }
+}
+@media (min-width: 400px) {
   .promotion {
     min-height: 316px;
     &__description-wrapper {
@@ -122,22 +142,9 @@ body {
     }
     &__title {
       text-align: start;
-      font-size: 24px;
-      line-height: 24px;
-      margin: 0 0 10px;
     }
     &__text {
       text-align: start;
-      font-size: 16px;
-      line-height: 16.512px;
-      margin: 0 0 20px;
     }
-    &__image-wrapper {
-      height: 119px;
-    }
-    &__btn {
-      @include button(27px 44px, 90px, $color-gradient01, 11px, 13px);
-      max-width: 273px;
-   }
-}
+  }
 }
