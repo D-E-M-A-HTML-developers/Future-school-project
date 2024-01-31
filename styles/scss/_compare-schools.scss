@@ -74,7 +74,7 @@
   }
 }
 
-@media (min-width: 320px) {
+@media (min-width: 415px) {
   .compare-schools {
     &__wrp {
       max-width: 345px;
@@ -86,7 +86,6 @@
     &--online {
       max-width: 345px;
       margin: -58px 0 0;
-
       .about-schools__title {
         font-size: 34px;
       }
