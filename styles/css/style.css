@@ -11,7 +11,7 @@
   line-height: 100%;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 415px) {
   .slider__card-title, .reviews__title, .education-document__title, .education-price__title, .advantages-school__title, .compare-schools__title, .lesson-advantages__title, .online-lessons__title, .online-learning__title {
     font-size: 34px;
   }
@@ -135,7 +135,7 @@ body {
   background: url(../../images/icon/watsapp-icon.svg);
 }
 
-@media (min-width: 320px) {
+@media (min-width: 415px) {
   .sign-up-lesson {
     min-height: 122px;
   }
@@ -145,33 +145,6 @@ body {
   .sign-up-lesson__btn {
     padding: 27px 56px;
   }
-  .promotion {
-    min-height: 316px;
-  }
-  .promotion__title {
-    font-size: 24px;
-    line-height: 24px;
-    margin: 0 0 10px;
-  }
-  .promotion__text {
-    font-size: 16px;
-    line-height: 16.512px;
-    margin: 0 0 20px;
-  }
-  .promotion__image-wrapper {
-    height: 119px;
-  }
-  .promotion__btn {
-    font-family: "Gotham700", sans-serif;
-    color: #fff;
-    padding: 27px 44px;
-    border-radius: 90px;
-    background: linear-gradient(273deg, #864ff1 0%, #49b3f7 100%);
-    font-size: 11px;
-    line-height: 13px;
-  }
-}
-@media (min-width: 400px) {
   .promotion {
     min-height: 316px;
   }
@@ -192,10 +165,28 @@ body {
     grid-template-areas: "image description" "sign-up sign-up";
   }
   .promotion__title {
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0 0 10px;
     text-align: start;
   }
   .promotion__text {
+    font-size: 16px;
+    line-height: 16.512px;
+    margin: 0 0 20px;
     text-align: start;
+  }
+  .promotion__image-wrapper {
+    height: 119px;
+  }
+  .promotion__btn {
+    font-family: "Gotham700", sans-serif;
+    color: #fff;
+    padding: 27px 44px;
+    border-radius: 90px;
+    background: linear-gradient(273deg, #864ff1 0%, #49b3f7 100%);
+    font-size: 11px;
+    line-height: 13px;
   }
 }
 .header {
@@ -393,7 +384,7 @@ body {
   color: #49b3f7;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 415px) {
   .header {
     padding: 15px 0 27px;
   }
@@ -479,7 +470,7 @@ body {
   background-image: url(../../images/online-learnig/item-icon5.svg);
 }
 
-@media (min-width: 320px) {
+@media (min-width: 415px) {
   .online-learning {
     padding: 50px 0 50px;
   }
@@ -531,7 +522,7 @@ body {
   margin: 0;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 415px) {
   .online-lessons__img {
     width: 173px;
     height: 156px;
@@ -561,7 +552,7 @@ body {
   margin: 25px 0;
 }
 .lesson-advantages__cards-wrapper {
-  margin: 0 0 15px 0;
+  margin: 0 0 20px 0;
 }
 .lesson-advantages__card {
   min-width: 280px;
@@ -595,7 +586,7 @@ body {
   height: 35px;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 415px) {
   .lesson-advantages__cards-wrapper {
     margin: 0 0 25px 0;
   }
@@ -683,7 +674,7 @@ body {
   font-size: 16px;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 415px) {
   .compare-schools__wrp {
     max-width: 345px;
   }
@@ -760,7 +751,7 @@ body {
   line-height: 18px;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 415px) {
   .advantages-school__item .advantages-school__image {
     width: 125px;
     height: 125px;
@@ -910,7 +901,7 @@ body {
   line-height: 20px;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 415px) {
   .education-price__card {
     max-width: 293px;
   }
@@ -1073,7 +1064,7 @@ body {
   width: 50px;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 415px) {
   .reviews {
     background-image: url(../../images/reviews/reviews-backgroud.png);
     background-repeat: no-repeat;
@@ -1151,11 +1142,12 @@ body {
   transform: rotate(45deg);
 }
 .accordion__button {
+  min-height: 76px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding: 20px 13px 20px 28px;
+  padding: 0 13px 0 28px;
   background-color: #eff2fd;
   border-radius: 25px;
   color: #243976;
@@ -1185,14 +1177,14 @@ body {
 .accordion__text {
   color: #243976;
   font-size: 12px;
-  line-height: 16px;
-  margin: 0 0 15px;
+  line-height: 130%;
+  padding: 0 0 20px;
 }
 .accordion__text span {
   font-family: "Gotham700";
 }
 .accordion__text-list-wrp > .accordion__text {
-  margin: 0;
+  padding: 0;
 }
 .accordion__text-list {
   padding-left: 22px;
@@ -1205,6 +1197,37 @@ body {
   line-height: 15.6px;
 }
 
+@media (min-width: 415px) {
+  .accordion__input:checked ~ .accordion__button {
+    padding: 25px 27px 20px 10px;
+    border-left: 25px solid #243976;
+  }
+  .accordion__button {
+    font-size: 20px;
+    line-height: 20.64px;
+    gap: 15px;
+  }
+  .accordion__button:not(:last-child) {
+    margin: 0 0 20px;
+  }
+  .accordion__button span {
+    min-width: 30px;
+    height: 30px;
+  }
+  .accordion__body {
+    padding: 0 13px 31px;
+    border-left: 25px solid #243976;
+  }
+  .accordion__text {
+    font-size: 15px;
+    line-height: 150%;
+    padding: 0 0 33px;
+  }
+  .accordion__text-item {
+    font-size: 15px;
+    line-height: 150%;
+  }
+}
 .application {
   padding: 0 0 50px;
 }
@@ -1472,4 +1495,4 @@ body {
   color: #9299af;
   line-height: 16.256px;
   text-align: center;
-}/*# sourceMappingURL=style.css.map */
+}
