@@ -117,3 +117,38 @@
     width: 100%;
   }
 }
+
+@media (min-width: 415px) {
+  .application{
+    &__offer{
+      margin-bottom: 30px;
+    }
+    &__title{
+    max-width: 350px;
+    width: 100%;
+    font-size: 34px;
+    line-height: 100%;
+  }
+   &__text{
+    font-size: 15px;
+    line-height: 130%;
+   }
+   &__input{
+    max-width: 298px;
+    width: 100%;
+    height: 56px;
+    padding: 16px 7.81px 16px 63px;
+    &-wrapper{
+      height: 56px;
+      &::before{
+        width: 56px;
+        height: 56px;
+      }
+    }
+   }
+   &__agreement-text{
+    font-size: 13px;
+    line-height: 130%;
+   }
+  }
+}
