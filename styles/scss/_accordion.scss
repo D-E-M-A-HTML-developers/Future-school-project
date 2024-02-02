@@ -1,5 +1,5 @@
 .accordion {
-  padding: 50px 0;
+  padding: 50px 0 30px;
 
   &__item {
     border-radius: 25px;
@@ -98,7 +98,7 @@
       line-height: 20.64px;
       gap: 15px;
 
-      &:not(:last-child) {
+      &:not(:last-of-type) {
         margin: 0 0 20px;
       }
       span {
