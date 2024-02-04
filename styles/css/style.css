@@ -201,6 +201,22 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.header .sign-up-lesson__btn-wrp {
+  position: relative;
+}
+.header .sign-up-lesson__btn-wrp::after {
+  position: absolute;
+  content: "";
+  width: 29.78px;
+  height: 34.42px;
+  background-image: url(../../images/header/right-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  top: -46px;
+  right: 26px;
+  transform: rotate(-71deg);
+}
 
 .logo, .logo__image, .logo__link {
   position: relative;
@@ -378,6 +394,7 @@ body {
 .header__banner-txt_bold {
   font-family: "Gotham700", sans-serif;
   margin: 0 0 48px 0;
+  min-height: 45px;
 }
 
 .color-blue {
@@ -387,6 +404,13 @@ body {
 @media (min-width: 415px) {
   .header {
     padding: 15px 0 27px;
+  }
+  .header .sign-up-lesson__btn-wrp::after {
+    content: "";
+    height: 34.42px;
+    top: -36px;
+    right: 45px;
+    transform: rotate(-71deg);
   }
   .logo, .logo__link, .logo__image {
     max-width: 170px;
@@ -413,6 +437,14 @@ body {
   }
   .header__banner-txt_bold {
     margin: 0 0 25px 0;
+  }
+}
+@media (min-width: 480px) {
+  .header {
+    padding: 15px 0 33px;
+  }
+  .header .sign-up-lesson__btn-wrp::after {
+    display: none;
   }
 }
 .online-learning {
@@ -1400,7 +1432,7 @@ body {
   display: grid;
   -moz-column-gap: 5px;
        column-gap: 5px;
-  grid-template-columns: repeat(2, minmax(70px, 125px));
+  grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "logo logo" "classes documents" "social social" "contacts contacts";
 }
 .footer__logo {
@@ -1409,14 +1441,11 @@ body {
 }
 .footer__block-classes {
   grid-area: classes;
-  width: 70px;
   min-height: 107px;
   margin: 0 0 20px 0;
 }
 .footer__block-documents {
   grid-area: documents;
-  width: 125px;
-  height: 86px;
   margin: 0 0 20px 0;
 }
 .footer__block-social {
@@ -1433,7 +1462,7 @@ body {
 }
 .footer-title {
   font-size: 16px;
-  line-height: 16.48px;
+  line-height: 103%;
 }
 .footer__title-classes {
   margin: 0 0 10px 0;
@@ -1513,7 +1542,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  top: 0;
   left: 0;
 }
 .footer__tel::before {
@@ -1530,27 +1558,35 @@ body {
 }
 
 @media (min-width: 415px) {
-  .logo, .logo__link, .logo__image {
-    max-width: 236px;
-    height: 67px;
+  .footer {
+    padding: 28px 0 31px;
   }
   .footer__block-classes {
     display: none;
   }
   .footer__position-wrapper {
     display: grid;
-    -moz-column-gap: 5px;
-         column-gap: 5px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "logo logo" "social documents" "contacts contacts";
+  }
+  .footer__logo, .footer__logo-link, .footer__logo-image {
+    max-width: 236px;
+    height: 67px;
   }
   .footer__block-contacts {
     justify-self: center;
     margin-bottom: 40px;
   }
-  .footer__title {
+  .footer-title {
     font-size: 20px;
-    line-height: 103%;
+  }
+  .footer__title-documents {
+    margin: 0 0 27px 0;
+  }
+  .footer__title-social {
+    margin: 0 0 22px 0;
   }
   .footer__link-contacts {
     font-size: 15px;
@@ -1558,9 +1594,13 @@ body {
   }
   .footer__address, .footer__tel {
     max-width: 230px;
-    width: 100%;
+    padding: 0 0 0 54px;
+  }
+  .footer__address::before, .footer__tel::before {
+    width: 46px;
+    height: 46px;
   }
   .footer__block-documents {
-    margin-bottom: 40px;
+    margin-bottom: 51px;
   }
 }
