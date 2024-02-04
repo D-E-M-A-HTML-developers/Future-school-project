@@ -7,6 +7,22 @@
     width: 100%;
     @include flexSpaceBetween;
   }
+  .sign-up-lesson__btn-wrp {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 29.78px;
+      height: 34.42px;
+      background-image: url(../../images/header/right-arrow.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      top: -46px;
+      right: 26px;
+      transform: rotate(-71deg);
+    }
+  }
 }
 
 .logo {
@@ -193,6 +209,7 @@
   &-txt_bold {
     font-family: "Gotham700", sans-serif;
     margin: 0 0 48px 0;
+    min-height: 45px;
   }
 }
 
@@ -203,6 +220,15 @@
 @media (min-width: 415px) {
   .header {
     padding: 15px 0 27px;
+    .sign-up-lesson__btn-wrp {
+      &::after {
+        content: "";
+        height: 34.42px;
+        top: -36px;
+        right: 45px;
+        transform: rotate(-71deg);
+      }
+    }
   }
   .logo {
     max-width: 170px;
@@ -232,6 +258,16 @@
     }
     &-txt_bold {
       margin: 0 0 25px 0;
+    }
+  }
+}
+@media (min-width: 480px) {
+  .header {
+    padding: 15px 0 33px;
+    .sign-up-lesson__btn-wrp {
+      &::after {
+        display: none;
+      }
     }
   }
 }

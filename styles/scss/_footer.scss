@@ -4,7 +4,7 @@
   &__position-wrapper {
     display: grid;
     column-gap: 5px;
-    grid-template-columns: repeat(2, minmax(70px, 125px));
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       "logo logo"
       "classes documents"
@@ -17,14 +17,11 @@
   }
   &__block-classes {
     grid-area: classes;
-    width: 70px;
     min-height: 107px;
     margin: 0 0 20px 0;
   }
   &__block-documents {
     grid-area: documents;
-    width: 125px;
-    height: 86px;
     margin: 0 0 20px 0;
   }
   &__block-social {
@@ -41,7 +38,7 @@
   }
   &-title {
     font-size: 16px;
-    line-height: 16.48px;
+    line-height: 103%;
   }
   &__title-classes {
     margin: 0 0 10px 0;
@@ -114,7 +111,6 @@
       height: 40px;
       background-image: url(../../images/footer/icon-map.svg);
       @include backgroundCenterCover;
-      top: 0;
       left: 0;
     }
   }
@@ -131,42 +127,56 @@
     text-align: center;
   }
 }
-@media (min-width: 415px){
-  .logo, .logo__link, .logo__image{
-      max-width: 236px;
-      height: 67px; 
-  }
-  .footer{
-    &__block-classes{
+@media (min-width: 415px) {
+  .footer {
+    padding: 28px 0 31px;
+    &__block-classes {
       display: none;
     }
-    &__position-wrapper{
+    &__position-wrapper {
       display: grid;
-      column-gap: 5px;
+      column-gap: 20px;
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas:
         "logo logo"
         "social documents"
         "contacts contacts";
     }
-    &__block-contacts{
+    &__logo,
+    &__logo-link,
+    &__logo-image {
+      max-width: 236px;
+      height: 67px;
+    }
+    &__block-contacts {
       justify-self: center;
       margin-bottom: 40px;
     }
-    &__title{
+    &-title {
       font-size: 20px;
-      line-height: 103%;
     }
-    &__link-contacts{
+    &__title-documents {
+      margin: 0 0 27px 0;
+    }
+    &__title-social {
+      margin: 0 0 22px 0;
+    }
+    &__link-contacts {
       font-size: 15px;
       line-height: 27px;
     }
-    &__address, &__tel{
+    &__address,
+    &__tel {
       max-width: 230px;
-      width: 100%;
+      padding: 0 0 0 54px;
+      &::before {
+        width: 46px;
+        height: 46px;
+      }
     }
-    &__block-documents{
-      margin-bottom: 40px;
+
+    &__block-documents {
+      margin-bottom: 51px;
     }
   }
 }
