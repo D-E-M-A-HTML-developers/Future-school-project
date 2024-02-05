@@ -94,6 +94,9 @@
   .mobile-menu__box {
   visibility: visible;
 }
+#menu-switch[type="checkbox"]:checked ~ .mobile-menu__wrapper {
+  z-index: 4;
+}
 .mobile-menu {
   &__burger {
     display: block;
@@ -129,6 +132,7 @@
     top: -5.1px;
   }
   &__wrapper {
+    z-index: -999;
     position: absolute;
     top: 0;
     left: 0;
@@ -241,6 +245,14 @@
       &-element {
         width: 17px;
         height: 2px;
+
+        &::after {
+          top: -6px;
+        }
+
+        &::before {
+          top: 6px;
+        }
       }
     }
   }
@@ -269,5 +281,36 @@
         display: none;
       }
     }
+
+    &__wrapper {
+      margin: 0 0 44px;
+    }
+
+    &__banner-image {
+      margin: 0 auto 50px;
+      max-width: 642px;
+    }
+
+    &__banner-text-wrp {
+      max-width: 592px;
+      padding: 0 15px;
+      margin: 0 auto;
+    }
+
+    &__banner-title {
+      margin: 0 0 23px;
+    }
+
+    &__banner-txt {
+      margin: 0 0 23px;
+
+      &_bold {
+        margin: 0 0 30px;
+        min-height: 25px;
+      }
+    }
+  }
+  .contact-us__txt {
+    font-size: 16px;
   }
 }
