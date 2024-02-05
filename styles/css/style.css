@@ -109,16 +109,22 @@ body {
 }
 
 .contact-us {
-  width: 199px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
+  gap: 10px;
 }
 .contact-us__txt {
   font-family: "Gotham400", sans-serif;
   color: #737373;
   line-height: 23.128px;
   font-size: 14px;
+}
+.contact-us__icons-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
 .contact-us__telegramm, .contact-us__whatsapp {
   display: block;
@@ -129,10 +135,10 @@ body {
   background-size: cover;
 }
 .contact-us__telegramm {
-  background: url(../../images/icon/telegramm-icon.svg);
+  background-image: url(../../images/icon/telegramm-icon.svg);
 }
 .contact-us__whatsapp {
-  background: url(../../images/icon/watsapp-icon.svg);
+  background-image: url(../../images/icon/watsapp-icon.svg);
 }
 
 @media (min-width: 415px) {
@@ -187,6 +193,17 @@ body {
     background: linear-gradient(273deg, #864ff1 0%, #49b3f7 100%);
     font-size: 11px;
     line-height: 13px;
+  }
+}
+@media (min-width: 480px) {
+  .sign-up-lesson {
+    min-height: 117px;
+  }
+  .contact-us {
+    gap: 20px;
+  }
+  .contact-us__icons-wrapper {
+    gap: 15px;
   }
 }
 .header {
@@ -277,6 +294,10 @@ body {
   visibility: visible;
 }
 
+#menu-switch[type=checkbox]:checked ~ .mobile-menu__wrapper {
+  z-index: 4;
+}
+
 .mobile-menu__burger {
   display: block;
   position: relative;
@@ -311,6 +332,7 @@ body {
   top: -5.1px;
 }
 .mobile-menu__wrapper {
+  z-index: -999;
   position: absolute;
   top: 0;
   left: 0;
@@ -424,6 +446,12 @@ body {
     width: 17px;
     height: 2px;
   }
+  .mobile-menu__burger-element::after {
+    top: -6px;
+  }
+  .mobile-menu__burger-element::before {
+    top: 6px;
+  }
   .menu-list {
     margin: 0 0 30px;
   }
@@ -445,6 +473,31 @@ body {
   }
   .header .sign-up-lesson__btn-wrp::after {
     display: none;
+  }
+  .header__wrapper {
+    margin: 0 0 44px;
+  }
+  .header__banner-image {
+    margin: 0 auto 50px;
+    max-width: 642px;
+  }
+  .header__banner-text-wrp {
+    max-width: 592px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .header__banner-title {
+    margin: 0 0 23px;
+  }
+  .header__banner-txt {
+    margin: 0 0 23px;
+  }
+  .header__banner-txt_bold {
+    margin: 0 0 30px;
+    min-height: 25px;
+  }
+  .contact-us__txt {
+    font-size: 16px;
   }
 }
 .online-learning {
@@ -509,6 +562,11 @@ body {
   .online-learning__list {
     max-width: 246px;
     margin: 0 auto;
+  }
+}
+@media (min-width: 480px) {
+  .online-learning {
+    padding: 60px 0 70px;
   }
 }
 .online-lessons {
@@ -1350,6 +1408,12 @@ body {
   line-height: 16px;
   color: #9e9e9e;
 }
+.application__input:-ms-input-placeholder {
+  font-family: "Gotham400" sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  color: #9e9e9e;
+}
 .application__input::placeholder {
   font-family: "Gotham400" sans-serif;
   font-size: 13px;
@@ -1380,7 +1444,8 @@ body {
   text-align: center;
 }
 .application__agreement-text a {
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   color: #9e9e9e;
 }
 .application__image-wrapper {
@@ -1593,7 +1658,7 @@ body {
     line-height: 27px;
   }
   .footer__address, .footer__tel {
-    max-width: 230px;
+    max-width: 233px;
     padding: 0 0 0 54px;
   }
   .footer__address::before, .footer__tel::before {
