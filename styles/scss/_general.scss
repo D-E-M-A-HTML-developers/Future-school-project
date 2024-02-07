@@ -160,4 +160,14 @@ body {
       gap: 15px;
     }
   }
+  .promotion {
+    padding: 30px 20px 30px;
+    &__wrapper {
+      column-gap: 30px;
+    }
+    &__image-wrapper {
+      width: 94px;
+      height: 131px;
+    }
+  }
 }

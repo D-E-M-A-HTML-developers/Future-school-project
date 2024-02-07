@@ -32,6 +32,17 @@
       transform: rotate(131.21deg);
     }
   }
+  &__card:first-child {
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 5px 15px 40px 0px rgba(30, 35, 66, 0.15);
+    .lesson-advantages__name {
+      background: linear-gradient(315deg, #864ff1 0%, #49b3f7 100%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+    }
+  }
   &__name {
     margin: 0 0 14px 0;
     font-size: 16px;
@@ -41,7 +52,7 @@
   &__text {
     padding: 0 0 0 40px;
     position: relative;
-    line-height: 18px;
+    line-height: 130%;
     &::before {
       position: absolute;
       content: "";
@@ -68,6 +79,14 @@
     }
     &__image {
       height: 227px;
+    }
+  }
+}
+@media (min-width: 480px) {
+  .lesson-advantages {
+    &__name {
+      font-size: 20px;
+      line-height: 100%;
     }
   }
 }
