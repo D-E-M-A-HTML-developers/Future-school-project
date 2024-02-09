@@ -34,12 +34,12 @@ body {
     text-align: center;
     font-family: "ALSSchlangesans-Bold", sans-serif;
     font-size: 20px;
-    line-height: 21px;
+    line-height: 103%;
   }
   &__text {
     margin: 0 0 15px;
     text-align: center;
-    line-height: 18px;
+    line-height: 130%;
   }
   &__image-wrapper {
     margin: 0 0 15px;
@@ -101,7 +101,7 @@ body {
 
 @media (min-width: 415px) {
   .sign-up-lesson {
-    min-height: 122px;
+    min-height: 117px;
     &__btn-wrp {
       height: 67px;
     }
@@ -116,6 +116,7 @@ body {
     }
     &__image-wrapper {
       grid-area: image;
+      height: 119px;
     }
     .sign-up-lesson {
       grid-area: sign-up;
@@ -130,18 +131,15 @@ body {
     }
     &__title {
       font-size: 24px;
-      line-height: 24px;
+      line-height: 100%;
       margin: 0 0 10px;
       text-align: start;
     }
     &__text {
       font-size: 16px;
-      line-height: 16.512px;
+      line-height: 103%;
       margin: 0 0 20px;
       text-align: start;
-    }
-    &__image-wrapper {
-      height: 119px;
     }
     &__btn {
       @include button(27px 44px, 90px, $color-gradient01, 11px, 13px);
@@ -162,12 +160,20 @@ body {
   }
   .promotion {
     padding: 30px 20px 30px;
+    min-height: 380px;
+    &__title {
+      line-height: 103%;
+    }
+    &__text {
+      margin: 0 0 15px;
+      line-height: 130%;
+    }
     &__wrapper {
       column-gap: 30px;
     }
     &__image-wrapper {
       width: 94px;
-      height: 131px;
+      height: 141px;
     }
   }
 }

@@ -22,34 +22,37 @@
       @include backgroundCenterContain;
       margin: 0 0 20px;
     }
-    &:nth-child(2) .advantages-school__image {
-      background-image: url("../../images/advantages-school/img2.svg");
+    // &:nth-child(2) .advantages-school__image {
+    //   background-image: url("../../images/advantages-school/img2.svg");
+    // }
+    // &:nth-child(3) .advantages-school__image {
+    //   background-image: url("../../images/advantages-school/img3.svg");
+    // }
+    // &:nth-child(4) .advantages-school__image {
+    //   background-image: url("../../images/advantages-school/img4.svg");
+    // }
+    &:nth-child(4) .advantages-school__subtitle {
+      line-height: 125%;
     }
-    &:nth-child(3) .advantages-school__image {
-      background-image: url("../../images/advantages-school/img3.svg");
-    }
-    &:nth-child(4) .advantages-school__image {
-      background-image: url("../../images/advantages-school/img4.svg");
-    }
-    &:nth-child(5) .advantages-school__image {
-      background-image: url("../../images/advantages-school/img5.svg");
-    }
-    &:nth-child(6) .advantages-school__image {
-      background-image: url("../../images/advantages-school/img6.svg");
-    }
-    h3 {
-      font-family: "Gotham400", sans-serif;
-      text-align: center;
-      font-size: 18px;
-      line-height: 19px;
-      font-weight: 600;
-      margin: 0 0 10px;
-    }
-    p {
-      text-align: center;
-      font-size: 15px;
-      line-height: 18px;
-    }
+    // &:nth-child(5) .advantages-school__image {
+    //   background-image: url("../../images/advantages-school/img5.svg");
+    // }
+    // &:nth-child(6) .advantages-school__image {
+    //   background-image: url("../../images/advantages-school/img6.svg");
+    // }
+  }
+  &__subtitle {
+    font-family: "Gotham400", sans-serif;
+    text-align: center;
+    font-size: 18px;
+    line-height: 103%;
+    font-weight: 600;
+    margin: 0 0 10px;
+  }
+  &__txt {
+    text-align: center;
+    font-size: 15px;
+    line-height: 120%;
   }
 }
 @media (min-width: 415px) {
@@ -61,10 +64,41 @@
     }
     &__subtitle {
       font-size: 20px;
-      line-height: 20px;
+      line-height: 100%;
     }
     &__txt {
-      line-height: 22.5px;
+      line-height: 150%;
+    }
+  }
+}
+@media (min-width: 480px) {
+  .advantages-school {
+    &__image {
+      height: 130px;
+    }
+    &__subtitle {
+      font-size: 20px;
+      line-height: 103%;
+      margin: 0 0 15px;
+    }
+    &__txt {
+      line-height: 120%;
+    }
+    .promotion {
+      min-height: 380px;
+      padding: 37px 17px 30px;
+      &__wrapper {
+        grid-template-rows: minmax(167px, auto);
+        column-gap: 46px;
+        row-gap: 30px;
+      }
+      &__image-wrapper {
+        width: 101.1px;
+        height: 154px;
+      }
+      &__description-wrapper {
+        align-self: self-end;
+      }
     }
   }
 }

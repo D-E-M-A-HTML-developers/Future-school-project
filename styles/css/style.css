@@ -16,11 +16,6 @@
     font-size: 34px;
   }
 }
-@media (min-width: 480px) {
-  .slider__card-title, .reviews__title, .education-document__title, .education-price__title, .advantages-school__title, .compare-schools__title, .lesson-advantages__title, .online-lessons__title, .online-learning__title {
-    font-size: 38px;
-  }
-}
 @media (min-width: 768px) {
   .slider__card-title, .reviews__title, .education-document__title, .education-price__title, .advantages-school__title, .compare-schools__title, .lesson-advantages__title, .online-lessons__title, .online-learning__title {
     font-size: 40px;
@@ -69,12 +64,12 @@ body {
   text-align: center;
   font-family: "ALSSchlangesans-Bold", sans-serif;
   font-size: 20px;
-  line-height: 21px;
+  line-height: 103%;
 }
 .promotion__text {
   margin: 0 0 15px;
   text-align: center;
-  line-height: 18px;
+  line-height: 130%;
 }
 .promotion__image-wrapper {
   margin: 0 0 15px;
@@ -143,7 +138,7 @@ body {
 
 @media (min-width: 415px) {
   .sign-up-lesson {
-    min-height: 122px;
+    min-height: 117px;
   }
   .sign-up-lesson__btn-wrp {
     height: 67px;
@@ -159,6 +154,7 @@ body {
   }
   .promotion__image-wrapper {
     grid-area: image;
+    height: 119px;
   }
   .promotion .sign-up-lesson {
     grid-area: sign-up;
@@ -172,18 +168,15 @@ body {
   }
   .promotion__title {
     font-size: 24px;
-    line-height: 24px;
+    line-height: 100%;
     margin: 0 0 10px;
     text-align: start;
   }
   .promotion__text {
     font-size: 16px;
-    line-height: 16.512px;
+    line-height: 103%;
     margin: 0 0 20px;
     text-align: start;
-  }
-  .promotion__image-wrapper {
-    height: 119px;
   }
   .promotion__btn {
     font-family: "Gotham700", sans-serif;
@@ -207,6 +200,14 @@ body {
   }
   .promotion {
     padding: 30px 20px 30px;
+    min-height: 380px;
+  }
+  .promotion__title {
+    line-height: 103%;
+  }
+  .promotion__text {
+    margin: 0 0 15px;
+    line-height: 130%;
   }
   .promotion__wrapper {
     -moz-column-gap: 30px;
@@ -214,7 +215,7 @@ body {
   }
   .promotion__image-wrapper {
     width: 94px;
-    height: 131px;
+    height: 141px;
   }
 }
 .header {
@@ -876,33 +877,21 @@ body {
   background-size: contain;
   margin: 0 0 20px;
 }
-.advantages-school__item:nth-child(2) .advantages-school__image {
-  background-image: url("../../images/advantages-school/img2.svg");
+.advantages-school__item:nth-child(4) .advantages-school__subtitle {
+  line-height: 125%;
 }
-.advantages-school__item:nth-child(3) .advantages-school__image {
-  background-image: url("../../images/advantages-school/img3.svg");
-}
-.advantages-school__item:nth-child(4) .advantages-school__image {
-  background-image: url("../../images/advantages-school/img4.svg");
-}
-.advantages-school__item:nth-child(5) .advantages-school__image {
-  background-image: url("../../images/advantages-school/img5.svg");
-}
-.advantages-school__item:nth-child(6) .advantages-school__image {
-  background-image: url("../../images/advantages-school/img6.svg");
-}
-.advantages-school__item h3 {
+.advantages-school__subtitle {
   font-family: "Gotham400", sans-serif;
   text-align: center;
   font-size: 18px;
-  line-height: 19px;
+  line-height: 103%;
   font-weight: 600;
   margin: 0 0 10px;
 }
-.advantages-school__item p {
+.advantages-school__txt {
   text-align: center;
   font-size: 15px;
-  line-height: 18px;
+  line-height: 120%;
 }
 
 @media (min-width: 415px) {
@@ -913,10 +902,40 @@ body {
   }
   .advantages-school__item .advantages-school__subtitle {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 100%;
   }
   .advantages-school__item .advantages-school__txt {
-    line-height: 22.5px;
+    line-height: 150%;
+  }
+}
+@media (min-width: 480px) {
+  .advantages-school__image {
+    height: 130px;
+  }
+  .advantages-school__subtitle {
+    font-size: 20px;
+    line-height: 103%;
+    margin: 0 0 15px;
+  }
+  .advantages-school__txt {
+    line-height: 120%;
+  }
+  .advantages-school .promotion {
+    min-height: 380px;
+    padding: 37px 17px 30px;
+  }
+  .advantages-school .promotion__wrapper {
+    grid-template-rows: minmax(167px, auto);
+    -moz-column-gap: 46px;
+         column-gap: 46px;
+    row-gap: 30px;
+  }
+  .advantages-school .promotion__image-wrapper {
+    width: 101.1px;
+    height: 154px;
+  }
+  .advantages-school .promotion__description-wrapper {
+    align-self: self-end;
   }
 }
 .education-price {

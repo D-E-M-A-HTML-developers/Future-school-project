@@ -18,11 +18,8 @@ $background-light-blue: #eff2fd;
     font-size: 34px;
   }
 }
-@media (min-width: 480px) {
-  %main-titles {
-    font-size: 38px;
-  }
-}
+// @media (min-width: 480px) {
+// }
 @media (min-width: 768px) {
   %main-titles {
     font-size: 40px;
