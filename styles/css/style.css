@@ -868,7 +868,10 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.advantages-school__item .advantages-school__image {
+.advantages-school__item:nth-child(4) .advantages-school__subtitle {
+  line-height: 125%;
+}
+.advantages-school__image {
   width: 100px;
   height: 100px;
   background-image: url("../../images/advantages-school/img1.svg");
@@ -876,9 +879,6 @@ body {
   background-position: center;
   background-size: contain;
   margin: 0 0 20px;
-}
-.advantages-school__item:nth-child(4) .advantages-school__subtitle {
-  line-height: 125%;
 }
 .advantages-school__subtitle {
   font-family: "Gotham400", sans-serif;
@@ -895,20 +895,23 @@ body {
 }
 
 @media (min-width: 415px) {
-  .advantages-school__item .advantages-school__image {
+  .advantages-school__image {
     width: 125px;
     height: 125px;
     margin: 0 0 30px;
   }
-  .advantages-school__item .advantages-school__subtitle {
+  .advantages-school__subtitle {
     font-size: 20px;
     line-height: 100%;
   }
-  .advantages-school__item .advantages-school__txt {
+  .advantages-school__txt {
     line-height: 150%;
   }
 }
 @media (min-width: 480px) {
+  .advantages-school {
+    padding: 0 0 70px;
+  }
   .advantages-school__image {
     height: 130px;
   }
@@ -936,6 +939,12 @@ body {
   }
   .advantages-school .promotion__description-wrapper {
     align-self: self-end;
+  }
+  .advantages-school .promotion__title {
+    margin: 0;
+  }
+  .advantages-school .promotion__text {
+    margin: 23px 0 0;
   }
 }
 .education-price {

@@ -15,31 +15,16 @@
   }
   &__item {
     @include flexColumnCenter;
-    .advantages-school__image {
-      width: 100px;
-      height: 100px;
-      background-image: url("../../images/advantages-school/img1.svg");
-      @include backgroundCenterContain;
-      margin: 0 0 20px;
-    }
-    // &:nth-child(2) .advantages-school__image {
-    //   background-image: url("../../images/advantages-school/img2.svg");
-    // }
-    // &:nth-child(3) .advantages-school__image {
-    //   background-image: url("../../images/advantages-school/img3.svg");
-    // }
-    // &:nth-child(4) .advantages-school__image {
-    //   background-image: url("../../images/advantages-school/img4.svg");
-    // }
     &:nth-child(4) .advantages-school__subtitle {
       line-height: 125%;
     }
-    // &:nth-child(5) .advantages-school__image {
-    //   background-image: url("../../images/advantages-school/img5.svg");
-    // }
-    // &:nth-child(6) .advantages-school__image {
-    //   background-image: url("../../images/advantages-school/img6.svg");
-    // }
+  }
+  &__image {
+    width: 100px;
+    height: 100px;
+    background-image: url("../../images/advantages-school/img1.svg");
+    @include backgroundCenterContain;
+    margin: 0 0 20px;
   }
   &__subtitle {
     font-family: "Gotham400", sans-serif;
@@ -56,7 +41,7 @@
   }
 }
 @media (min-width: 415px) {
-  .advantages-school__item .advantages-school {
+  .advantages-school {
     &__image {
       width: 125px;
       height: 125px;
@@ -73,6 +58,7 @@
 }
 @media (min-width: 480px) {
   .advantages-school {
+    padding: 0 0 70px;
     &__image {
       height: 130px;
     }
@@ -98,6 +84,12 @@
       }
       &__description-wrapper {
         align-self: self-end;
+      }
+      &__title {
+        margin: 0;
+      }
+      &__text {
+        margin: 23px 0 0;
       }
     }
   }
