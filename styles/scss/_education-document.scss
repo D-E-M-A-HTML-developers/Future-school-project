@@ -1,28 +1,66 @@
 .education-document {
-  padding: 50px 0;
-  &__wrp {
-    @include flexColumnCenter;
-    gap: 30px;
-  }
-  &__title {
-    max-width: 265px;
-    width: 100%;
-    @extend %main-titles;
-    text-align: center;
-    margin: 0 auto 30px;
-  }
-  &__txt {
-    max-width: 549px;
-    width: 100%;
-    font-size: 16px;
-    line-height: 17px;
-    text-align: center;
-  }
-  &__img {
-    min-width: 280px;
-    width: 100%;
-    min-height: 247px;
-    background: url(../../images/educatuin-document/picture.png) no-repeat
-      center / contain;
-  }
+	padding: 50px 0;
+	&__wrp {
+		@include flexColumnCenter;
+		gap: 30px;
+	}
+	&__title {
+		max-width: 265px;
+		width: 100%;
+		@extend %main-titles;
+		text-align: center;
+		margin: 0 auto 30px;
+	}
+	&__txt {
+		max-width: 549px;
+		width: 100%;
+		font-size: 16px;
+		line-height: 17px;
+		text-align: center;
+	}
+	&__img {
+		min-width: 280px;
+		width: 100%;
+		min-height: 247px;
+		background: url(../../images/educatuin-document/picture.png) no-repeat
+			center / contain;
+	}
+}
+
+@media (min-width: 415px) {
+	.education-document {
+		&__txt {
+			font-size: 15px;
+			line-height: 130%;
+		}
+
+		&__wrapper-img {
+			padding: 0 14px;
+		}
+
+		&__img {
+			min-width: 347px;
+			min-height: 305px;
+		}
+	}
+}
+
+@media (min-width: 480px) {
+	.education-document {
+		padding: 70px 0;
+
+		&__txt {
+			font-size: 20px;
+			line-height: 103%;
+		}
+
+		&__wrapper-img {
+			padding: 0 44px;
+		}
+
+		&__img {
+			min-width: 352px;
+			min-height: 310px;
+		}
+	}
 }
