@@ -1177,6 +1177,35 @@ body {
   background: url(../../images/educatuin-document/picture.png) no-repeat center/contain;
 }
 
+@media (min-width: 415px) {
+  .education-document__txt {
+    font-size: 15px;
+    line-height: 130%;
+  }
+  .education-document__wrapper-img {
+    padding: 0 14px;
+  }
+  .education-document__img {
+    min-width: 347px;
+    min-height: 305px;
+  }
+}
+@media (min-width: 480px) {
+  .education-document {
+    padding: 70px 0;
+  }
+  .education-document__txt {
+    font-size: 20px;
+    line-height: 103%;
+  }
+  .education-document__wrapper-img {
+    padding: 0 44px;
+  }
+  .education-document__img {
+    min-width: 352px;
+    min-height: 310px;
+  }
+}
 .reviews__title {
   text-align: center;
 }
@@ -1791,4 +1820,4 @@ body {
   .footer__block-documents {
     margin-bottom: 51px;
   }
-}
+}/*# sourceMappingURL=style.css.map */
