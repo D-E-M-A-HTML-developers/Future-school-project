@@ -7,7 +7,7 @@
   }
   &__list {
     @include flexColumnCenter;
-    gap: 89px;
+    gap: 90px;
   }
   &__card {
     position: relative;
@@ -51,7 +51,7 @@
     font-family: "Gotham400", sans-serif;
     font-weight: 600;
     font-size: 20px;
-    line-height: 21px;
+    line-height: 103%;
     color: $text-color-blue;
     margin: 0 0 8px 0;
   }
@@ -60,7 +60,7 @@
     width: 100%;
     font-weight: 500;
     font-size: 17px;
-    line-height: 18px;
+    line-height: 103%;
     background: $color-gradient01;
     background-clip: text;
     -webkit-background-clip: text;
@@ -82,7 +82,7 @@
     max-width: 173px;
     width: 100%;
     min-height: 32px;
-    line-height: 14px;
+    line-height: 103%;
     position: relative;
     display: flex;
     align-items: center;
@@ -117,13 +117,14 @@
     > span {
       span:first-child {
         font-size: 24px;
+        line-height: 141%;
         margin-right: 3px;
       }
       span:last-child {
         vertical-align: bottom;
         font-family: "Gotham400", sans-serif;
         font-size: 14px;
-        line-height: 20px;
+        line-height: 142%;
       }
     }
   }
@@ -131,9 +132,16 @@
 
 @media (min-width: 415px) {
   .education-price {
+    padding: 30px 0;
+    &__title {
+      margin: 0 0 70px 0;
+    }
+    &__list {
+      gap: 70px;
+    }
     &__card {
       max-width: 293px;
-
+      min-height: 500px;
       &:nth-child(2) {
         .price-card__image {
           width: 114px;
@@ -157,7 +165,6 @@
 
       > span {
         font-size: 32px;
-        line-height: 45.12px;
       }
     }
 
@@ -165,6 +172,31 @@
       width: 128px;
       height: 195px;
       right: -44px;
+    }
+  }
+}
+@media (min-width: 480px) {
+  .education-price {
+    padding: 20px 0 30px;
+    &__title {
+      margin: 0 0 80px 0;
+    }
+    &__list {
+      gap: 90px;
+    }
+    &__card {
+      max-width: 310px;
+      padding: 51px 38px 26px 30px;
+    }
+  }
+  .price-card {
+    &__list {
+      margin: 0 0 20px 0;
+    }
+    &__banner {
+      padding: 20px 25px;
+      right: 22px;
+      top: -47px;
     }
   }
 }
