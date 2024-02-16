@@ -1367,6 +1367,41 @@ body {
     line-height: 150%;
   }
 }
+@media (min-width: 480px) {
+  .reviews__title {
+    margin: 0 0 60px;
+    padding: 0 20px;
+  }
+  .slider {
+    min-height: 317px;
+  }
+  .slider__line {
+    margin: 0 0 58px 0;
+  }
+  .slider__card {
+    min-height: 207px;
+    padding: 18px 8px 22px 21px;
+    gap: 30px;
+    background-position: top 32px right 38px;
+  }
+  .slider__card-info {
+    min-width: 125px;
+    padding: 52px 0 0;
+  }
+  .slider__card-title {
+    font-size: 18px;
+  }
+  .slider__card-subtitle {
+    font-size: 12px;
+  }
+  .slider__card-link {
+    font-size: 12px;
+  }
+  .slider__card-text {
+    font-size: 12px;
+    align-self: center;
+  }
+}
 .accordion {
   padding: 50px 0 30px;
 }
@@ -1820,4 +1855,4 @@ body {
   .footer__block-documents {
     margin-bottom: 51px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
