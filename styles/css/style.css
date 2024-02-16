@@ -1403,7 +1403,7 @@ body {
   }
 }
 .accordion {
-  padding: 50px 0 30px;
+  padding: 50px 0 35px;
 }
 .accordion__item {
   border-radius: 25px;
@@ -1430,6 +1430,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 0 15px;
   position: relative;
   padding: 0 13px 0 28px;
   background-color: #eff2fd;
@@ -1437,11 +1438,8 @@ body {
   color: #243976;
   font-family: "ALSSchlangesans-Bold";
   font-size: 18px;
-  line-height: 18px;
+  line-height: 100%;
   cursor: pointer;
-}
-.accordion__button:not(:last-child) {
-  margin: 0 0 15px;
 }
 .accordion__button span {
   display: block;
@@ -1488,10 +1486,8 @@ body {
   }
   .accordion__button {
     font-size: 20px;
-    line-height: 20.64px;
+    line-height: 103%;
     gap: 15px;
-  }
-  .accordion__button:not(:last-of-type) {
     margin: 0 0 20px;
   }
   .accordion__button span {
@@ -1499,7 +1495,7 @@ body {
     height: 30px;
   }
   .accordion__body {
-    padding: 0 13px 31px;
+    padding: 0 13px 35px;
     border-left: 25px solid #243976;
   }
   .accordion__text {
@@ -1510,6 +1506,30 @@ body {
   .accordion__text-item {
     font-size: 15px;
     line-height: 150%;
+  }
+}
+@media (min-width: 480px) {
+  .accordion {
+    padding: 70px 0 50px;
+  }
+  .accordion__button {
+    padding: 22px 22px 22px 35px;
+  }
+  .accordion__button span {
+    min-width: 40px;
+    height: 40px;
+  }
+  .accordion__text {
+    font-size: 14px;
+    line-height: 130%;
+    padding: 0 0 27px;
+  }
+  .accordion__input:checked ~ .accordion__button {
+    padding: 25px 27px 20px 10px;
+    border-left: 15px solid #243976;
+  }
+  .accordion__body {
+    border-left: 15px solid #243976;
   }
 }
 .application {
@@ -1855,4 +1875,4 @@ body {
   .footer__block-documents {
     margin-bottom: 51px;
   }
-}
+}/*# sourceMappingURL=style.css.map */
