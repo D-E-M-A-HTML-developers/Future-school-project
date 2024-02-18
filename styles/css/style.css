@@ -3,7 +3,7 @@
 @import "../css/nulling-styles.css";
 @import "../css/fonts.css";
 @import "animation-hover.css";
-.slider__card-title, .reviews__title, .education-document__title, .education-price__title, .advantages-school__title, .compare-schools__title, .lesson-advantages__title, .online-lessons__title, .online-learning__title {
+.application__title, .slider__card-title, .reviews__title, .education-document__title, .education-price__title, .advantages-school__title, .compare-schools__title, .lesson-advantages__title, .online-lessons__title, .online-learning__title {
   font-family: "ALSSchlangesans-Bold", sans-serif;
   margin: 0 0 30px;
   text-align: center;
@@ -12,22 +12,22 @@
 }
 
 @media (min-width: 415px) {
-  .slider__card-title, .reviews__title, .education-document__title, .education-price__title, .advantages-school__title, .compare-schools__title, .lesson-advantages__title, .online-lessons__title, .online-learning__title {
+  .application__title, .slider__card-title, .reviews__title, .education-document__title, .education-price__title, .advantages-school__title, .compare-schools__title, .lesson-advantages__title, .online-lessons__title, .online-learning__title {
     font-size: 34px;
   }
 }
 @media (min-width: 768px) {
-  .slider__card-title, .reviews__title, .education-document__title, .education-price__title, .advantages-school__title, .compare-schools__title, .lesson-advantages__title, .online-lessons__title, .online-learning__title {
+  .application__title, .slider__card-title, .reviews__title, .education-document__title, .education-price__title, .advantages-school__title, .compare-schools__title, .lesson-advantages__title, .online-lessons__title, .online-learning__title {
     font-size: 38px;
   }
 }
 @media (min-width: 1000px) {
-  .slider__card-title, .reviews__title, .education-document__title, .education-price__title, .advantages-school__title, .compare-schools__title, .lesson-advantages__title, .online-lessons__title, .online-learning__title {
+  .application__title, .slider__card-title, .reviews__title, .education-document__title, .education-price__title, .advantages-school__title, .compare-schools__title, .lesson-advantages__title, .online-lessons__title, .online-learning__title {
     font-size: 40px;
   }
 }
 @media (min-width: 1920px) {
-  .slider__card-title, .reviews__title, .education-document__title, .education-price__title, .advantages-school__title, .compare-schools__title, .lesson-advantages__title, .online-lessons__title, .online-learning__title {
+  .application__title, .slider__card-title, .reviews__title, .education-document__title, .education-price__title, .advantages-school__title, .compare-schools__title, .lesson-advantages__title, .online-lessons__title, .online-learning__title {
     font-size: 50px;
   }
 }
@@ -1541,11 +1541,7 @@ body {
 .application__title {
   max-width: 190px;
   width: 100%;
-  font-family: "ALSSchlangesans-Bold";
   margin: 0 auto 30px;
-  text-align: center;
-  font-size: 28px;
-  line-height: 29px;
 }
 .application__title span {
   background: linear-gradient(27deg, #4271df 16.72%, #789cf1 95.45%);
@@ -1598,9 +1594,6 @@ body {
   background-position: center;
   background-size: cover;
 }
-.application__input-wrapper:nth-child(3) {
-  margin-bottom: 20px;
-}
 .application__input-wrapper:nth-child(3)::before {
   background: url(../../images/application/form-phone-image.svg);
   background-repeat: no-repeat;
@@ -1632,7 +1625,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 0 10px;
+  padding: 10px 0;
 }
 .application__button {
   font-family: "Gotham700", sans-serif;
@@ -1670,13 +1663,15 @@ body {
   }
   .application__title {
     max-width: 350px;
-    width: 100%;
-    font-size: 34px;
-    line-height: 100%;
   }
   .application__text {
     font-size: 15px;
     line-height: 130%;
+    padding: 0 30px;
+  }
+  .application__form-wrapper {
+    margin: 0 auto 30px;
+    padding: 35px 26px 23px;
   }
   .application__input {
     max-width: 298px;
@@ -1685,15 +1680,42 @@ body {
     padding: 16px 7.81px 16px 63px;
   }
   .application__input-wrapper {
+    margin: 0 0 20px 0;
     height: 56px;
   }
   .application__input-wrapper::before {
     width: 56px;
     height: 56px;
   }
+  .application__button-wrapper {
+    padding: 10px 0 20px;
+  }
   .application__agreement-text {
     font-size: 13px;
     line-height: 130%;
+  }
+  .application__image-wrapper {
+    padding: 0 14px;
+  }
+}
+@media (min-width: 480px) {
+  .application {
+    padding: 0 0 70px;
+  }
+  .application__title {
+    line-height: 103%;
+  }
+  .application__text {
+    font-size: 18px;
+    line-height: 103%;
+    padding: 0;
+  }
+  .application__form-wrapper {
+    margin: 0 auto 40px;
+    padding: 35px 26px;
+  }
+  .application__image-wrapper {
+    padding: 0;
   }
 }
 .footer {
@@ -1751,8 +1773,16 @@ body {
   gap: 10px;
 }
 .footer-link {
-  line-height: 27px;
+  line-height: 193%;
   color: #243976;
+}
+.footer__link-documents {
+  font-size: 15px;
+  line-height: 180%;
+}
+.footer__link-contacts {
+  font-size: 13px;
+  line-height: 154%;
 }
 .footer__link-documents {
   display: flex;
@@ -1819,9 +1849,6 @@ body {
 .footer__tel::before {
   background-image: url(../../images/footer/icon-tel.svg);
 }
-.footer__link-contacts {
-  line-height: 20px;
-}
 .footer__item-info {
   font-size: 8px;
   color: #9299af;
@@ -1875,4 +1902,60 @@ body {
   .footer__block-documents {
     margin-bottom: 51px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+@media (min-width: 480px) {
+  .footer {
+    padding: 30px 0 14px;
+  }
+  .footer .center {
+    padding: 0 30px;
+  }
+  .footer__logo {
+    margin: 0 0 40px 0;
+  }
+  .footer__block-classes {
+    display: block;
+    margin: 0 0 26px 0;
+  }
+  .footer-title {
+    font-size: 18px;
+  }
+  .footer__title-classes {
+    margin: 0 0 15px 0;
+  }
+  .footer__title-social {
+    margin: 0 0 26px 0;
+  }
+  .footer__item-classes {
+    margin: 0 0 5px 0;
+  }
+  .footer__position-wrapper {
+    -moz-column-gap: 52px;
+         column-gap: 52px;
+    grid-template-columns: repeat(3, minmax(70px, auto));
+    grid-template-areas: "logo logo logo" "classes documents social" "contacts contacts contacts";
+  }
+  .footer__block-contacts {
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 30px;
+  }
+  .footer__address, .footer__tel {
+    padding: 0 0 0 45px;
+  }
+  .footer__address::before, .footer__tel::before {
+    width: 40px;
+    height: 40px;
+  }
+  .footer__address {
+    padding: 0 12px 0 45px;
+  }
+  .footer__link-documents {
+    font-size: 15px;
+    line-height: 180%;
+  }
+  .footer__link-contacts {
+    font-size: 13px;
+    line-height: 154%;
+  }
+}
