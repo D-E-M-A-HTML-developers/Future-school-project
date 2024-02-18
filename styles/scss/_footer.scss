@@ -57,8 +57,18 @@
   }
 
   &-link {
-    line-height: 27px;
+    line-height: 193%;
     color: $text-color-blue;
+  }
+  &__link {
+    &-documents {
+      font-size: 15px;
+      line-height: 180%;
+    }
+    &-contacts {
+      font-size: 13px;
+      line-height: 154%;
+    }
   }
 
   &__link-documents {
@@ -117,9 +127,6 @@
   &__tel::before {
     background-image: url(../../images/footer/icon-tel.svg);
   }
-  &__link-contacts {
-    line-height: 20px;
-  }
   &__item-info {
     font-size: 8px;
     color: #9299af;
@@ -177,6 +184,67 @@
 
     &__block-documents {
       margin-bottom: 51px;
+    }
+  }
+}
+@media (min-width: 480px) {
+  .footer {
+    .center {
+      padding: 0 30px;
+    }
+    padding: 30px 0 14px;
+    &__logo {
+      margin: 0 0 40px 0;
+    }
+    &__block-classes {
+      display: block;
+      margin: 0 0 26px 0;
+    }
+    &-title {
+      font-size: 18px;
+    }
+    &__title-classes {
+      margin: 0 0 15px 0;
+    }
+    &__title-social {
+      margin: 0 0 26px 0;
+    }
+    &__item-classes {
+      margin: 0 0 5px 0;
+    }
+    &__position-wrapper {
+      column-gap: 52px;
+      grid-template-columns: repeat(3, minmax(70px, auto));
+      grid-template-areas:
+        "logo logo logo"
+        "classes documents social"
+        "contacts contacts contacts";
+    }
+    &__block-contacts {
+      flex-direction: row;
+      gap: 40px;
+      margin-bottom: 30px;
+    }
+    &__address,
+    &__tel {
+      padding: 0 0 0 45px;
+      &::before {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    &__address {
+      padding: 0 12px 0 45px;
+    }
+    &__link {
+      &-documents {
+        font-size: 15px;
+        line-height: 180%;
+      }
+      &-contacts {
+        font-size: 13px;
+        line-height: 154%;
+      }
     }
   }
 }
