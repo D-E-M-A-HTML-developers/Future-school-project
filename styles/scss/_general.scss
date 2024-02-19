@@ -8,6 +8,11 @@ body {
   padding: 0 20px;
   box-sizing: border-box;
 }
+@media (min-width: 768px) {
+  .center {
+    padding: 0 40px;
+  }
+}
 @media (min-width: 1000px) {
   .center {
     margin: 0 auto;
