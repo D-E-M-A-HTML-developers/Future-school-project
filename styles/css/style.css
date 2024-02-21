@@ -240,6 +240,9 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.header__nav, .header__contacts {
+  display: none;
+}
 .header .sign-up-lesson__btn-wrp {
   position: relative;
 }
@@ -289,20 +292,36 @@ body {
   background-color: #c5cff3;
 }
 .menu-item-account {
-  margin: 16px 0 0 0;
+  position: relative;
+  max-width: 161.5px;
+  width: 100%;
+  margin: 16px auto 0;
+  padding: 0 0 0 24.5px;
+}
+.menu-item-account::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 16.51px;
+  top: 0;
+  left: 0;
+  background-image: url(../../images/header/user-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .menu-item-tel {
   margin: 10px 0 0 0;
 }
 .menu-item-tel .menu-link {
   font-size: 20px;
-  line-height: 24px;
+  line-height: 118%;
 }
 .menu-link {
   font-family: "Gotham500", sans-serif;
-  line-height: 16px;
   color: #243976;
   font-size: 16px;
+  line-height: 100%;
 }
 .menu-buttons-group {
   min-height: 140px;
@@ -406,7 +425,7 @@ body {
   border-radius: 15px;
   background: linear-gradient(27deg, #4271df 16.72%, #789cf1 95.45%);
   font-size: 12px;
-  line-height: 14px;
+  line-height: 118%;
 }
 
 /* END-modile-menu */
@@ -422,7 +441,7 @@ body {
   min-height: 72px;
   font-family: "ALSSchlangesans-Bold", sans-serif;
   font-size: 34px;
-  line-height: 34px;
+  line-height: 100%;
   text-align: center;
   margin: 0 0 20px 0;
 }
@@ -431,7 +450,7 @@ body {
   width: 100%;
   font-family: "Gotham400", sans-serif;
   font-size: 15px;
-  line-height: 24.78px;
+  line-height: 165%;
   text-align: center;
   margin: 0 0 10px 0;
 }
@@ -482,7 +501,6 @@ body {
   }
   .header__banner-title {
     font-size: 40px;
-    line-height: 40px;
     margin: 0 0 30px;
   }
   .header__banner-txt_bold {
@@ -523,18 +541,15 @@ body {
   }
 }
 @media (min-width: 768px) {
-  a {
-    text-decoration: none;
-  }
-  .menu-wrp {
-    display: none;
+  .header {
+    padding: 15px 0 20px;
   }
   .header__wrapper {
     padding: 0 0 15px;
     width: 100%;
     position: relative;
-    margin: 0;
-    height: 84px;
+    margin: 0 0 14px 0;
+    height: 81px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -545,11 +560,11 @@ body {
     content: "";
     width: 100%;
     height: 1px;
-    color: #E4E5EC;
-    top: 0;
+    background: #e4e5ec;
+    bottom: 0;
   }
-  .sign-up-lesson__btn-wrp {
-    height: 50px;
+  .header__button-sign-up {
+    padding: 18px 24.5px 19px;
   }
   .header__contacts {
     max-width: 397px;
@@ -558,20 +573,13 @@ body {
     justify-content: space-between;
     align-items: center;
   }
-  .header__button-signUp {
-    padding: 18px 21px 19px;
-  }
-  .menu-link {
-    font-size: 14px;
-    line-height: 118.2%;
-  }
-  .menu-link a {
-    text-decoration: none;
-  }
   .header__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    margin: 0 0 63px 0;
   }
   .header__nav-items {
     display: flex;
@@ -580,9 +588,54 @@ body {
     max-width: 514px;
     width: 100%;
   }
+  .header__nav-cabinet {
+    margin: 0;
+    max-width: 146px;
+  }
+  .menu-wrp {
+    display: none;
+  }
+  .menu-link {
+    font-size: 14px;
+    line-height: 118.2%;
+  }
   .menu-item-tel {
     margin: 0;
+  }
+  .menu-item-tel .menu-link {
     font-size: 16px;
+  }
+  .menu-buttons-group {
+    max-width: 420px;
+    width: 100%;
+    min-height: 30px;
+  }
+  .menu-buttons-group .buttons {
+    min-height: 30px;
+    flex-direction: row;
+  }
+  .sign-up-lesson__btn-wrp {
+    height: 50px;
+  }
+  .header__banner-image {
+    margin: 0 auto 40px;
+  }
+  .header__banner-title {
+    font-size: 60px;
+    margin: 0 0 34px;
+  }
+  .header__banner-txt {
+    font-size: 16px;
+    margin: 0 0 22px;
+  }
+  .header__banner-txt_bold {
+    margin: 0 0 28px;
+  }
+  .header__banner .sign-up-lesson {
+    min-height: 121px;
+  }
+  .header__banner .sign-up-lesson__btn {
+    padding: 24px 44px;
   }
 }
 .online-learning {
