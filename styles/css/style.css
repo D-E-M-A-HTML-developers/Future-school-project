@@ -560,7 +560,6 @@ body {
     content: "";
     width: 100%;
     height: 1px;
-
     background: #e4e5ec;
     bottom: 0;
   }
@@ -575,7 +574,6 @@ body {
     align-items: center;
   }
   .header__nav {
-    padding: 15px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -2081,4 +2079,4 @@ body {
     font-size: 13px;
     line-height: 154%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
