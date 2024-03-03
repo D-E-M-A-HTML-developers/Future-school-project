@@ -58,7 +58,6 @@ body {
 }
 .promotion {
   min-width: 280px;
-  width: 100%;
   min-height: 445px;
   padding: 30px 20px 20px;
   background-color: #eff2fd;
@@ -210,22 +209,59 @@ body {
   }
   .promotion {
     padding: 30px 20px 30px;
-    min-height: 380px;
+    min-height: auto;
   }
   .promotion__title {
     line-height: 103%;
+    margin: 0 0 20px;
   }
   .promotion__text {
-    margin: 0 0 15px;
+    margin: 0 0 33px;
     line-height: 130%;
   }
   .promotion__wrapper {
-    -moz-column-gap: 30px;
-         column-gap: 30px;
+    -moz-column-gap: 44px;
+         column-gap: 44px;
   }
   .promotion__image-wrapper {
+    margin: -41px 0 0;
     width: 94px;
     height: 141px;
+  }
+}
+@media (min-width: 580px) {
+  .promotion {
+    margin: 0 auto;
+    max-width: 688px;
+    padding: 25px 25px 18px 23px;
+  }
+  .promotion__wrapper {
+    grid-template-columns: 168px 1fr;
+    -moz-column-gap: 33px;
+         column-gap: 33px;
+    row-gap: 20px;
+    grid-template-areas: "image description" "image sign-up";
+  }
+  .promotion__image-wrapper {
+    margin: -41px 0 0;
+    width: 168px;
+    height: 253px;
+  }
+  .promotion__title {
+    margin: 0 0 15px;
+  }
+  .promotion__text {
+    font-size: 14px;
+    margin: 0;
+  }
+  .promotion .sign-up-lesson {
+    align-items: flex-start;
+  }
+  .promotion .sign-up-lesson__btn {
+    padding: 24.2px 45px;
+  }
+  .promotion .contact-us__txt {
+    font-size: 14px;
   }
 }
 .header {
@@ -666,7 +702,7 @@ body {
   min-height: 70px;
   font-family: "Gotham500", sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 150%;
 }
 .online-learning__item::before {
   content: "";
@@ -705,6 +741,44 @@ body {
 @media (min-width: 480px) {
   .online-learning {
     padding: 60px 0 70px;
+  }
+}
+@media (min-width: 768px) {
+  .online-learning {
+    padding: 60px 0 80px;
+  }
+  .online-learning .center {
+    padding: 0 20px;
+  }
+  .online-learning__title {
+    margin: 0 0 40px;
+  }
+  .online-learning__list {
+    min-width: 727px;
+    min-height: 285px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    row-gap: 40px;
+  }
+  .online-learning__item {
+    padding: 80px 30px 0;
+    max-width: 229px;
+    min-height: 115px;
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .online-learning__item::before {
+    content: "";
+    display: block;
+    top: 0;
+    left: 85px;
+    width: 60px;
+    height: 60px;
   }
 }
 .online-lessons {
