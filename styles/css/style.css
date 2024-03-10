@@ -807,20 +807,20 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.online-lessons__item > h3 {
+.online-lessons__item > .online-lessons__item-title {
   font-family: "Gotham400", sans-serif;
   text-align: center;
   font-size: 20px;
-  line-height: 20.6px;
+  line-height: 103%;
   margin: 0 0 10px 0;
 }
-.online-lessons__item p {
+.online-lessons__item-text {
   text-align: center;
   font-size: 15px;
   line-height: 157%;
   margin: 0 0 40px 0;
 }
-.online-lessons__item:last-child p {
+.online-lessons__item:last-child .online-lessons__item-text {
   margin: 0;
 }
 
@@ -830,7 +830,7 @@ body {
     height: 156px;
     margin: 0 0 30px 0;
   }
-  .online-lessons__item p {
+  .online-lessons__item .online-lessons__item-text {
     line-height: 150%;
   }
 }
@@ -842,10 +842,10 @@ body {
     width: 167px;
     height: 150px;
   }
-  .online-lessons__item > h3 {
+  .online-lessons__item > .online-lessons__item-title {
     margin: 0 0 15px;
   }
-  .online-lessons__item > p {
+  .online-lessons__item > .online-lessons__item-text {
     line-height: 157%;
   }
 }
@@ -857,9 +857,13 @@ body {
     margin: 0 0 40px;
   }
   .online-lessons__list {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     gap: 40px;
+  }
+  .online-lessons__item {
+    max-width: 315px;
+    width: 100%;
   }
   .online-lessons__item:nth-child(2) {
     order: 1;
@@ -867,19 +871,15 @@ body {
   .online-lessons__item:nth-child(4) {
     order: 2;
   }
-  .online-lessons__item > h3 {
+  .online-lessons__item > .online-lessons__item-title {
     font-size: 17px;
     line-height: 103%;
     margin: 0 0 10px 0;
   }
-  .online-lessons__item p {
+  .online-lessons__item .online-lessons__item-text {
     font-size: 14px;
     line-height: 157%;
     margin: 0;
-  }
-  .online-lessons__item {
-    max-width: 315px;
-    width: 100%;
   }
 }
 .lesson-advantages {
@@ -2186,4 +2186,4 @@ body {
     font-size: 13px;
     line-height: 154%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
