@@ -94,3 +94,55 @@
     }
   }
 }
+@media (min-width: 768px) {
+  .advantages-school {
+    padding: 0 0 80px;
+    &__title {
+      margin: 0 auto 40px;
+      max-width: 470px;
+    }
+    &__list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      row-gap: 88px;
+      margin: 0 0 56px;
+    }
+    &__item {
+      max-width: 300px;
+    }
+    &__subtitle {
+      font-size: 18px;
+    }
+    &__txt {
+      font-size: 14px;
+      line-height: 157%;
+    }
+    &__image {
+      width: 150px;
+      height: 150px;
+    }
+    .promotion {
+      padding: 0 25px;
+      min-height: 255px;
+      &__wrapper {
+        column-gap: 30px;
+        grid-template-rows: minmax(101px, auto);
+        row-gap: 20px;
+      }
+      &__image-wrapper {
+        position: relative;
+        top: 15px;
+        width: 168px;
+        height: 256px;
+      }
+      &__description-wrapper {
+        align-self: flex-start;
+        padding: 23px 0px 0px;
+      }
+      &__text {
+        margin: 17px 0 0;
+      }
+    }
+  }
+}
