@@ -98,7 +98,7 @@
     }
   }
 }
-@media (min-width: 480px){
+@media (min-width: 480px) {
   .compare-schools {
     padding: 70px 0;
   }
@@ -111,10 +111,38 @@
     &--online {
       max-width: 334px;
       margin: -46px 0 0;
-     .about-schools__title {
-      font-size: 32px;
-      line-height: 103.2%;
+      .about-schools__title {
+        font-size: 32px;
+        line-height: 103.2%;
+      }
     }
   }
+}
+@media (min-width: 768px) {
+  .compare-schools {
+    padding: 80px 0;
+    &__title {
+      margin: 0 0 40px;
+    }
+    &__wrp {
+      flex-direction: row;
+      min-width: 630px;
+    }
+  }
+  .about-schools {
+    padding: 30px 12px 15px 0;
+    &--online {
+      margin: 0;
+      padding: 30px 24px 15px 0;
+      .about-schools__title {
+        margin: 0 0 24px 0;
+      }
+    }
+    &__item {
+      margin: 0 0 15px 0;
+    }
+    &__title {
+      padding: 0 0 0 10px;
+    }
   }
 }
