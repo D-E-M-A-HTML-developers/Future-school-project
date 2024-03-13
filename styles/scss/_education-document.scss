@@ -64,3 +64,16 @@
 		}
 	}
 }
+@media (min-width: 768px) {
+	.education-document {
+		padding: 40px 0 80px;
+		&__title {
+			max-width: 455px;
+			margin: 0 auto 40px;
+		}
+		&__img {
+			width: 336px;
+			height: 296px;
+		}
+	}
+}

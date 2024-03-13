@@ -1512,6 +1512,22 @@ body {
     top: -47px;
   }
 }
+@media (min-width: 768px) {
+  .education-price {
+    padding: 40px 0;
+  }
+  .education-price__title {
+    margin: 0 0 90px;
+  }
+  .education-price__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 90px;
+    -moz-column-gap: 68px;
+         column-gap: 68px;
+    justify-content: center;
+  }
+}
 .education-document {
   padding: 50px 0;
 }
@@ -1568,6 +1584,19 @@ body {
   .education-document__img {
     min-width: 352px;
     min-height: 310px;
+  }
+}
+@media (min-width: 768px) {
+  .education-document {
+    padding: 40px 0 80px;
+  }
+  .education-document__title {
+    max-width: 455px;
+    margin: 0 auto 40px;
+  }
+  .education-document__img {
+    width: 336px;
+    height: 296px;
   }
 }
 .reviews__title {
