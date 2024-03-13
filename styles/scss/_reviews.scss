@@ -92,17 +92,14 @@
     transform: rotate(-90deg);
     background-color: transparent;
     border: none;
-    img {
-      width: 50px;
-    }
   }
   &__btn-next {
     transform: rotate(90deg);
     background-color: transparent;
     border: none;
-    img {
-      width: 50px;
-    }
+  }
+  &__btn-img {
+    width: 50px;
   }
 }
 
@@ -178,13 +175,12 @@
   .slider {
     min-height: 317px;
     &__line {
-      margin: 0 0 58px 0;
+      margin: 0 0 58px;
     }
     &__card {
       min-height: 207px;
       padding: 18px 8px 22px 21px;
       gap: 30px;
-      // align-items: center;
       background-position: top 32px right 38px;
       &-info {
         min-width: 125px;
@@ -205,6 +201,61 @@
       }
     }
   }
-  
- 
+}
+@media (min-width: 768px) {
+  .reviews {
+    background-position: 80% 56%;
+    background-size: 532px 450px;
+    &__title {
+      margin: 0 0 120px;
+      padding: 0 110px;
+    }
+  }
+  .slider {
+    &__line {
+      margin: 0 0 120px;
+    }
+    &__card {
+      margin: 0 calc(100vw * 0.099);
+      min-height: 272px;
+      border: 5px solid #4c75a3;
+      padding: 31px 29px 40px;
+      gap: 44px;
+      background-size: 275px 207px;
+      background-position: top 24px right -5px;
+      &-info {
+        min-width: 180px;
+        padding: 64px 0 0;
+        text-align: center;
+        &::before {
+          width: 40px;
+          height: 40px;
+          left: 12px;
+          top: -4px;
+        }
+      }
+      &-title {
+        font-size: 26px;
+        margin: 0 0 10px;
+      }
+      &-subtitle {
+        font-size: 18px;
+        display: block;
+        margin: 0 0 15px;
+      }
+      &-link {
+        font-size: 16px;
+      }
+      &-text {
+        font-size: 16px;
+        line-height: 130%;
+      }
+    }
+    &__buttons-wrp {
+      max-width: 168px;
+    }
+    &__btn-img {
+      width: 69px;
+    }
+  }
 }
