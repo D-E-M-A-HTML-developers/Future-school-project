@@ -200,3 +200,20 @@
     }
   }
 }
+@media (min-width: 768px) {
+  .education-price {
+    padding: 40px 0;
+    &__title {
+      margin: 0 0 90px;
+    }
+    &__list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      // gap: 0;
+      row-gap: 90px;
+      column-gap: 68px;
+      justify-content: center;
+    }
+  }
+  
+}
