@@ -1694,15 +1694,12 @@ body {
   background-color: transparent;
   border: none;
 }
-.slider__btn-prev img {
-  width: 50px;
-}
 .slider__btn-next {
   transform: rotate(90deg);
   background-color: transparent;
   border: none;
 }
-.slider__btn-next img {
+.slider__btn-img {
   width: 50px;
 }
 
@@ -1769,7 +1766,7 @@ body {
     min-height: 317px;
   }
   .slider__line {
-    margin: 0 0 58px 0;
+    margin: 0 0 58px;
   }
   .slider__card {
     min-height: 207px;
@@ -1793,6 +1790,61 @@ body {
   .slider__card-text {
     font-size: 12px;
     align-self: center;
+  }
+}
+@media (min-width: 768px) {
+  .reviews {
+    background-position: 80% 56%;
+    background-size: 532px 450px;
+  }
+  .reviews__title {
+    margin: 0 0 120px;
+    padding: 0 110px;
+  }
+  .slider__line {
+    margin: 0 0 120px;
+  }
+  .slider__card {
+    margin: 0 9.9vw;
+    min-height: 272px;
+    border: 5px solid #4c75a3;
+    padding: 31px 29px 40px;
+    gap: 44px;
+    background-size: 275px 207px;
+    background-position: top 24px right -5px;
+  }
+  .slider__card-info {
+    min-width: 180px;
+    padding: 64px 0 0;
+    text-align: center;
+  }
+  .slider__card-info::before {
+    width: 40px;
+    height: 40px;
+    left: 12px;
+    top: -4px;
+  }
+  .slider__card-title {
+    font-size: 26px;
+    margin: 0 0 10px;
+  }
+  .slider__card-subtitle {
+    font-size: 18px;
+    display: block;
+    margin: 0 0 15px;
+  }
+  .slider__card-link {
+    font-size: 16px;
+  }
+  .slider__card-text {
+    font-size: 16px;
+    line-height: 130%;
+  }
+  .slider__buttons-wrp {
+    max-width: 168px;
+  }
+  .slider__btn-img {
+    width: 69px;
   }
 }
 .accordion {
