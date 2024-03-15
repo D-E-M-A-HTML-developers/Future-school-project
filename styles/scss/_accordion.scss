@@ -1,147 +1,174 @@
 .accordion {
-	padding: 50px 0 35px;
+  padding: 50px 0 35px;
 
-	&__item {
-		border-radius: 25px;
-		box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
-	}
+  &__item {
+    border-radius: 25px;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 
-	&__input {
-		display: none;
+  &__input {
+    display: none;
 
-		&:checked ~ .accordion__body {
-			display: block;
-			margin: 0 0 15px;
-		}
-		&:checked ~ .accordion__button {
-			margin: 0;
-			padding: 20px 13px;
-			border-radius: 25px 25px 0 0;
-			border-left: 15px solid $text-color-blue;
-		}
-		&:checked + .accordion__button > span {
-			transform: rotate(45deg);
-		}
-	}
+    &:checked ~ .accordion__body {
+      display: block;
+      margin: 0 0 15px;
+    }
+    &:checked ~ .accordion__button {
+      margin: 0;
+      padding: 20px 13px;
+      border-radius: 25px 25px 0 0;
+      border-left: 15px solid $text-color-blue;
+    }
+    &:checked + .accordion__button > span {
+      transform: rotate(45deg);
+    }
+  }
 
-	&__button {
-		min-height: 76px;
-		@include flexSpaceBetween;
-		margin: 0 0 15px;
-		position: relative;
-		padding: 0 13px 0 28px;
-		background-color: #eff2fd;
-		border-radius: 25px;
-		color: $text-color-blue;
-		font-family: 'ALSSchlangesans-Bold';
-		font-size: 18px;
-		line-height: 100%;
-		cursor: pointer;
+  &__button {
+    min-height: 76px;
+    @include flexSpaceBetween;
+    margin: 0 0 15px;
+    position: relative;
+    padding: 0 13px 0 28px;
+    background-color: #eff2fd;
+    border-radius: 25px;
+    color: $text-color-blue;
+    font-family: "ALSSchlangesans-Bold";
+    font-size: 18px;
+    line-height: 100%;
+    cursor: pointer;
 
-		span {
-			display: block;
-			width: 20px;
-			height: 20px;
-			border-radius: 100%;
-			background: url(../../images/accordion/plus.png) no-repeat center / cover;
-		}
-	}
+    span {
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      background: url(../../images/accordion/plus.png) no-repeat center / cover;
+    }
+  }
 
-	&__body {
-		padding: 0 13px 37px;
-		border-left: 15px solid $text-color-blue;
-		border-radius: 0 0 25px 25px;
-		background-color: #eff2fd;
-		display: none;
-		transition: all 0.8s ease-in-out;
-	}
+  &__body {
+    padding: 0 13px 37px;
+    border-left: 15px solid $text-color-blue;
+    border-radius: 0 0 25px 25px;
+    background-color: #eff2fd;
+    display: none;
+    transition: all 0.8s ease-in-out;
+  }
 
-	&__text {
-		color: $text-color-blue;
-		font-size: 12px;
-		line-height: 130%;
-		padding: 0 0 20px;
-		span {
-			font-family: 'Gotham700';
-		}
-	}
+  &__text {
+    color: $text-color-blue;
+    font-size: 12px;
+    line-height: 130%;
+    padding: 0 0 20px;
+    span {
+      font-family: "Gotham700";
+    }
+  }
 
-	&__text-list-wrp > .accordion__text {
-		padding: 0;
-	}
+  &__text-list-wrp > .accordion__text {
+    padding: 0;
+  }
 
-	&__text-list {
-		padding-left: 22px;
-		margin: 0 0 20px;
-	}
+  &__text-list {
+    padding-left: 22px;
+    margin: 0 0 20px;
+  }
 
-	&__text-item {
-		list-style: disc;
-		color: $text-color-blue;
-		font-size: 12px;
-		line-height: 15.6px;
-	}
+  &__text-item {
+    list-style: disc;
+    color: $text-color-blue;
+    font-size: 12px;
+    line-height: 15.6px;
+  }
 }
 @media (min-width: 415px) {
-	.accordion {
-		&__input {
-			&:checked ~ .accordion__button {
-				padding: 25px 27px 20px 10px;
-				border-left: 25px solid $text-color-blue;
-			}
-		}
-		&__button {
-			font-size: 20px;
-			line-height: 103%;
-			gap: 15px;
-			margin: 0 0 20px;
-
-			span {
-				min-width: 30px;
-				height: 30px;
-			}
-		}
-		&__body {
-			padding: 0 13px 35px;
-			border-left: 25px solid $text-color-blue;
-		}
-		&__text {
-			font-size: 15px;
-			line-height: 150%;
-			padding: 0 0 33px;
-		}
-		&__text-item {
-			font-size: 15px;
-			line-height: 150%;
-		}
-	}
+  .accordion {
+    &__input {
+      &:checked ~ .accordion__body {
+        margin: 0 0 20px;
+      }
+      &:checked ~ .accordion__button {
+        padding: 16px 19px 15px 15px;
+        border-left: 25px solid $text-color-blue;
+      }
+    }
+    &__button {
+      font-size: 20px;
+      line-height: 103%;
+      gap: 15px;
+      margin: 0 0 20px;
+      padding: 0 20px 0 40px;
+      span {
+        min-width: 32px;
+        height: 32px;
+      }
+    }
+    &__body {
+      padding: 0 13px 35px;
+      border-left: 25px solid $text-color-blue;
+    }
+    &__text {
+      font-size: 15px;
+      line-height: 150%;
+      padding: 0 0 33px;
+    }
+    &__text-item {
+      font-size: 15px;
+      line-height: 150%;
+    }
+  }
 }
 
 @media (min-width: 480px) {
-	.accordion {
-		padding: 70px 0 50px;
-		&__button {
-			padding: 22px 22px 22px 35px;
-			span {
-				min-width: 40px;
-				height: 40px;
-			}
-		}
+  .accordion {
+    padding: 70px 0 50px;
+    &__button {
+      padding: 21.6px 14px 22px 35px;
+      span {
+        min-width: 40px;
+        height: 40px;
+      }
+    }
 
-		&__text {
-			font-size: 14px;
-			line-height: 130%;
-			padding: 0 0 27px;
-		}
+    &__text {
+      font-size: 14px;
+      line-height: 130%;
+      padding: 0 0 27px 7px;
+    }
 
-		&__input {
-			&:checked ~ .accordion__button {
-				padding: 25px 27px 20px 10px;
-				border-left: 15px solid $text-color-blue;
-			}
-		}
-		&__body {
-			border-left: 15px solid $text-color-blue;
-		}
-	}
+    &__input {
+      &:checked ~ .accordion__button {
+        padding: 21px 14px 30px 21px;
+        border-left: 15px solid $text-color-blue;
+      }
+    }
+    &__body {
+      border-left: 15px solid $text-color-blue;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .accordion {
+    &__button {
+      font-size: 24px;
+      padding: 22px 20px 22px 55px;
+    }
+    &__input {
+      &:checked ~ .accordion__button {
+        padding: 22px 20px 22px 30px;
+        border-left: 25px solid $text-color-blue;
+      }
+    }
+    &__body {
+      border-left: 25px solid #243976;
+      padding: 0 30px 56px;
+    }
+    &__text {
+      padding: 0 0 17px 0;
+      &-list {
+        margin: 0 0 4px 0;
+      }
+    }
+  }
 }

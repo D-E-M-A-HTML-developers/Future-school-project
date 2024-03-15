@@ -1263,7 +1263,7 @@ body {
     margin: 23px 0 0;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 580px) {
   .advantages-school {
     padding: 0 0 80px;
   }
@@ -1293,7 +1293,7 @@ body {
     height: 150px;
   }
   .advantages-school .promotion {
-    padding: 0 25px;
+    padding: 0 25px 18px;
     min-height: 255px;
   }
   .advantages-school .promotion__wrapper {
@@ -1925,8 +1925,11 @@ body {
 }
 
 @media (min-width: 415px) {
+  .accordion__input:checked ~ .accordion__body {
+    margin: 0 0 20px;
+  }
   .accordion__input:checked ~ .accordion__button {
-    padding: 25px 27px 20px 10px;
+    padding: 16px 19px 15px 15px;
     border-left: 25px solid #243976;
   }
   .accordion__button {
@@ -1934,10 +1937,11 @@ body {
     line-height: 103%;
     gap: 15px;
     margin: 0 0 20px;
+    padding: 0 20px 0 40px;
   }
   .accordion__button span {
-    min-width: 30px;
-    height: 30px;
+    min-width: 32px;
+    height: 32px;
   }
   .accordion__body {
     padding: 0 13px 35px;
@@ -1958,7 +1962,7 @@ body {
     padding: 70px 0 50px;
   }
   .accordion__button {
-    padding: 22px 22px 22px 35px;
+    padding: 21.6px 14px 22px 35px;
   }
   .accordion__button span {
     min-width: 40px;
@@ -1967,14 +1971,34 @@ body {
   .accordion__text {
     font-size: 14px;
     line-height: 130%;
-    padding: 0 0 27px;
+    padding: 0 0 27px 7px;
   }
   .accordion__input:checked ~ .accordion__button {
-    padding: 25px 27px 20px 10px;
+    padding: 21px 14px 30px 21px;
     border-left: 15px solid #243976;
   }
   .accordion__body {
     border-left: 15px solid #243976;
+  }
+}
+@media (min-width: 768px) {
+  .accordion__button {
+    font-size: 24px;
+    padding: 22px 20px 22px 55px;
+  }
+  .accordion__input:checked ~ .accordion__button {
+    padding: 22px 20px 22px 30px;
+    border-left: 25px solid #243976;
+  }
+  .accordion__body {
+    border-left: 25px solid #243976;
+    padding: 0 30px 56px;
+  }
+  .accordion__text {
+    padding: 0 0 17px 0;
+  }
+  .accordion__text-list {
+    margin: 0 0 4px 0;
   }
 }
 .application {
