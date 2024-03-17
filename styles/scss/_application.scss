@@ -177,3 +177,33 @@
     }
   }
 }
+@media (min-width: 768px) {
+  .application {
+    padding: 0 0 80px;
+    &__wrapper {
+      max-width: 537px;
+      width:100%;
+      margin: 0 auto;
+    }
+    &__offer {
+      margin: 0 0 110px;
+    }
+    &__title {
+      max-width: 100%;
+      margin: 0 auto 40px;
+    }
+    &__form-wrapper {
+      position: relative;
+      &::before{
+        position: absolute;
+        content: '';
+        background: url(../../images/application/backround-form-image.svg) no-repeat center / cover;
+        width: 331.62px;
+        height: 402px;
+        left: -94px;
+        top: -80px;
+      }
+
+    }
+  }
+}
