@@ -250,25 +250,53 @@
 }
 @media (min-width: 768px) {
   .footer {
+    .center {
+      padding: 0 50px 0 40px;
+    }
     &__logo {
-      margin: -11px 0px 40px 9px;
+      margin: -9px 0px 40px 0;
       width: 170px;
       height: 48px;
     }
     &__position-wrapper {
-      column-gap: 52px;
-      grid-template-columns: repeat(4, minmax(70px, auto));
+      column-gap: 54px;
+      grid-template-columns:
+        minmax(170px, auto) minmax(70px, auto) minmax(128px, auto)
+        minmax(108px, auto);
       grid-template-areas:
         "logo classes documents social"
         "contacts contacts contacts contacts";
     }
+    &__block-classes {
+      margin: 0 0 25px;
+    }
+    &__title-documents {
+      margin: 0 0 18px;
+    }
+    &__title-social {
+      margin: 0 0 24px;
+    }
     &__link-documents {
       font-size: 14px;
+      padding-left: 33px;
       &::before {
         width: 21px;
         height: 26.77px;
       }
-      
+    }
+    &__link-social {
+      width: 30px;
+      height: 30px;
+    }
+    &__block-contacts {
+      gap: 91px;
+    }
+    &__link-contacts {
+      font-size: 14px;
+      line-height: 193%;
+    }
+    &__address {
+      padding: 0 20px 0 50px;
     }
   }
 }
