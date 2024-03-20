@@ -671,6 +671,69 @@ body {
     padding: 24px 44px;
   }
 }
+@media (min-width: 1000px) {
+  .header {
+    padding: 7px 0 50px;
+  }
+  .header__wrapper {
+    height: 79px;
+  }
+  .header__contacts {
+    max-width: 420px;
+  }
+  .header__nav {
+    margin: 0 0 42px;
+    row-gap: 43px;
+  }
+  .header__nav-items {
+    max-width: 554px;
+  }
+  .menu-item-tel .menu-link {
+    font-size: 18px;
+  }
+  .header__banner {
+    position: relative;
+  }
+  .header__banner-image-wrp {
+    position: absolute;
+    right: 0;
+    bottom: 80px;
+    max-width: 481px;
+    min-height: 286px;
+  }
+  .header__banner-image {
+    margin: 0;
+  }
+  .header__banner-text-wrp {
+    max-width: 100%;
+    padding: 0;
+  }
+  .header__banner-title {
+    font-size: 78px;
+    line-height: 103%;
+    text-align: start;
+    margin: 0 0 25px;
+  }
+  .header__banner-txt {
+    text-align: start;
+    max-width: 445px;
+  }
+  .header__banner-txt_bold {
+    margin: 0 0 40px;
+    letter-spacing: -0.2px;
+  }
+  .header__banner .sign-up-lesson {
+    align-items: flex-start;
+  }
+  .header__banner .sign-up-lesson__btn-wrp::after {
+    display: block;
+    width: 60px;
+    height: 60px;
+    left: 273px;
+    top: -25px;
+    transform: rotate(-2deg);
+  }
+}
 .online-learning {
   padding: 40px 0 50px;
 }
@@ -856,6 +919,7 @@ body {
   .online-lessons__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 40px;
   }
   .online-lessons__item {
