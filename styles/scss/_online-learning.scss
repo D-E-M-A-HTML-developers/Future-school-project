@@ -103,3 +103,26 @@
     }
   }
 }
+
+@media (min-width: 1000px) {
+  .online-learning {
+    padding: 69px 0 80px;
+    &__list {
+      min-width: 900px;
+      min-height: 132px;
+      flex-wrap: nowrap;
+      column-gap: 34px;
+      &-wrapper {
+        margin: 0 0 88px;
+      }
+    }
+    &__item {
+      max-width: 140px;
+      min-height: 128px;
+      padding: 88px 0 0;
+      &::before {
+        left: 40px;
+      }
+    }
+  }
+}
