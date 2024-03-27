@@ -1200,6 +1200,44 @@ body {
     right: -59px;
   }
 }
+@media (min-width: 1000px) {
+  .lesson-advantages__title {
+    text-align: start;
+  }
+  .lesson-advantages__cards-wrapper {
+    margin: 0 0 28px;
+  }
+  .lesson-advantages__card {
+    max-width: 517px;
+    width: 100%;
+    padding: 15px 24px 9px 26px;
+  }
+  .lesson-advantages__card:first-child {
+    margin: 0 0 24px;
+  }
+  .lesson-advantages__card:nth-child(3) {
+    margin: 0 0 13px;
+  }
+  .lesson-advantages__name {
+    margin: 0 0 7px;
+  }
+  .lesson-advantages__text::before {
+    top: -5px;
+  }
+  .lesson-advantages__image {
+    min-width: 480px;
+    height: 313px;
+    left: 449px;
+    bottom: -107px;
+  }
+  .lesson-advantages .sign-up-lesson__btn::after {
+    top: -34px;
+    right: -73px;
+  }
+  .lesson-advantages__card:nth-child(4) .lesson-advantages__text::before {
+    top: -23px;
+  }
+}
 .compare-schools {
   padding: 50px 0;
 }

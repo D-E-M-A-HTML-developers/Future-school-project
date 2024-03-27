@@ -147,3 +147,45 @@
     }
   }
 }
+
+@media (min-width: 1000px) {
+  .lesson-advantages {
+    &__title {
+      text-align: start;
+    }
+    &__cards-wrapper {
+      margin: 0 0 28px;
+    }
+    &__card {
+      max-width: 517px;
+      width: 100%;
+      padding: 15px 24px 9px 26px;
+    }
+    &__card:first-child {
+      margin: 0 0 24px;
+    }
+    &__card:nth-child(3) {
+      margin: 0 0 13px;
+    }
+    &__name {
+      margin: 0 0 7px;
+    }
+    &__text::before {
+      top: -5px;
+    }
+
+    &__image {
+      min-width: 480px;
+      height: 313px;
+      left: 449px;
+      bottom: -107px;
+    }
+    .sign-up-lesson__btn::after {
+      top: -34px;
+      right: -73px;
+    }
+  }
+  .lesson-advantages__card:nth-child(4) .lesson-advantages__text::before {
+    top: -23px;
+  }
+}
