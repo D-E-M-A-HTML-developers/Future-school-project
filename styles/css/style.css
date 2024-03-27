@@ -1366,8 +1366,9 @@ body {
     padding: 30px 12px 15px 0;
   }
   .about-schools--online {
-    margin: 0;
+    margin: 0 0 0 -14px;
     padding: 30px 24px 15px 0;
+    min-height: 470px;
   }
   .about-schools--online .about-schools__title {
     margin: 0 0 24px 0;
@@ -1377,6 +1378,38 @@ body {
   }
   .about-schools__title {
     padding: 0 0 0 10px;
+  }
+}
+@media (min-width: 1000px) {
+  .compare-schools__wrp {
+    position: relative;
+    max-width: 630px;
+  }
+  .compare-schools__wrp::before {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    background: url(../../images/compare-schools/img-before.svg) no-repeat center/cover;
+    width: 228.51px;
+    height: 210px;
+    top: 48px;
+    left: -176px;
+  }
+  .compare-schools__wrp::after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    background: url(../../images/compare-schools/img-after.svg) no-repeat center/cover;
+    width: 228.51px;
+    height: 210px;
+    bottom: 20px;
+    right: -184px;
+  }
+  .about-schools__title {
+    margin: 0 0 26px;
+  }
+  .about-schools--online .about-schools__title {
+    margin: 0 0 22px;
   }
 }
 .advantages-school {
