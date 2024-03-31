@@ -1816,6 +1816,32 @@ body {
     justify-content: center;
   }
 }
+@media (min-width: 1000px) {
+  .education-price__list {
+    flex-wrap: nowrap;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  .education-price__card {
+    max-width: 280px;
+  }
+  .education-price__card:nth-child(2) .price-card__image {
+    right: -34px;
+  }
+  .education-price__card:nth-child(3) .price-card__image {
+    right: -39px;
+  }
+  .price-card__banner {
+    right: 9px;
+  }
+  .price-card__image {
+    right: -39px;
+    z-index: 2;
+  }
+  .price-card__list {
+    margin: 0 0 22px;
+  }
+}
 .education-document {
   padding: 50px 0;
 }
@@ -1885,6 +1911,30 @@ body {
   .education-document__img {
     width: 336px;
     height: 296px;
+  }
+}
+@media (min-width: 1000px) {
+  .education-document {
+    padding: 80px 0 80px;
+  }
+  .education-document__wrp {
+    flex-direction: row;
+    align-items: start;
+  }
+  .education-document__title {
+    text-align: start;
+    margin: 0 auto 40px 0;
+  }
+  .education-document__txt {
+    text-align: start;
+    font-size: 18px;
+  }
+  .education-document__wrapper-img {
+    padding: 0;
+  }
+  .education-document__img {
+    width: 380px;
+    height: 334px;
   }
 }
 .reviews__title {

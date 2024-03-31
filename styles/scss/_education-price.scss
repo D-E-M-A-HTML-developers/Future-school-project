@@ -217,3 +217,39 @@
   }
   
 }
+@media (min-width: 1000px) {
+  .education-price {
+    &__list {
+      flex-wrap: nowrap;
+      column-gap: 30px;
+
+    }
+    &__card {
+      max-width: 280px;
+      &:nth-child(2) {
+        .price-card__image {
+          right: -34px;
+        }
+      }
+      &:nth-child(3) {
+        .price-card__image {
+          right: -39px;
+        }
+      }
+  
+    }
+ 
+  }
+  .price-card {
+    &__banner {
+      right: 9px;
+    }
+    &__image {
+      right: -39px;
+      z-index: 2;
+    }
+    &__list {
+      margin: 0 0 22px;
+    }
+  }
+}

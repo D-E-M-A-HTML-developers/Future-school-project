@@ -77,3 +77,28 @@
 		}
 	}
 }
+@media (min-width: 1000px) {
+	.education-document {
+		padding: 80px 0 80px;
+		
+		&__wrp {
+			flex-direction: row;
+			align-items: start;
+		}
+		&__title {
+			text-align: start;
+			margin: 0 auto 40px 0;
+		}
+		&__txt {
+			text-align: start;
+			font-size: 18px;
+		}
+		&__wrapper-img {
+			padding: 0;
+		}
+		&__img {
+			width: 380px;
+			height: 334px;
+		}
+	}
+}
