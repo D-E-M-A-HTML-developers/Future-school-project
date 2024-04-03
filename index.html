@@ -1,1291 +1,1114 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Школа будущего</title>
-    <link rel="stylesheet" href="styles/css/style.css" />
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="center">
-        <div class="header__wrapper">
-          <div class="logo">
-            <a class="logo__link" href="index.html">
-              <img
-                class="logo__image"
-                src="images/header/logo.svg"
-                alt="Школьный логотип"
-              />
-            </a>
-          </div>
-          <div class="menu-wrp">
-            <nav class="menu">
-              <div class="mobile-menu">
-                <input id="menu-switch" type="checkbox" />
-                <label class="mobile-menu__burger" for="menu-switch">
-                  <span class="mobile-menu__burger-element"></span>
-                </label>
-                <div class="mobile-menu__wrapper">
-                  <div class="mobile-menu__box">
-                    <ul class="menu-list">
-                      <li class="menu-item">
-                        <a class="menu-link" href="!#"> Для кого </a>
-                      </li>
-                      <li class="menu-item">
-                        <a class="menu-link" href="!#"> Как проходят уроки </a>
-                      </li>
-                      <li class="menu-item">
-                        <a class="menu-link" href="!#"> Преимущества </a>
-                      </li>
-                      <li class="menu-item">
-                        <a class="menu-link" href="!#"> Цены </a>
-                      </li>
-                      <li class="menu-item">
-                        <a class="menu-link" href="!#"> Контакты </a>
-                      </li>
-                      <li class="menu-item menu-item-account">
-                        <a class="menu-link" href="!#"> Личный кабинет </a>
-                      </li>
-                      <li class="menu-item menu-item-tel">
-                        <a class="menu-link" href="tel:+88003003791">
-                          8 (800) 300-37-91
-                        </a>
-                      </li>
-                    </ul>
-                    <div class="menu-buttons-group">
-                      <ul class="buttons">
-                        <li class="buttons-item">
-                          <a class="button" href="!#"> 1-4 классы </a>
-                        </li>
-                        <li class="buttons-item">
-                          <a class="button" href="!#"> 5-8 классы </a>
-                        </li>
-                        <li class="buttons-item">
-                          <a class="button" href="!#"> 9-11 классы </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </nav>
-          </div>
-          <div class="header__contacts">
-            <div class="menu-item menu-item-tel">
-              <a class="menu-link" href="tel:+88003003791">
-                8 (800) 300-37-91
-              </a>
-            </div>
-            <div class="sign-up-lesson__btn-wrp header__button-sign-up-wrp">
-              <a href="#" class="sign-up-lesson__btn header__button-sign-up"
-                >Записаться на урок</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="header__nav">
-          <ul class="header__nav-items">
-            <li class="header__nav-item">
-              <a class="menu-link" href="#!">Для кого</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="menu-link" href="#!">Как проходят уроки</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="menu-link" href="#!">Преимущества</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="menu-link" href="#!">Цены</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="menu-link" href="#!">Контакты</a>
-            </li>
-          </ul>
-          <div class="menu-item-account header__nav-cabinet">
-            <a class="menu-link" href="#!">Личный кабинет</a>
-          </div>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Школа будущего</title>
+	<link rel="stylesheet" href="styles/css/style.css" />
+</head>
 
-          <div class="menu-buttons-group">
-            <ul class="buttons">
-              <li class="buttons-item">
-                <a class="button" href="!#"> 1-4 классы </a>
-              </li>
-              <li class="buttons-item">
-                <a class="button" href="!#"> 5-8 классы </a>
-              </li>
-              <li class="buttons-item">
-                <a class="button" href="!#"> 9-11 классы </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="header__banner">
-          <div class="header__banner-image-wrp">
-            <img
-              class="header__banner-image"
-              src="images/header/header-baner-ganeral.png"
-              alt="Картинка о школе"
-            />
-          </div>
-          <div class="header__banner-info">
-            <div class="header__banner-text-wrp">
-              <h1 class="header__banner-title">
-                Настоящая школа<br />
-                <span class="color-blue">у&nbsp;вас дома!</span>
-              </h1>
-              <p class="header__banner-txt">
-                Мы&nbsp;даем детям реальные знания, потому наши классы не
-                превышают&nbsp;10&nbsp;человек. А&nbsp;интерактивность
-                и&nbsp;вовлеченность делает уроки интересными для детей.
-              </p>
-              <p class="header__banner-txt header__banner-txt_bold">
-                Семейное образование с&nbsp;нами&nbsp;&mdash; это эффективно!
-              </p>
-            </div>
-          </div>
-          <div class="sign-up-lesson">
-            <div class="sign-up-lesson__btn-wrp">
-              <a class="sign-up-lesson__btn" href="!#">Записаться на урок</a>
-            </div>
-            <div class="contact-us">
-              <span class="contact-us__txt">или написать:</span>
-              <div class="contact-us__icons-wrapper">
-                <a
-                  class="contact-us__telegramm"
-                  style="
+<body>
+	<header class="header">
+		<div class="center">
+			<div class="header__wrapper">
+				<div class="logo">
+					<a class="logo__link" href="index.html">
+						<img class="logo__image" src="images/header/logo.svg" alt="Школьный логотип" />
+					</a>
+				</div>
+				<div class="menu-wrp">
+					<nav class="menu">
+						<div class="mobile-menu">
+							<input id="menu-switch" type="checkbox" />
+							<label class="mobile-menu__burger" for="menu-switch">
+								<span class="mobile-menu__burger-element"></span>
+							</label>
+							<div class="mobile-menu__wrapper">
+								<div class="mobile-menu__box">
+									<ul class="menu-list">
+										<li class="menu-item">
+											<a class="menu-link" href="!#"> Для кого </a>
+										</li>
+										<li class="menu-item">
+											<a class="menu-link" href="!#"> Как проходят уроки </a>
+										</li>
+										<li class="menu-item">
+											<a class="menu-link" href="!#"> Преимущества </a>
+										</li>
+										<li class="menu-item">
+											<a class="menu-link" href="!#"> Цены </a>
+										</li>
+										<li class="menu-item">
+											<a class="menu-link" href="!#"> Контакты </a>
+										</li>
+										<li class="menu-item menu-item-account">
+											<a class="menu-link" href="!#"> Личный кабинет </a>
+										</li>
+										<li class="menu-item menu-item-tel">
+											<a class="menu-link" href="tel:+88003003791">
+												8 (800) 300-37-91
+											</a>
+										</li>
+									</ul>
+									<div class="menu-buttons-group">
+										<ul class="buttons">
+											<li class="buttons-item">
+												<a class="button" href="!#"> 1-4 классы </a>
+											</li>
+											<li class="buttons-item">
+												<a class="button" href="!#"> 5-8 классы </a>
+											</li>
+											<li class="buttons-item">
+												<a class="button" href="!#"> 9-11 классы </a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<div class="header__contacts">
+					<div class="menu-item menu-item-tel">
+						<a class="menu-link" href="tel:+88003003791">
+							8 (800) 300-37-91
+						</a>
+					</div>
+					<div class="sign-up-lesson__btn-wrp header__button-sign-up-wrp">
+						<a href="#" class="sign-up-lesson__btn header__button-sign-up">Записаться на урок</a>
+					</div>
+				</div>
+			</div>
+			<div class="header__nav">
+				<ul class="header__nav-items">
+					<li class="header__nav-item">
+						<a class="menu-link" href="#!">Для кого</a>
+					</li>
+					<li class="header__nav-item">
+						<a class="menu-link" href="#!">Как проходят уроки</a>
+					</li>
+					<li class="header__nav-item">
+						<a class="menu-link" href="#!">Преимущества</a>
+					</li>
+					<li class="header__nav-item">
+						<a class="menu-link" href="#!">Цены</a>
+					</li>
+					<li class="header__nav-item">
+						<a class="menu-link" href="#!">Контакты</a>
+					</li>
+				</ul>
+				<div class="menu-item-account header__nav-cabinet">
+					<a class="menu-link" href="#!">Личный кабинет</a>
+				</div>
+
+				<div class="menu-buttons-group">
+					<ul class="buttons">
+						<li class="buttons-item">
+							<a class="button" href="!#"> 1-4 классы </a>
+						</li>
+						<li class="buttons-item">
+							<a class="button" href="!#"> 5-8 классы </a>
+						</li>
+						<li class="buttons-item">
+							<a class="button" href="!#"> 9-11 классы </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="header__banner">
+				<div class="header__banner-image-wrp">
+					<img class="header__banner-image" src="images/header/header-baner-ganeral.png" alt="Картинка о школе" />
+				</div>
+				<div class="header__banner-info">
+					<div class="header__banner-text-wrp">
+						<h1 class="header__banner-title">
+							Настоящая школа<br />
+							<span class="color-blue">у&nbsp;вас дома!</span>
+						</h1>
+						<p class="header__banner-txt">
+							Мы&nbsp;даем детям реальные знания, потому наши классы не
+							превышают&nbsp;10&nbsp;человек. А&nbsp;интерактивность
+							и&nbsp;вовлеченность делает уроки интересными для детей.
+						</p>
+						<p class="header__banner-txt header__banner-txt_bold">
+							Семейное образование с&nbsp;нами&nbsp;&mdash; это эффективно!
+						</p>
+					</div>
+				</div>
+				<div class="sign-up-lesson">
+					<div class="sign-up-lesson__btn-wrp">
+						<a class="sign-up-lesson__btn" href="!#">Записаться на урок</a>
+					</div>
+					<div class="contact-us">
+						<span class="contact-us__txt">или написать:</span>
+						<div class="contact-us__icons-wrapper">
+							<a class="contact-us__telegramm" style="
                     background-image: url(./images/icon/telegramm-icon.svg);
-                  "
-                  href="https://web.telegram.org/k/"
-                  target="_blank"
-                ></a>
-                <a
-                  class="contact-us__whatsapp"
-                  style="background-image: url(./images/icon/watsapp-icon.svg)"
-                  href="https://www.whatsapp.com/?lang=ru_RU"
-                  target="_blank"
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+                  " href="https://web.telegram.org/k/" target="_blank"></a>
+							<a class="contact-us__whatsapp" style="background-image: url(./images/icon/watsapp-icon.svg)"
+								href="https://www.whatsapp.com/?lang=ru_RU" target="_blank"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
 
-    <main>
-      <section class="online-learning">
-        <div class="center">
-          <div class="online-learning__info-wrapper">
-            <h2 class="online-learning__title">
-              Кому подходит онлайн образование?
-            </h2>
-            <div class="online-learning__list-wrapper">
-              <ul class="online-learning__list">
-                <li class="online-learning__item">
-                  Для тех, кто хочет получать знания
-                </li>
-                <li class="online-learning__item">Для путешественников</li>
-                <li class="online-learning__item">Для семейного обучения</li>
-                <li class="online-learning__item">Для<br />спортсменов</li>
-                <li class="online-learning__item">
-                  Для проживающих за&nbsp;рубежом
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="promotion">
-            <div class="promotion__wrapper">
-              <div class="promotion__description-wrapper">
-                <h3 class="promotion__title">
-                  Первый месяц обучения от&nbsp;5&nbsp;250&nbsp;руб
-                </h3>
-                <p class="promotion__text">
-                  Не&nbsp;знаете подойдет&nbsp;ли вашему ребенку обучение
-                  онлайн? Попробуйте первый месяц со скидкой&nbsp;50%!
-                </p>
-              </div>
-              <div
-                class="promotion__image-wrapper"
-                style="
+	<main>
+		<section class="online-learning">
+			<div class="center">
+				<div class="online-learning__info-wrapper">
+					<h2 class="online-learning__title">
+						Кому подходит онлайн образование?
+					</h2>
+					<div class="online-learning__list-wrapper">
+						<ul class="online-learning__list">
+							<li class="online-learning__item">
+								Для тех, кто хочет получать знания
+							</li>
+							<li class="online-learning__item">Для путешественников</li>
+							<li class="online-learning__item">Для семейного обучения</li>
+							<li class="online-learning__item">Для<br />спортсменов</li>
+							<li class="online-learning__item">
+								Для проживающих за&nbsp;рубежом
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="promotion">
+					<div class="promotion__wrapper">
+						<div class="promotion__description-wrapper">
+							<h3 class="promotion__title">
+								Первый месяц обучения от&nbsp;5&nbsp;250&nbsp;руб
+							</h3>
+							<p class="promotion__text">
+								Не&nbsp;знаете подойдет&nbsp;ли вашему ребенку обучение
+								онлайн? Попробуйте первый месяц со скидкой&nbsp;50%!
+							</p>
+						</div>
+						<div class="promotion__image-wrapper" style="
                   background-image: url(./images/online-learnig/promotion-girl.svg);
-                "
-              ></div>
-              <div class="sign-up-lesson">
-                <div class="sign-up-lesson__btn-wrp">
-                  <a class="sign-up-lesson__btn" href="!#"
-                    >Записаться&nbsp;на&nbsp;урок</a
-                  >
-                </div>
-                <div class="contact-us">
-                  <span class="contact-us__txt">или написать:</span>
-                  <div class="contact-us__icons-wrapper">
-                    <a
-                      class="contact-us__telegramm"
-                      style="
+                "></div>
+						<div class="sign-up-lesson">
+							<div class="sign-up-lesson__btn-wrp">
+								<a class="sign-up-lesson__btn" href="!#">Записаться&nbsp;на&nbsp;урок</a>
+							</div>
+							<div class="contact-us">
+								<span class="contact-us__txt">или написать:</span>
+								<div class="contact-us__icons-wrapper">
+									<a class="contact-us__telegramm" style="
                         background-image: url(./images/icon/telegramm-icon.svg);
-                      "
-                      href="https://web.telegram.org/k/"
-                      target="_blank"
-                    ></a>
-                    <a
-                      class="contact-us__whatsapp"
-                      style="
+                      " href="https://web.telegram.org/k/" target="_blank"></a>
+									<a class="contact-us__whatsapp" style="
                         background-image: url(./images/icon/watsapp-icon.svg);
-                      "
-                      href="https://www.whatsapp.com/?lang=ru_RU"
-                      target="_blank"
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                      " href="https://www.whatsapp.com/?lang=ru_RU" target="_blank"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-      <section class="online-lessons">
-        <div class="center">
-          <h2 class="online-lessons__title">
-            Как проходят уроки в нашей онлайн школе?
-          </h2>
-          <div class="online-lessons__info">
-            <ul class="online-lessons__list">
-              <li class="online-lessons__item">
-                <div
-                  class="online-lessons__img"
-                  style="background-image: url(./images/online-lesson/img1.png)"
-                ></div>
-                <div class="online-lessons__item-description">
-                  <h3 class="online-lessons__item-name">
-                    Живые уроки с&nbsp;учителем
-                  </h3>
-                  <p class="online-lessons__item-text">
-                    Увлекательные уроки с&nbsp;учителем, на&nbsp;которых каждому
-                    ребенку будет уделено внимание
-                  </p>
-                </div>
-              </li>
-              <li class="online-lessons__item">
-                <div
-                  class="online-lessons__img"
-                  style="background-image: url(./images/online-lesson/img2.png)"
-                ></div>
-                <div class="online-lessons__item-description">
-                  <h3 class="online-lessons__item-name">
-                    Дополнительные материалы
-                  </h3>
-                  <p class="online-lessons__item-text">
-                    Материалы по&nbsp;каждой теме без лишней воды помогут
-                    закрепить знания
-                  </p>
-                </div>
-              </li>
-              <li class="online-lessons__item">
-                <div
-                  class="online-lessons__img"
-                  style="background-image: url(./images/online-lesson/img3.png)"
-                ></div>
-                <div class="online-lessons__item-description">
-                  <h3 class="online-lessons__item-name">Домашнее задание</h3>
-                  <p class="online-lessons__item-text">
-                    Для закрепления всего ранее полученного материала дети
-                    получают домашнее задание
-                  </p>
-                </div>
-              </li>
-              <li class="online-lessons__item">
-                <div
-                  class="online-lessons__img"
-                  style="background-image: url(./images/online-lesson/img4.png)"
-                ></div>
-                <div class="online-lessons__item-description">
-                  <h3 class="online-lessons__item-name">Проверка и оценка</h3>
-                  <p class="online-lessons__item-text">
-                    Все домашние задания проверяются учителем
-                    и&nbsp;выставляется оценка в&nbsp;дневник
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+		<section class="online-lessons">
+			<div class="center">
+				<h2 class="online-lessons__title">
+					Как проходят уроки в нашей онлайн школе?
+				</h2>
+				<div class="online-lessons__info">
+					<ul class="online-lessons__list">
+						<li class="online-lessons__item">
+							<div class="online-lessons__img" style="background-image: url(./images/online-lesson/img1.png)"></div>
+							<div class="online-lessons__item-description">
+								<h3 class="online-lessons__item-name">
+									Живые уроки с&nbsp;учителем
+								</h3>
+								<p class="online-lessons__item-text">
+									Увлекательные уроки с&nbsp;учителем, на&nbsp;которых каждому
+									ребенку будет уделено внимание
+								</p>
+							</div>
+						</li>
+						<li class="online-lessons__item">
+							<div class="online-lessons__img" style="background-image: url(./images/online-lesson/img2.png)"></div>
+							<div class="online-lessons__item-description">
+								<h3 class="online-lessons__item-name">
+									Дополнительные материалы
+								</h3>
+								<p class="online-lessons__item-text">
+									Материалы по&nbsp;каждой теме без лишней воды помогут
+									закрепить знания
+								</p>
+							</div>
+						</li>
+						<li class="online-lessons__item">
+							<div class="online-lessons__img" style="background-image: url(./images/online-lesson/img3.png)"></div>
+							<div class="online-lessons__item-description">
+								<h3 class="online-lessons__item-name">Домашнее задание</h3>
+								<p class="online-lessons__item-text">
+									Для закрепления всего ранее полученного материала дети
+									получают домашнее задание
+								</p>
+							</div>
+						</li>
+						<li class="online-lessons__item">
+							<div class="online-lessons__img" style="background-image: url(./images/online-lesson/img4.png)"></div>
+							<div class="online-lessons__item-description">
+								<h3 class="online-lessons__item-name">Проверка и оценка</h3>
+								<p class="online-lessons__item-text">
+									Все домашние задания проверяются учителем
+									и&nbsp;выставляется оценка в&nbsp;дневник
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
 
-      <section class="lesson-advantages">
-        <div class="center">
-          <h2 class="lesson-advantages__title">
-            Дети любят наши уроки потому что:
-          </h2>
-          <div class="lesson-advantages__wrapper">
-            <div class="lesson-advantages__cards-wrapper">
-              <div class="lesson-advantages__card">
-                <h3 class="lesson-advantages__name">
-                  Продвинутая геймификация
-                </h3>
-                <p class="lesson-advantages__text">
-                  Мы&nbsp;используем мини-игры чтобы увлечь ребенка&nbsp;в
-                  процесс решения задач и&nbsp;помочь усвоить материал&nbsp;в
-                  интересной форме
-                </p>
-              </div>
-              <div
-                class="lesson-advantages__image"
-                style="
+		<section class="lesson-advantages">
+			<div class="center">
+				<h2 class="lesson-advantages__title">
+					Дети любят наши уроки потому что:
+				</h2>
+				<div class="lesson-advantages__wrapper">
+					<div class="lesson-advantages__cards-wrapper">
+						<div class="lesson-advantages__card">
+							<h3 class="lesson-advantages__name">
+								Продвинутая геймификация
+							</h3>
+							<p class="lesson-advantages__text">
+								Мы&nbsp;используем мини-игры чтобы увлечь ребенка&nbsp;в
+								процесс решения задач и&nbsp;помочь усвоить материал&nbsp;в
+								интересной форме
+							</p>
+						</div>
+						<div class="lesson-advantages__image" style="
                   background-image: url(./images/lesson-advantages/card-image.png);
-                "
-              ></div>
-              <div class="lesson-advantages__card">
-                <h3 class="lesson-advantages__name">
-                  Не зубрят и не переписывают учебники
-                </h3>
-                <p class="lesson-advantages__text">
-                  Дети вовлечены в&nbsp;урок по&nbsp;средствам взаимодействия
-                  между собой и&nbsp;педагогом. Играют в&nbsp;тематические
-                  квизы. Смотрят видео и&nbsp;разбирают материал.
-                </p>
-              </div>
-              <div class="lesson-advantages__card">
-                <h3 class="lesson-advantages__name">Никакого стресса</h3>
-                <p class="lesson-advantages__text">
-                  В&nbsp;учебных классах поддерживается атмосфера дружбы
-                  и&nbsp;уважения. Никакого давления. Дети чувствуют себя
-                  комфортно
-                </p>
-              </div>
-            </div>
-            <div class="sign-up-lesson">
-              <div class="sign-up-lesson__btn-wrp">
-                <a class="sign-up-lesson__btn" href="!#"
-                  >Записаться&nbsp;на&nbsp;урок</a
-                >
-              </div>
-              <div class="contact-us">
-                <span class="contact-us__txt">или написать:</span>
-                <div class="contact-us__icons-wrapper">
-                  <a
-                    class="contact-us__telegramm"
-                    style="
+                "></div>
+						<div class="lesson-advantages__card">
+							<h3 class="lesson-advantages__name">
+								Не зубрят и не переписывают учебники
+							</h3>
+							<p class="lesson-advantages__text">
+								Дети вовлечены в&nbsp;урок по&nbsp;средствам взаимодействия
+								между собой и&nbsp;педагогом. Играют в&nbsp;тематические
+								квизы. Смотрят видео и&nbsp;разбирают материал.
+							</p>
+						</div>
+						<div class="lesson-advantages__card">
+							<h3 class="lesson-advantages__name">Никакого стресса</h3>
+							<p class="lesson-advantages__text">
+								В&nbsp;учебных классах поддерживается атмосфера дружбы
+								и&nbsp;уважения. Никакого давления. Дети чувствуют себя
+								комфортно
+							</p>
+						</div>
+					</div>
+					<div class="sign-up-lesson">
+						<div class="sign-up-lesson__btn-wrp">
+							<a class="sign-up-lesson__btn" href="!#">Записаться&nbsp;на&nbsp;урок</a>
+						</div>
+						<div class="contact-us">
+							<span class="contact-us__txt">или написать:</span>
+							<div class="contact-us__icons-wrapper">
+								<a class="contact-us__telegramm" style="
                       background-image: url(./images/icon/telegramm-icon.svg);
-                    "
-                    href="https://web.telegram.org/k/"
-                    target="_blank"
-                  ></a>
-                  <a
-                    class="contact-us__whatsapp"
-                    style="
+                    " href="https://web.telegram.org/k/" target="_blank"></a>
+								<a class="contact-us__whatsapp" style="
                       background-image: url(./images/icon/watsapp-icon.svg);
-                    "
-                    href="https://www.whatsapp.com/?lang=ru_RU"
-                    target="_blank"
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                    " href="https://www.whatsapp.com/?lang=ru_RU" target="_blank"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-      <section class="compare-schools">
-        <div class="center">
-          <h2 class="compare-schools__title">Глянем сравнение:</h2>
-          <div class="compare-schools__wrp">
-            <div class="about-schools">
-              <h3 class="about-schools__title">Обычная школа</h3>
-              <ul class="about-schools__list">
-                <li class="about-schools__item">
-                  Число детей в классе <span>от&nbsp;25</span>
-                </li>
-                <li class="about-schools__item">
-                  Количество уроков<span>5-6&nbsp;в&nbsp;день</span>
-                </li>
-                <li class="about-schools__item">
-                  Дополнительные занятия <span>обязательно</span>
-                </li>
-                <li class="about-schools__item">
-                  Индивидуальный подход <span>нет</span>
-                </li>
-                <li class="about-schools__item">
-                  Гибкий график занятий <span>нет</span>
-                </li>
-                <li class="about-schools__item">
-                  Собрать ребенка в школу <span>от 30 тыс. рублей</span>
-                </li>
-              </ul>
-            </div>
-            <div class="about-schools about-schools--online">
-              <h3 class="about-schools__title">Онлайн школа</h3>
-              <ul class="about-schools__list">
-                <li class="about-schools__item">
-                  Число детей в классе <span>до&nbsp;12</span>
-                </li>
-                <li class="about-schools__item">
-                  Количество уроков<span>2-3&nbsp;в день</span>
-                </li>
-                <li class="about-schools__item">
-                  Дополнительные занятия <span>по желанию</span>
-                </li>
-                <li class="about-schools__item">
-                  Индивидуальный подход <span>да&nbsp;</span>
-                </li>
-                <li class="about-schools__item">
-                  Гибкий график занятий <span>да&nbsp;</span>
-                </li>
-                <li class="about-schools__item">
-                  Собрать ребенка в школу <span>0 рублей</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+		<section class="compare-schools">
+			<div class="center">
+				<h2 class="compare-schools__title">Глянем сравнение:</h2>
+				<div class="compare-schools__wrp">
+					<div class="about-schools">
+						<h3 class="about-schools__title">Обычная школа</h3>
+						<ul class="about-schools__list">
+							<li class="about-schools__item">
+								Число детей в классе <span>от&nbsp;25</span>
+							</li>
+							<li class="about-schools__item">
+								Количество уроков<span>5-6&nbsp;в&nbsp;день</span>
+							</li>
+							<li class="about-schools__item">
+								Дополнительные занятия <span>обязательно</span>
+							</li>
+							<li class="about-schools__item">
+								Индивидуальный подход <span>нет</span>
+							</li>
+							<li class="about-schools__item">
+								Гибкий график занятий <span>нет</span>
+							</li>
+							<li class="about-schools__item">
+								Собрать ребенка в школу <span>от 30 тыс. рублей</span>
+							</li>
+						</ul>
+					</div>
+					<div class="about-schools about-schools--online">
+						<h3 class="about-schools__title">Онлайн школа</h3>
+						<ul class="about-schools__list">
+							<li class="about-schools__item">
+								Число детей в классе <span>до&nbsp;12</span>
+							</li>
+							<li class="about-schools__item">
+								Количество уроков<span>2-3&nbsp;в день</span>
+							</li>
+							<li class="about-schools__item">
+								Дополнительные занятия <span>по желанию</span>
+							</li>
+							<li class="about-schools__item">
+								Индивидуальный подход <span>да&nbsp;</span>
+							</li>
+							<li class="about-schools__item">
+								Гибкий график занятий <span>да&nbsp;</span>
+							</li>
+							<li class="about-schools__item">
+								Собрать ребенка в школу <span>0 рублей</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
 
-      <section class="advantages-school">
-        <div class="center">
-          <h2 class="advantages-school__title">
-            Онлайн школа среднего&nbsp;образования это -
-          </h2>
-          <ul class="advantages-school__list">
-            <li class="advantages-school__item">
-              <div
-                class="advantages-school__image"
-                style="
+		<section class="advantages-school">
+			<div class="center">
+				<h2 class="advantages-school__title">
+					Онлайн школа среднего&nbsp;образования это -
+				</h2>
+				<ul class="advantages-school__list">
+					<li class="advantages-school__item">
+						<div class="advantages-school__image" style="
                   background-image: url(./images/advantages-school/img1.svg);
-                "
-              ></div>
-              <h3 class="advantages-school__subtitle">
-                Удобный график занятий
-              </h3>
-              <p class="advantages-school__txt">
-                Вы можете выбрать удобное время начала занятий (9:00, 11:00 или
-                13:00)
-              </p>
-            </li>
-            <li class="advantages-school__item">
-              <div
-                class="advantages-school__image"
-                style="
+                "></div>
+						<h3 class="advantages-school__subtitle">
+							Удобный график занятий
+						</h3>
+						<p class="advantages-school__txt">
+							Вы можете выбрать удобное время начала занятий (9:00, 11:00 или
+							13:00)
+						</p>
+					</li>
+					<li class="advantages-school__item">
+						<div class="advantages-school__image" style="
                   background-image: url(./images/advantages-school/img2.svg);
-                "
-              ></div>
-              <h3 class="advantages-school__subtitle">
-                Записи уроков доступны всегда
-              </h3>
-              <p class="advantages-school__txt">
-                Пропустил урок&nbsp;&mdash; не&nbsp;страшно! Записи уроков можно
-                посмотреть в&nbsp;любое время
-              </p>
-            </li>
-            <li class="advantages-school__item">
-              <div
-                class="advantages-school__image"
-                style="
+                "></div>
+						<h3 class="advantages-school__subtitle">
+							Записи уроков доступны всегда
+						</h3>
+						<p class="advantages-school__txt">
+							Пропустил урок&nbsp;&mdash; не&nbsp;страшно! Записи уроков можно
+							посмотреть в&nbsp;любое время
+						</p>
+					</li>
+					<li class="advantages-school__item">
+						<div class="advantages-school__image" style="
                   background-image: url(./images/advantages-school/img3.svg);
-                "
-              ></div>
-              <h3 class="advantages-school__subtitle">
-                Сбалансированная нагрузка
-              </h3>
-              <p class="advantages-school__txt">
-                Никаких лишних и&nbsp;не&nbsp;нужных занятий. Только важное
-                и&nbsp;необходимое
-              </p>
-            </li>
-            <li class="advantages-school__item">
-              <div
-                class="advantages-school__image"
-                style="
+                "></div>
+						<h3 class="advantages-school__subtitle">
+							Сбалансированная нагрузка
+						</h3>
+						<p class="advantages-school__txt">
+							Никаких лишних и&nbsp;не&nbsp;нужных занятий. Только важное
+							и&nbsp;необходимое
+						</p>
+					</li>
+					<li class="advantages-school__item">
+						<div class="advantages-school__image" style="
                   background-image: url(./images/advantages-school/img4.svg);
-                "
-              ></div>
-              <h3 class="advantages-school__subtitle">
-                Не&nbsp;нужно покупать школьную форму и&nbsp;канцелярию
-              </h3>
-              <p class="advantages-school__txt">
-                Тетрадка, ручка, линейка и&nbsp;карандаш&nbsp;&mdash; это все,
-                что нужно для учебы в&nbsp;онлайн школе!
-              </p>
-            </li>
-            <li class="advantages-school__item">
-              <div
-                class="advantages-school__image"
-                style="
+                "></div>
+						<h3 class="advantages-school__subtitle">
+							Не&nbsp;нужно покупать школьную форму и&nbsp;канцелярию
+						</h3>
+						<p class="advantages-school__txt">
+							Тетрадка, ручка, линейка и&nbsp;карандаш&nbsp;&mdash; это все,
+							что нужно для учебы в&nbsp;онлайн школе!
+						</p>
+					</li>
+					<li class="advantages-school__item">
+						<div class="advantages-school__image" style="
                   background-image: url(./images/advantages-school/img5.svg);
-                "
-              ></div>
-              <h3 class="advantages-school__subtitle">
-                Высококлассные педагоги
-              </h3>
-              <p class="advantages-school__txt">
-                Опытные учителя прошедшие строгий отбор и&nbsp;использующие
-                современные методы обучения
-              </p>
-            </li>
-            <li class="advantages-school__item">
-              <div
-                class="advantages-school__image"
-                style="
+                "></div>
+						<h3 class="advantages-school__subtitle">
+							Высококлассные педагоги
+						</h3>
+						<p class="advantages-school__txt">
+							Опытные учителя прошедшие строгий отбор и&nbsp;использующие
+							современные методы обучения
+						</p>
+					</li>
+					<li class="advantages-school__item">
+						<div class="advantages-school__image" style="
                   background-image: url(./images/advantages-school/img6.svg);
-                "
-              ></div>
-              <h3 class="advantages-school__subtitle">Никакого стресса</h3>
-              <p class="advantages-school__txt">
-                В&nbsp;учебных классах поддерживается атмосфера дружбы
-                и&nbsp;уважения. Никакого давления. Дети чувствуют себя
-                комфортно
-              </p>
-            </li>
-          </ul>
-          <div class="promotion">
-            <div class="promotion__wrapper">
-              <div class="promotion__description-wrapper">
-                <h3 class="promotion__title">
-                  Первый месяц обучения от 5&nbsp;250&nbsp;руб
-                </h3>
-                <p class="promotion__text">
-                  Не&nbsp;знаете подойдет&nbsp;ли вашему ребенку обучение
-                  онлайн? Попробуйте первый месяц со скидкой&nbsp;50%!
-                </p>
-              </div>
-              <div
-                class="promotion__image-wrapper"
-                style="
+                "></div>
+						<h3 class="advantages-school__subtitle">Никакого стресса</h3>
+						<p class="advantages-school__txt">
+							В&nbsp;учебных классах поддерживается атмосфера дружбы
+							и&nbsp;уважения. Никакого давления. Дети чувствуют себя
+							комфортно
+						</p>
+					</li>
+				</ul>
+				<div class="promotion">
+					<div class="promotion__wrapper">
+						<div class="promotion__description-wrapper">
+							<h3 class="promotion__title">
+								Первый месяц обучения от 5&nbsp;250&nbsp;руб
+							</h3>
+							<p class="promotion__text">
+								Не&nbsp;знаете подойдет&nbsp;ли вашему ребенку обучение
+								онлайн? Попробуйте первый месяц со скидкой&nbsp;50%!
+							</p>
+						</div>
+						<div class="promotion__image-wrapper" style="
                   background-image: url(./images/advantages-school/boy.svg);
-                "
-              ></div>
-              <div class="sign-up-lesson">
-                <div class="sign-up-lesson__btn-wrp">
-                  <a class="sign-up-lesson__btn" href="!#"
-                    >Записаться на&nbsp;урок</a
-                  >
-                </div>
-                <div class="contact-us">
-                  <span class="contact-us__txt">или написать:</span>
-                  <div class="contact-us__icons-wrapper">
-                    <a
-                      class="contact-us__telegramm"
-                      style="
+                "></div>
+						<div class="sign-up-lesson">
+							<div class="sign-up-lesson__btn-wrp">
+								<a class="sign-up-lesson__btn" href="!#">Записаться на&nbsp;урок</a>
+							</div>
+							<div class="contact-us">
+								<span class="contact-us__txt">или написать:</span>
+								<div class="contact-us__icons-wrapper">
+									<a class="contact-us__telegramm" style="
                         background-image: url(./images/icon/telegramm-icon.svg);
-                      "
-                      href="https://web.telegram.org/k/"
-                      target="_blank"
-                    ></a>
-                    <a
-                      class="contact-us__whatsapp"
-                      style="
+                      " href="https://web.telegram.org/k/" target="_blank"></a>
+									<a class="contact-us__whatsapp" style="
                         background-image: url(./images/icon/watsapp-icon.svg);
-                      "
-                      href="https://www.whatsapp.com/?lang=ru_RU"
-                      target="_blank"
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                      " href="https://www.whatsapp.com/?lang=ru_RU" target="_blank"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-      <section class="education-price">
-        <div class="center">
-          <h2 class="education-price__title">
-            Сколько стоит обучение в&nbsp;онлайн школе?
-          </h2>
-          <ul class="education-price__list">
-            <li class="education-price__card">
-              <article class="price-card">
-                <h3 class="price-card__heading">1-4 класс</h3>
-                <p class="price-card__subtitle">
-                  Веселые&nbsp;и увлекательные&nbsp;уроки
-                </p>
-                <ul class="price-card__list">
-                  <li class="price-card__item">2-3 урока в&nbsp;день пн-чт</li>
-                  <li class="price-card__item">10-12 учеников в классе</li>
-                  <li class="price-card__item">
-                    внимание к каждому&nbsp;ребенку
-                  </li>
-                  <li class="price-card__item">интерактивные тренажеры</li>
-                  <li class="price-card__item">игровая форма обучения</li>
-                  <li class="price-card__item">
-                    зачисление в&nbsp;школу партнер 12 000/год
-                  </li>
-                </ul>
-                <div class="price-card__btn-wrp">
-                  <a class="price-card__btn" href="!#">Подробнее</a>
-                </div>
-                <div class="price-card__banner">
-                  <span>10&nbsp;500&nbsp;<span>₽</span><span>/мес</span></span>
-                </div>
-                <div
-                  class="price-card__image"
-                  style="
+		<section class="education-price">
+			<div class="center">
+				<h2 class="education-price__title">
+					Сколько стоит обучение в&nbsp;онлайн школе?
+				</h2>
+				<ul class="education-price__list">
+					<li class="education-price__card">
+						<article class="price-card">
+							<h3 class="price-card__heading">1-4 класс</h3>
+							<p class="price-card__subtitle">
+								Веселые&nbsp;и увлекательные&nbsp;уроки
+							</p>
+							<ul class="price-card__list">
+								<li class="price-card__item">2-3 урока в&nbsp;день пн-чт</li>
+								<li class="price-card__item">10-12 учеников в классе</li>
+								<li class="price-card__item">
+									внимание к каждому&nbsp;ребенку
+								</li>
+								<li class="price-card__item">интерактивные тренажеры</li>
+								<li class="price-card__item">игровая форма обучения</li>
+								<li class="price-card__item">
+									зачисление в&nbsp;школу партнер 12 000/год
+								</li>
+							</ul>
+							<div class="price-card__btn-wrp">
+								<a class="price-card__btn" href="!#">Подробнее</a>
+							</div>
+							<div class="price-card__banner">
+								<span>10&nbsp;500&nbsp;<span>₽</span><span>/мес</span></span>
+							</div>
+							<div class="price-card__image" style="
                     background-image: url(./images/education-price/girl-1.png);
-                  "
-                ></div>
-              </article>
-            </li>
-            <li class="education-price__card">
-              <article class="price-card">
-                <h3 class="price-card__heading">5-8 класс</h3>
-                <p class="price-card__subtitle">
-                  Помогаем не&nbsp;потерять интерес
-                </p>
-                <ul class="price-card__list">
-                  <li class="price-card__item">3-5 уроков в&nbsp;день пн-пт</li>
-                  <li class="price-card__item">12-15 учеников в<br />классе</li>
-                  <li class="price-card__item">
-                    внимание к каждому&nbsp;ребенку
-                  </li>
-                  <li class="price-card__item">интерактивные тренажеры</li>
-                  <li class="price-card__item">
-                    усиленная подготовка&nbsp;к&nbsp;ОГЭ
-                  </li>
-                  <li class="price-card__item">
-                    зачисление в&nbsp;школу партнер 12 000/год
-                  </li>
-                </ul>
-                <div class="price-card__btn-wrp">
-                  <a class="price-card__btn" href="!#">Подробнее</a>
-                </div>
-                <div class="price-card__banner">
-                  <span>12&nbsp;500&nbsp;<span>₽</span><span>/мес</span></span>
-                </div>
-                <div
-                  class="price-card__image"
-                  style="
+                  "></div>
+						</article>
+					</li>
+					<li class="education-price__card">
+						<article class="price-card">
+							<h3 class="price-card__heading">5-8 класс</h3>
+							<p class="price-card__subtitle">
+								Помогаем не&nbsp;потерять интерес
+							</p>
+							<ul class="price-card__list">
+								<li class="price-card__item">3-5 уроков в&nbsp;день пн-пт</li>
+								<li class="price-card__item">12-15 учеников в<br />классе</li>
+								<li class="price-card__item">
+									внимание к каждому&nbsp;ребенку
+								</li>
+								<li class="price-card__item">интерактивные тренажеры</li>
+								<li class="price-card__item">
+									усиленная подготовка&nbsp;к&nbsp;ОГЭ
+								</li>
+								<li class="price-card__item">
+									зачисление в&nbsp;школу партнер 12 000/год
+								</li>
+							</ul>
+							<div class="price-card__btn-wrp">
+								<a class="price-card__btn" href="!#">Подробнее</a>
+							</div>
+							<div class="price-card__banner">
+								<span>12&nbsp;500&nbsp;<span>₽</span><span>/мес</span></span>
+							</div>
+							<div class="price-card__image" style="
                     background-image: url(./images/education-price/girl-2.png);
-                  "
-                ></div>
-              </article>
-            </li>
-            <li class="education-price__card">
-              <article class="price-card">
-                <h3 class="price-card__heading">9-11 класс</h3>
-                <p class="price-card__subtitle">
-                  Самый важный этап&nbsp;в жизни
-                </p>
-                <ul class="price-card__list">
-                  <li class="price-card__item">4-5 уроков в день<br />пн-пт</li>
-                  <li class="price-card__item">12-15 учеников в<br />классе</li>
-                  <li class="price-card__item">
-                    внимание к каждому&nbsp;ребенку
-                  </li>
-                  <li class="price-card__item">интерактивные тренажеры</li>
-                  <li class="price-card__item">
-                    усиленная подготовка к&nbsp;ОГЭ и&nbsp;ЕГЭ
-                  </li>
-                  <li class="price-card__item">
-                    зачисление в&nbsp;школу партнер 12 000/год
-                  </li>
-                </ul>
-                <div class="price-card__btn-wrp">
-                  <a class="price-card__btn" href="!#">Подробнее</a>
-                </div>
-                <div class="price-card__banner">
-                  <span>16&nbsp;500&nbsp;<span>₽</span><span>/мес</span></span>
-                </div>
-                <div
-                  class="price-card__image"
-                  style="
+                  "></div>
+						</article>
+					</li>
+					<li class="education-price__card">
+						<article class="price-card">
+							<h3 class="price-card__heading">9-11 класс</h3>
+							<p class="price-card__subtitle">
+								Самый важный этап&nbsp;в жизни
+							</p>
+							<ul class="price-card__list">
+								<li class="price-card__item">4-5 уроков в день<br />пн-пт</li>
+								<li class="price-card__item">12-15 учеников в<br />классе</li>
+								<li class="price-card__item">
+									внимание к каждому&nbsp;ребенку
+								</li>
+								<li class="price-card__item">интерактивные тренажеры</li>
+								<li class="price-card__item">
+									усиленная подготовка к&nbsp;ОГЭ и&nbsp;ЕГЭ
+								</li>
+								<li class="price-card__item">
+									зачисление в&nbsp;школу партнер 12 000/год
+								</li>
+							</ul>
+							<div class="price-card__btn-wrp">
+								<a class="price-card__btn" href="!#">Подробнее</a>
+							</div>
+							<div class="price-card__banner">
+								<span>16&nbsp;500&nbsp;<span>₽</span><span>/мес</span></span>
+							</div>
+							<div class="price-card__image" style="
                     background-image: url(./images/education-price/girl-3.png);
-                  "
-                ></div>
-              </article>
-            </li>
-          </ul>
-        </div>
-      </section>
+                  "></div>
+						</article>
+					</li>
+				</ul>
+			</div>
+		</section>
 
-      <section class="education-document">
-        <div class="education-document__wrp center">
-          <div class="education-document__desc">
-            <h2 class="education-document__title">
-              Аттестат государственного образца
-            </h2>
-            <p class="education-document__txt">
-              Вы&nbsp;получите аттестат государственного образца. Он ничем
-              не&nbsp;отличается от&nbsp;аттестата которые выдают в&nbsp;обычных
-              школах.С аттестатом вы&nbsp;сможете продолжить обучение
-              в&nbsp;лучших вузах страны.
-            </p>
-          </div>
-          <div class="education-document__wrapper-img">
-            <img
-              class="education-document__img"
-              src="./images/educatuin-document/picture.png"
-              alt="Картинка аттестата"
-            />
-          </div>
-        </div>
-      </section>
+		<section class="education-document">
+			<div class="education-document__wrp center">
+				<div class="education-document__desc">
+					<h2 class="education-document__title">
+						Аттестат государственного образца
+					</h2>
+					<p class="education-document__txt">
+						Вы&nbsp;получите аттестат государственного образца. Он ничем
+						не&nbsp;отличается от&nbsp;аттестата которые выдают в&nbsp;обычных
+						школах.С аттестатом вы&nbsp;сможете продолжить обучение
+						в&nbsp;лучших вузах страны.
+					</p>
+				</div>
+				<div class="education-document__wrapper-img">
+					<img class="education-document__img" src="./images/educatuin-document/picture.png" alt="Картинка аттестата" />
+				</div>
+			</div>
+		</section>
 
-      <section class="reviews">
-        <div class="center">
-          <h2 class="reviews__title">
-            Отзывы родителей о&nbsp;"Школе Будущего Online"
-          </h2>
-        </div>
-        <div class="slider">
-          <div class="slider__line">
-            <article class="slider__card">
-              <div class="slider__card-info">
-                <h3 class="slider__card-title">Анна Смирнова</h3>
-                <p class="slider__card-subtitle">родитель Максима</p>
-                <a
-                  class="slider__card-link"
-                  href="https://vk.com/annaaa"
-                  target="_blank"
-                  >vk.com/annaaa</a
-                >
-              </div>
-              <p class="slider__card-text">
-                Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также
-                непосредственные участники технического прогресса набирают
-                популярность среди определенных слоев населения, а&nbsp;значит,
-                должны быть ассоциативно распределены по&nbsp;отраслям. Имеется
-                спорная точка зрения, гласящая примерно следующее: диаграммы.
-              </p>
-            </article>
-            <article class="slider__card">
-              <div class="slider__card-info">
-                <h3 class="slider__card-title">Анна Смирнова</h3>
-                <span class="slider__card-subtitle">родитель Максима</span>
-                <a
-                  class="slider__card-link"
-                  href="https://vk.com/annaaa"
-                  target="_blank"
-                  >vk.com/annaaa</a
-                >
-              </div>
-              <p class="slider__card-text">
-                Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также
-                непосредственные участники технического прогресса набирают
-                популярность среди определенных слоев населения, а&nbsp;значит,
-                должны быть ассоциативно распределены по&nbsp;отраслям. Имеется
-                спорная точка зрения, гласящая примерно следующее: диаграммы.
-              </p>
-            </article>
-            <article class="slider__card">
-              <div class="slider__card-info">
-                <h3 class="slider__card-title">Анна Смирнова</h3>
-                <span class="slider__card-subtitle">родитель Максима</span>
-                <a
-                  class="slider__card-link"
-                  href="https://vk.com/annaaa"
-                  target="_blank"
-                  >vk.com/annaaa</a
-                >
-              </div>
-              <p class="slider__card-text">
-                Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также
-                непосредственные участники технического прогресса набирают
-                популярность среди определенных слоев населения, а&nbsp;значит,
-                должны быть ассоциативно распределены по&nbsp;отраслям. Имеется
-                спорная точка зрения, гласящая примерно следующее: диаграммы.
-              </p>
-            </article>
-          </div>
-          <div class="slider__buttons-wrp">
-            <button class="slider__btn-prev">
-              <img
-                class="slider__btn-img"
-                src="images/reviews/slider-button.png"
-              />
-            </button>
-            <button class="slider__btn-next">
-              <img
-                class="slider__btn-img"
-                src="images/reviews/slider-button.png"
-              />
-            </button>
-          </div>
-        </div>
-      </section>
+		<section class="reviews">
+			<div class="center">
+				<h2 class="reviews__title">
+					Отзывы родителей о&nbsp;"Школе Будущего Online"
+				</h2>
+			</div>
+			<div class="slider">
+				<div class="slider__line">
+					<article class="slider__card">
+						<div class="slider__card-info">
+							<h3 class="slider__card-title">Анна Смирнова</h3>
+							<p class="slider__card-subtitle">родитель Максима</p>
+							<a class="slider__card-link" href="https://vk.com/annaaa" target="_blank">vk.com/annaaa</a>
+						</div>
+						<p class="slider__card-text">
+							Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также
+							непосредственные участники технического прогресса набирают
+							популярность среди определенных слоев населения, а&nbsp;значит,
+							должны быть ассоциативно распределены по&nbsp;отраслям. Имеется
+							спорная точка зрения, гласящая примерно следующее: диаграммы.
+						</p>
+					</article>
+					<article class="slider__card">
+						<div class="slider__card-info">
+							<h3 class="slider__card-title">Анна Смирнова</h3>
+							<span class="slider__card-subtitle">родитель Максима</span>
+							<a class="slider__card-link" href="https://vk.com/annaaa" target="_blank">vk.com/annaaa</a>
+						</div>
+						<p class="slider__card-text">
+							Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также
+							непосредственные участники технического прогресса набирают
+							популярность среди определенных слоев населения, а&nbsp;значит,
+							должны быть ассоциативно распределены по&nbsp;отраслям. Имеется
+							спорная точка зрения, гласящая примерно следующее: диаграммы.
+						</p>
+					</article>
+					<article class="slider__card">
+						<div class="slider__card-info">
+							<h3 class="slider__card-title">Анна Смирнова</h3>
+							<span class="slider__card-subtitle">родитель Максима</span>
+							<a class="slider__card-link" href="https://www.instagram.com/" target="_blank">instagram.com/annaa</a>
+						</div>
+						<p class="slider__card-text">
+							Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также
+							непосредственные участники технического прогресса набирают
+							популярность среди определенных слоев населения, а&nbsp;значит,
+							должны быть ассоциативно распределены по&nbsp;отраслям. Имеется
+							спорная точка зрения, гласящая примерно следующее: диаграммы.
+						</p>
+					</article>
+				</div>
+				<div class="slider__buttons-wrp">
+					<button class="slider__btn-prev">
+						<img class="slider__btn-img" src="images/reviews/slider-button.png" />
+					</button>
+					<button class="slider__btn-next">
+						<img class="slider__btn-img" src="images/reviews/slider-button.png" />
+					</button>
+				</div>
+			</div>
+		</section>
 
-      <section class="accordion">
-        <div class="center">
-          <div class="accordion__wrapper">
-            <ul class="accordion__list">
-              <li class="accordion__item">
-                <input class="accordion__input" id="item01" type="checkbox" />
-                <label class="accordion__button" for="item01">
-                  <h4>
-                    Домашнее обучение в&nbsp;&laquo;Школе Будущего Онлайн&raquo;
-                  </h4>
-                  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                </label>
-                <div class="accordion__body">
-                  <p class="accordion__text">
-                    <span>Домашнее образование</span> в&nbsp;&laquo;Школе
-                    Будущего Онлайн&raquo; дает много свободы ученику
-                    и&nbsp;возможность развиваться как индивидуальность. Такой
-                    формат обучения идеально подходит для детей, которые хотят
-                    эффективно использовать свое время
-                    и&nbsp;с&nbsp;максимальной пользой для достижения
-                    поставленных целей.
-                  </p>
-                  <p class="accordion__text">
-                    Наша <span>домашняя интернет школа</span> имеет лицензию
-                    образовательного учреждения, предоставляет программу
-                    обучения, которая соответствует государственной. При этом
-                    мы&nbsp;используем уникальные методики, игровой формат
-                    и&nbsp;квизы для максимального вовлечения учеников
-                    в&nbsp;учебный процесс.
-                  </p>
-                  <p class="accordion__text">
-                    Современное <span>образование онлайн</span> позволяет
-                    ученику всесторонне развиваться и&nbsp;совмещать учебу
-                    с&nbsp;увлечениями, спортом и&nbsp;творчеством без
-                    перенапряжения с&nbsp;оптимальным распределением времени.
-                    Такой формат дает положительные результаты в&nbsp;обучении
-                    ребенка. Есть возможность развития индивидуальных
-                    особенностей, талантов и&nbsp;склонностей к&nbsp;одной или
-                    нескольким наукам, которые могут в&nbsp;будущем стать
-                    основой профессии.
-                  </p>
-                  <div class="accordion__text-list-wrp">
-                    <p class="accordion__text">
-                      Домашняя школа для ребенка&nbsp;&mdash; это возможность:
-                    </p>
-                    <ul class="accordion__text-list">
-                      <li class="accordion__text-item">
-                        учиться в&nbsp;комфортном режиме;
-                      </li>
-                      <li class="accordion__text-item">
-                        совмещать учебу с&nbsp;личным развитием;
-                      </li>
-                      <li class="accordion__text-item">
-                        получить обратную связь от&nbsp;учителей
-                        и&nbsp;индивидуальный подход.
-                      </li>
-                    </ul>
-                  </div>
-                  <p class="accordion__text">
-                    Согласно действующему законодательству
-                    <span>семейная форма обучения</span> доступна
-                    по&nbsp;желанию любому ребенку. Для этого достаточно подать
-                    заявление в&nbsp;обычную школу и&nbsp;перейти
-                    на&nbsp;домашний формат обучения. Чтобы при семейном формате
-                    обучения ребенок не&nbsp;сбился с&nbsp;графика, а&nbsp;также
-                    своевременно проходил базовые темы государственной
-                    образовательной программы прекрасным помощником станет
-                    онлайн-школа.
-                  </p>
-                  <p class="accordion__text">
-                    Наша <span>российская онлайн школа</span> поможет сделать
-                    семейное обучение эффективным за&nbsp;счет дополнительных
-                    учебных материалов, кураторства и&nbsp;помощи учителей.
-                    Чтобы узнать, подходит&nbsp;ли такой формат обучения, всегда
-                    можно пройти недельный бесплатный курс.
-                  </p>
-                </div>
-              </li>
-              <li class="accordion__item">
-                <input class="accordion__input" id="item02" type="checkbox" />
-                <label class="accordion__button" for="item02">
-                  <h4>
-                    Как поступить в&nbsp;&laquo;Школу Будущего Онлайн&raquo;
-                  </h4>
-                  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                </label>
-                <div class="accordion__body">
-                  <p class="accordion__text">
-                    <span>Домашнее образование</span> в&nbsp;&laquo;Школе
-                    Будущего Онлайн&raquo; дает много свободы ученику
-                    и&nbsp;возможность развиваться как индивидуальность. Такой
-                    формат обучения идеально подходит для детей, которые хотят
-                    эффективно использовать свое время
-                    и&nbsp;с&nbsp;максимальной пользой для достижения
-                    поставленных целей.
-                  </p>
-                  <p class="accordion__text">
-                    Наша <span>домашняя интернет школа</span> имеет лицензию
-                    образовательного учреждения, предоставляет программу
-                    обучения, которая соответствует государственной. При этом
-                    мы&nbsp;используем уникальные методики, игровой формат
-                    и&nbsp;квизы для максимального вовлечения учеников
-                    в&nbsp;учебный процесс.
-                  </p>
-                </div>
-              </li>
-              <li class="accordion__item">
-                <input class="accordion__input" id="item03" type="checkbox" />
-                <label class="accordion__button" for="item03">
-                  <h4>Как перевести ребенка на&nbsp;семейное обучение</h4>
-                  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                </label>
-                <div class="accordion__body">
-                  <p class="accordion__text">
-                    <span>Домашнее образование</span> в&nbsp;&laquo;Школе
-                    Будущего Онлайн&raquo; дает много свободы ученику
-                    и&nbsp;возможность развиваться как индивидуальность. Такой
-                    формат обучения идеально подходит для детей, которые хотят
-                    эффективно использовать свое время
-                    и&nbsp;с&nbsp;максимальной пользой для достижения
-                    поставленных целей.
-                  </p>
-                  <p class="accordion__text">
-                    Наша <span>российская онлайн школа</span> поможет сделать
-                    семейное обучение эффективным за&nbsp;счет дополнительных
-                    учебных материалов, кураторства и&nbsp;помощи учителей.
-                    Чтобы узнать, подходит&nbsp;ли такой формат обучения, всегда
-                    можно пройти недельный бесплатный курс.
-                  </p>
-                </div>
-              </li>
-              <li class="accordion__item">
-                <input class="accordion__input" id="item04" type="checkbox" />
-                <label class="accordion__button" for="item04">
-                  <h4>
-                    Что входит в&nbsp;цену на&nbsp;дистанционное школьное
-                    образование
-                  </h4>
-                  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                </label>
-                <div class="accordion__body">
-                  <p class="accordion__text">
-                    Современное <span>образование онлайн</span> позволяет
-                    ученику всесторонне развиваться и&nbsp;совмещать учебу
-                    с&nbsp;увлечениями, спортом и&nbsp;творчеством без
-                    перенапряжения с&nbsp;оптимальным распределением времени.
-                    Такой формат дает положительные результаты в&nbsp;обучении
-                    ребенка. Есть возможность развития индивидуальных
-                    особенностей, талантов и&nbsp;склонностей к&nbsp;одной или
-                    нескольким наукам, которые могут в&nbsp;будущем стать
-                    основой профессии.
-                  </p>
-                  <div class="accordion__text-list-wrp">
-                    <p class="accordion__text">
-                      Домашняя школа для ребенка&nbsp;&mdash; это возможность:
-                    </p>
-                    <ul class="accordion__text-list">
-                      <li class="accordion__text-item">
-                        учиться в&nbsp;комфортном режиме;
-                      </li>
-                      <li class="accordion__text-item">
-                        совмещать учебу с&nbsp;личным развитием;
-                      </li>
-                      <li class="accordion__text-item">
-                        получить обратную связь от&nbsp;учителей
-                        и&nbsp;индивидуальный подход.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-              <li class="accordion__item">
-                <input class="accordion__input" id="item05" type="checkbox" />
-                <label class="accordion__button" for="item05">
-                  <h4>Контроль успеваемости в&nbsp;онлайн школе</h4>
-                  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                </label>
-                <div class="accordion__body">
-                  <p class="accordion__text">
-                    Наша <span>российская онлайн школа</span> поможет сделать
-                    семейное обучение эффективным за&nbsp;счет дополнительных
-                    учебных материалов, кураторства и&nbsp;помощи учителей.
-                    Чтобы узнать, подходит&nbsp;ли такой формат обучения, всегда
-                    можно пройти недельный бесплатный курс.
-                  </p>
-                </div>
-              </li>
-              <li class="accordion__item">
-                <input class="accordion__input" id="item06" type="checkbox" />
-                <label class="accordion__button" for="item06">
-                  <h4>Преимущества обучения в&nbsp;онлайн-школе</h4>
-                  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                </label>
-                <div class="accordion__body">
-                  <p class="accordion__text">
-                    <span>Домашнее образование</span> в&nbsp;&laquo;Школе
-                    Будущего Онлайн&raquo; дает много свободы ученику
-                    и&nbsp;возможность развиваться как индивидуальность. Такой
-                    формат обучения идеально подходит для детей, которые хотят
-                    эффективно использовать свое время
-                    и&nbsp;с&nbsp;максимальной пользой для достижения
-                    поставленных целей.
-                  </p>
-                  <p class="accordion__text">
-                    Наша <span>домашняя интернет школа</span> имеет лицензию
-                    образовательного учреждения, предоставляет программу
-                    обучения, которая соответствует государственной. При этом
-                    мы&nbsp;используем уникальные методики, игровой формат
-                    и&nbsp;квизы для максимального вовлечения учеников
-                    в&nbsp;учебный процесс.
-                  </p>
-                </div>
-              </li>
-              <li class="accordion__item">
-                <input class="accordion__input" id="item07" type="checkbox" />
-                <label class="accordion__button" for="item07">
-                  <h4>Нужна&nbsp;ли онлайн школа на&nbsp;домашнем обучении?</h4>
-                  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                </label>
-                <div class="accordion__body">
-                  <p class="accordion__text">
-                    <span>Домашнее образование</span> в&nbsp;&laquo;Школе
-                    Будущего Онлайн&raquo; дает много свободы ученику
-                    и&nbsp;возможность развиваться как индивидуальность. Такой
-                    формат обучения идеально подходит для детей, которые хотят
-                    эффективно использовать свое время
-                    и&nbsp;с&nbsp;максимальной пользой для достижения
-                    поставленных целей.
-                  </p>
-                </div>
-              </li>
-              <li class="accordion__item">
-                <input class="accordion__input" id="item08" type="checkbox" />
-                <label class="accordion__button" for="item08">
-                  <h4>Разница между семейным и&nbsp;заочным обучением</h4>
-                  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                </label>
-                <div class="accordion__body">
-                  <div class="accordion__text-list-wrp">
-                    <p class="accordion__text">
-                      Домашняя школа для ребенка&nbsp;&mdash; это возможность:
-                    </p>
-                    <ul class="accordion__text-list">
-                      <li class="accordion__text-item">
-                        учиться в&nbsp;комфортном режиме;
-                      </li>
-                      <li class="accordion__text-item">
-                        совмещать учебу с&nbsp;личным развитием;
-                      </li>
-                      <li class="accordion__text-item">
-                        получить обратную связь от&nbsp;учителей
-                        и&nbsp;индивидуальный подход.
-                      </li>
-                    </ul>
-                  </div>
-                  <p class="accordion__text">
-                    Наша <span>российская онлайн школа</span> поможет сделать
-                    семейное обучение эффективным за&nbsp;счет дополнительных
-                    учебных материалов, кураторства и&nbsp;помощи учителей.
-                    Чтобы узнать, подходит&nbsp;ли такой формат обучения, всегда
-                    можно пройти недельный бесплатный курс.
-                  </p>
-                </div>
-              </li>
-              <li class="accordion__item">
-                <input class="accordion__input" id="item09" type="checkbox" />
-                <label class="accordion__button" for="item09">
-                  <h4>
-                    Школа отказывается переводить ребёнка на&nbsp;семейное
-                    образование?
-                  </h4>
-                  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                </label>
-                <div class="accordion__body">
-                  <p class="accordion__text">
-                    Согласно действующему законодательству
-                    <span>семейная форма обучения</span> доступна
-                    по&nbsp;желанию любому ребенку. Для этого достаточно подать
-                    заявление в&nbsp;обычную школу и&nbsp;перейти
-                    на&nbsp;домашний формат обучения. Чтобы при семейном формате
-                    обучения ребенок не&nbsp;сбился с&nbsp;графика, а&nbsp;также
-                    своевременно проходил базовые темы государственной
-                    образовательной программы прекрасным помощником станет
-                    онлайн-школа.
-                  </p>
-                  <p class="accordion__text">
-                    Наша <span>российская онлайн школа</span> поможет сделать
-                    семейное обучение эффективным за&nbsp;счет дополнительных
-                    учебных материалов, кураторства и&nbsp;помощи учителей.
-                    Чтобы узнать, подходит&nbsp;ли такой формат обучения, всегда
-                    можно пройти недельный бесплатный курс.
-                  </p>
-                </div>
-              </li>
-              <li class="accordion__item">
-                <input class="accordion__input" id="item010" type="checkbox" />
-                <label class="accordion__button" for="item010">
-                  <h4>Почему нужно поступить в&nbsp;онлайн школу?</h4>
-                  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                </label>
-                <div class="accordion__body">
-                  <p class="accordion__text">
-                    Наша <span>российская онлайн школа</span> поможет сделать
-                    семейное обучение эффективным за&nbsp;счет дополнительных
-                    учебных материалов, кураторства и&nbsp;помощи учителей.
-                    Чтобы узнать, подходит&nbsp;ли такой формат обучения, всегда
-                    можно пройти недельный бесплатный курс.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+		<section class="accordion">
+			<div class="center">
+				<div class="accordion__wrapper">
+					<ul class="accordion__list">
+						<li class="accordion__item">
+							<input class="accordion__input" id="item01" type="checkbox" />
+							<label class="accordion__button" for="item01">
+								<h4>
+									Домашнее обучение в&nbsp;&laquo;Школе Будущего Онлайн&raquo;
+								</h4>
+								<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							</label>
+							<div class="accordion__body">
+								<p class="accordion__text">
+									<span>Домашнее образование</span> в&nbsp;&laquo;Школе
+									Будущего Онлайн&raquo; дает много свободы ученику
+									и&nbsp;возможность развиваться как индивидуальность. Такой
+									формат обучения идеально подходит для детей, которые хотят
+									эффективно использовать свое время
+									и&nbsp;с&nbsp;максимальной пользой для достижения
+									поставленных целей.
+								</p>
+								<p class="accordion__text">
+									Наша <span>домашняя интернет школа</span> имеет лицензию
+									образовательного учреждения, предоставляет программу
+									обучения, которая соответствует государственной. При этом
+									мы&nbsp;используем уникальные методики, игровой формат
+									и&nbsp;квизы для максимального вовлечения учеников
+									в&nbsp;учебный процесс.
+								</p>
+								<p class="accordion__text">
+									Современное <span>образование онлайн</span> позволяет
+									ученику всесторонне развиваться и&nbsp;совмещать учебу
+									с&nbsp;увлечениями, спортом и&nbsp;творчеством без
+									перенапряжения с&nbsp;оптимальным распределением времени.
+									Такой формат дает положительные результаты в&nbsp;обучении
+									ребенка. Есть возможность развития индивидуальных
+									особенностей, талантов и&nbsp;склонностей к&nbsp;одной или
+									нескольким наукам, которые могут в&nbsp;будущем стать
+									основой профессии.
+								</p>
+								<div class="accordion__text-list-wrp">
+									<p class="accordion__text">
+										Домашняя школа для ребенка&nbsp;&mdash; это возможность:
+									</p>
+									<ul class="accordion__text-list">
+										<li class="accordion__text-item">
+											учиться в&nbsp;комфортном режиме;
+										</li>
+										<li class="accordion__text-item">
+											совмещать учебу с&nbsp;личным развитием;
+										</li>
+										<li class="accordion__text-item">
+											получить обратную связь от&nbsp;учителей
+											и&nbsp;индивидуальный подход.
+										</li>
+									</ul>
+								</div>
+								<p class="accordion__text">
+									Согласно действующему законодательству
+									<span>семейная форма обучения</span> доступна
+									по&nbsp;желанию любому ребенку. Для этого достаточно подать
+									заявление в&nbsp;обычную школу и&nbsp;перейти
+									на&nbsp;домашний формат обучения. Чтобы при семейном формате
+									обучения ребенок не&nbsp;сбился с&nbsp;графика, а&nbsp;также
+									своевременно проходил базовые темы государственной
+									образовательной программы прекрасным помощником станет
+									онлайн-школа.
+								</p>
+								<p class="accordion__text">
+									Наша <span>российская онлайн школа</span> поможет сделать
+									семейное обучение эффективным за&nbsp;счет дополнительных
+									учебных материалов, кураторства и&nbsp;помощи учителей.
+									Чтобы узнать, подходит&nbsp;ли такой формат обучения, всегда
+									можно пройти недельный бесплатный курс.
+								</p>
+							</div>
+						</li>
+						<li class="accordion__item">
+							<input class="accordion__input" id="item02" type="checkbox" />
+							<label class="accordion__button" for="item02">
+								<h4>
+									Как поступить в&nbsp;&laquo;Школу Будущего Онлайн&raquo;
+								</h4>
+								<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							</label>
+							<div class="accordion__body">
+								<p class="accordion__text">
+									<span>Домашнее образование</span> в&nbsp;&laquo;Школе
+									Будущего Онлайн&raquo; дает много свободы ученику
+									и&nbsp;возможность развиваться как индивидуальность. Такой
+									формат обучения идеально подходит для детей, которые хотят
+									эффективно использовать свое время
+									и&nbsp;с&nbsp;максимальной пользой для достижения
+									поставленных целей.
+								</p>
+								<p class="accordion__text">
+									Наша <span>домашняя интернет школа</span> имеет лицензию
+									образовательного учреждения, предоставляет программу
+									обучения, которая соответствует государственной. При этом
+									мы&nbsp;используем уникальные методики, игровой формат
+									и&nbsp;квизы для максимального вовлечения учеников
+									в&nbsp;учебный процесс.
+								</p>
+							</div>
+						</li>
+						<li class="accordion__item">
+							<input class="accordion__input" id="item03" type="checkbox" />
+							<label class="accordion__button" for="item03">
+								<h4>Как перевести ребенка на&nbsp;семейное обучение</h4>
+								<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							</label>
+							<div class="accordion__body">
+								<p class="accordion__text">
+									<span>Домашнее образование</span> в&nbsp;&laquo;Школе
+									Будущего Онлайн&raquo; дает много свободы ученику
+									и&nbsp;возможность развиваться как индивидуальность. Такой
+									формат обучения идеально подходит для детей, которые хотят
+									эффективно использовать свое время
+									и&nbsp;с&nbsp;максимальной пользой для достижения
+									поставленных целей.
+								</p>
+								<p class="accordion__text">
+									Наша <span>российская онлайн школа</span> поможет сделать
+									семейное обучение эффективным за&nbsp;счет дополнительных
+									учебных материалов, кураторства и&nbsp;помощи учителей.
+									Чтобы узнать, подходит&nbsp;ли такой формат обучения, всегда
+									можно пройти недельный бесплатный курс.
+								</p>
+							</div>
+						</li>
+						<li class="accordion__item">
+							<input class="accordion__input" id="item04" type="checkbox" />
+							<label class="accordion__button" for="item04">
+								<h4>
+									Что входит в&nbsp;цену на&nbsp;дистанционное школьное
+									образование
+								</h4>
+								<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							</label>
+							<div class="accordion__body">
+								<p class="accordion__text">
+									Современное <span>образование онлайн</span> позволяет
+									ученику всесторонне развиваться и&nbsp;совмещать учебу
+									с&nbsp;увлечениями, спортом и&nbsp;творчеством без
+									перенапряжения с&nbsp;оптимальным распределением времени.
+									Такой формат дает положительные результаты в&nbsp;обучении
+									ребенка. Есть возможность развития индивидуальных
+									особенностей, талантов и&nbsp;склонностей к&nbsp;одной или
+									нескольким наукам, которые могут в&nbsp;будущем стать
+									основой профессии.
+								</p>
+								<div class="accordion__text-list-wrp">
+									<p class="accordion__text">
+										Домашняя школа для ребенка&nbsp;&mdash; это возможность:
+									</p>
+									<ul class="accordion__text-list">
+										<li class="accordion__text-item">
+											учиться в&nbsp;комфортном режиме;
+										</li>
+										<li class="accordion__text-item">
+											совмещать учебу с&nbsp;личным развитием;
+										</li>
+										<li class="accordion__text-item">
+											получить обратную связь от&nbsp;учителей
+											и&nbsp;индивидуальный подход.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="accordion__item">
+							<input class="accordion__input" id="item05" type="checkbox" />
+							<label class="accordion__button" for="item05">
+								<h4>Контроль успеваемости в&nbsp;онлайн школе</h4>
+								<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							</label>
+							<div class="accordion__body">
+								<p class="accordion__text">
+									Наша <span>российская онлайн школа</span> поможет сделать
+									семейное обучение эффективным за&nbsp;счет дополнительных
+									учебных материалов, кураторства и&nbsp;помощи учителей.
+									Чтобы узнать, подходит&nbsp;ли такой формат обучения, всегда
+									можно пройти недельный бесплатный курс.
+								</p>
+							</div>
+						</li>
+						<li class="accordion__item">
+							<input class="accordion__input" id="item06" type="checkbox" />
+							<label class="accordion__button" for="item06">
+								<h4>Преимущества обучения в&nbsp;онлайн-школе</h4>
+								<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							</label>
+							<div class="accordion__body">
+								<p class="accordion__text">
+									<span>Домашнее образование</span> в&nbsp;&laquo;Школе
+									Будущего Онлайн&raquo; дает много свободы ученику
+									и&nbsp;возможность развиваться как индивидуальность. Такой
+									формат обучения идеально подходит для детей, которые хотят
+									эффективно использовать свое время
+									и&nbsp;с&nbsp;максимальной пользой для достижения
+									поставленных целей.
+								</p>
+								<p class="accordion__text">
+									Наша <span>домашняя интернет школа</span> имеет лицензию
+									образовательного учреждения, предоставляет программу
+									обучения, которая соответствует государственной. При этом
+									мы&nbsp;используем уникальные методики, игровой формат
+									и&nbsp;квизы для максимального вовлечения учеников
+									в&nbsp;учебный процесс.
+								</p>
+							</div>
+						</li>
+						<li class="accordion__item">
+							<input class="accordion__input" id="item07" type="checkbox" />
+							<label class="accordion__button" for="item07">
+								<h4>Нужна&nbsp;ли онлайн школа на&nbsp;домашнем обучении?</h4>
+								<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							</label>
+							<div class="accordion__body">
+								<p class="accordion__text">
+									<span>Домашнее образование</span> в&nbsp;&laquo;Школе
+									Будущего Онлайн&raquo; дает много свободы ученику
+									и&nbsp;возможность развиваться как индивидуальность. Такой
+									формат обучения идеально подходит для детей, которые хотят
+									эффективно использовать свое время
+									и&nbsp;с&nbsp;максимальной пользой для достижения
+									поставленных целей.
+								</p>
+							</div>
+						</li>
+						<li class="accordion__item">
+							<input class="accordion__input" id="item08" type="checkbox" />
+							<label class="accordion__button" for="item08">
+								<h4>Разница между семейным и&nbsp;заочным обучением</h4>
+								<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							</label>
+							<div class="accordion__body">
+								<div class="accordion__text-list-wrp">
+									<p class="accordion__text">
+										Домашняя школа для ребенка&nbsp;&mdash; это возможность:
+									</p>
+									<ul class="accordion__text-list">
+										<li class="accordion__text-item">
+											учиться в&nbsp;комфортном режиме;
+										</li>
+										<li class="accordion__text-item">
+											совмещать учебу с&nbsp;личным развитием;
+										</li>
+										<li class="accordion__text-item">
+											получить обратную связь от&nbsp;учителей
+											и&nbsp;индивидуальный подход.
+										</li>
+									</ul>
+								</div>
+								<p class="accordion__text">
+									Наша <span>российская онлайн школа</span> поможет сделать
+									семейное обучение эффективным за&nbsp;счет дополнительных
+									учебных материалов, кураторства и&nbsp;помощи учителей.
+									Чтобы узнать, подходит&nbsp;ли такой формат обучения, всегда
+									можно пройти недельный бесплатный курс.
+								</p>
+							</div>
+						</li>
+						<li class="accordion__item">
+							<input class="accordion__input" id="item09" type="checkbox" />
+							<label class="accordion__button" for="item09">
+								<h4>
+									Школа отказывается переводить ребёнка на&nbsp;семейное
+									образование?
+								</h4>
+								<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							</label>
+							<div class="accordion__body">
+								<p class="accordion__text">
+									Согласно действующему законодательству
+									<span>семейная форма обучения</span> доступна
+									по&nbsp;желанию любому ребенку. Для этого достаточно подать
+									заявление в&nbsp;обычную школу и&nbsp;перейти
+									на&nbsp;домашний формат обучения. Чтобы при семейном формате
+									обучения ребенок не&nbsp;сбился с&nbsp;графика, а&nbsp;также
+									своевременно проходил базовые темы государственной
+									образовательной программы прекрасным помощником станет
+									онлайн-школа.
+								</p>
+								<p class="accordion__text">
+									Наша <span>российская онлайн школа</span> поможет сделать
+									семейное обучение эффективным за&nbsp;счет дополнительных
+									учебных материалов, кураторства и&nbsp;помощи учителей.
+									Чтобы узнать, подходит&nbsp;ли такой формат обучения, всегда
+									можно пройти недельный бесплатный курс.
+								</p>
+							</div>
+						</li>
+						<li class="accordion__item">
+							<input class="accordion__input" id="item010" type="checkbox" />
+							<label class="accordion__button" for="item010">
+								<h4>Почему нужно поступить в&nbsp;онлайн школу?</h4>
+								<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							</label>
+							<div class="accordion__body">
+								<p class="accordion__text">
+									Наша <span>российская онлайн школа</span> поможет сделать
+									семейное обучение эффективным за&nbsp;счет дополнительных
+									учебных материалов, кураторства и&nbsp;помощи учителей.
+									Чтобы узнать, подходит&nbsp;ли такой формат обучения, всегда
+									можно пройти недельный бесплатный курс.
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
 
-      <section class="application">
-        <div class="center">
-          <div class="application__wrapper">
-            <div class="application__offer">
-              <h2 class="application__title">
-                Все еще <span>сомневаетесь?</span>
-              </h2>
-              <p class="application__text">
-                Всегда страшно переходить на&nbsp;что-то новое
-                и&nbsp;неизведанное, потому мы&nbsp;предоставляем нашим клиентам
-                возможность попробовать обучаться первую неделю абсолютно
-                бесплатно.
-              </p>
-            </div>
-            <div class="application__form-wrapper">
-              <div class="application__card-form">
-                <form
-                  class="application-form"
-                  action="#"
-                  method="get"
-                  id="application-form"
-                >
-                  <div class="application__input-wrapper">
-                    <input
-                      class="application__input"
-                      type="text"
-                      name="class"
-                      placeholder="Класс"
-                    />
-                  </div>
-                  <div class="application__input-wrapper">
-                    <input
-                      class="application__input"
-                      type="text"
-                      name="parent-name"
-                      placeholder="Имя родителя"
-                    />
-                  </div>
-                  <div class="application__input-wrapper">
-                    <input
-                      class="application__input"
-                      type="tel"
-                      name="phone"
-                      placeholder="Телефон родителя"
-                    />
-                  </div>
+		<section class="application">
+			<div class="center">
+				<div class="application__wrapper">
+					<div class="application__offer">
+						<h2 class="application__title">
+							Все еще <span>сомневаетесь?</span>
+						</h2>
+						<p class="application__text">
+							Всегда страшно переходить на&nbsp;что-то новое
+							и&nbsp;неизведанное, потому мы&nbsp;предоставляем нашим клиентам
+							возможность попробовать обучаться первую неделю абсолютно
+							бесплатно.
+						</p>
+					</div>
+					<div class="application__form-wrapper">
+						<div class="application__card-form">
+							<form class="application-form" action="#" method="get" id="application-form">
+								<div class="application__input-wrapper">
+									<input class="application__input" type="text" name="class" placeholder="Класс" />
+								</div>
+								<div class="application__input-wrapper">
+									<input class="application__input" type="text" name="parent-name" placeholder="Имя родителя" />
+								</div>
+								<div class="application__input-wrapper">
+									<input class="application__input" type="tel" name="phone" placeholder="Телефон родителя" />
+								</div>
 
-                  <div class="application__button-wrapper">
-                    <button class="application__button">Оставить заявку</button>
-                  </div>
-                  <p class="application__agreement-text">
-                    Нажимая кнопку, вы&nbsp;даете согласие&nbsp;на
-                    <a href="#">обработку своих персональных данных</a>
-                  </p>
-                </form>
-              </div>
-            </div>
-            <div class="application__image-wrapper">
-              <img
-                class="application__image"
-                src="images/application/application-image.png"
-                alt="Изображение девочки за партой"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+								<div class="application__button-wrapper">
+									<button class="application__button">Оставить заявку</button>
+								</div>
+								<p class="application__agreement-text">
+									Нажимая кнопку, вы&nbsp;даете согласие&nbsp;на
+									<a href="#">обработку своих персональных данных</a>
+								</p>
+							</form>
+						</div>
+					</div>
+					<div class="application__image-wrapper">
+						<img class="application__image" src="images/application/application-image.png"
+							alt="Изображение девочки за партой" />
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
 
-    <footer class="footer">
-      <div class="center">
-        <div class="footer__position-wrapper">
-          <div class="logo footer__logo">
-            <a class="logo__link footer__logo-link" href="index.html">
-              <img
-                class="logo__image footer__logo-image"
-                src="images/header/logo.svg"
-                alt="Школьный логотип"
-              />
-            </a>
-          </div>
-          <div class="footer-block footer__block-classes">
-            <h2 class="footer-title footer__title-classes">Классы</h2>
-            <ul class="footer-list footer__list-classes">
-              <li class="footer-item footer__item-classes">
-                <a href="#" class="footer-link footer__link-classes"
-                  >1-4 класс</a
-                >
-              </li>
-              <li class="footer-item footer__item-classes">
-                <a href="#" class="footer-link footer__link-classes"
-                  >5-8 класс</a
-                >
-              </li>
-              <li class="footer-item footer__item-classes">
-                <a href="#" class="footer-link footer__link-classes"
-                  >9-11 класс</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="footer-block footer__block-documents">
-            <h2 class="footer-title footer__title-documents">Документы</h2>
-            <a href="#" class="footer-link footer__link-documents">Лицензия</a>
-          </div>
-          <div class="footer-block footer__block-social">
-            <h2 class="footer-title footer__title-social">Соцсети</h2>
-            <ul class="footer-list footer__list-social">
-              <li class="footer-item footer__item-social">
-                <a
-                  class="footer-link footer__link-social footer__link-social--telegram"
-                  href="https://telegram.com"
-                  style="
+	<footer class="footer">
+		<div class="center">
+			<div class="footer__position-wrapper">
+				<div class="logo footer__logo">
+					<a class="logo__link footer__logo-link" href="index.html">
+						<img class="logo__image footer__logo-image" src="images/header/logo.svg" alt="Школьный логотип" />
+					</a>
+				</div>
+				<div class="footer-block footer__block-classes">
+					<h2 class="footer-title footer__title-classes">Классы</h2>
+					<ul class="footer-list footer__list-classes">
+						<li class="footer-item footer__item-classes">
+							<a href="#" class="footer-link footer__link-classes">1-4 класс</a>
+						</li>
+						<li class="footer-item footer__item-classes">
+							<a href="#" class="footer-link footer__link-classes">5-8 класс</a>
+						</li>
+						<li class="footer-item footer__item-classes">
+							<a href="#" class="footer-link footer__link-classes">9-11 класс</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-block footer__block-documents">
+					<h2 class="footer-title footer__title-documents">Документы</h2>
+					<a href="#" class="footer-link footer__link-documents">Лицензия</a>
+				</div>
+				<div class="footer-block footer__block-social">
+					<h2 class="footer-title footer__title-social">Соцсети</h2>
+					<ul class="footer-list footer__list-social">
+						<li class="footer-item footer__item-social">
+							<a class="footer-link footer__link-social footer__link-social--telegram" href="https://telegram.com"
+								style="
                     background-image: url(./images/icon/telegramm-icon.svg);
-                  "
-                  target="_blank"
-                ></a>
-              </li>
-              <li class="footer-item footer__item-social">
-                <a
-                  class="footer-link footer__link-social footer__link-social--youtube"
-                  href="https://yotube.com"
-                  style="background-image: url(./images/icon/youtube.svg)"
-                  target="_blank"
-                ></a>
-              </li>
-              <li class="footer-item footer__item-social">
-                <a
-                  class="footer-link footer__link-social footer__link-social--vk"
-                  href="https://vk.com"
-                  style="background-image: url(./images/icon/vk-icon.svg)"
-                  target="_blank"
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-block footer__block-contacts">
-            <address class="footer__address">
-              <a class="footer-link footer__link-contacts" href="#"
-                >г. Дмитров ул&nbsp;Московская,&nbsp;дом&nbsp;23</a
-              >
-            </address>
-            <address class="footer__tel">
-              <a
-                class="footer-link footer__link-contacts"
-                href="tel:88003003791"
-                >8 (800) 300-37-91</a
-              >
-            </address>
-          </div>
-        </div>
-        <ul class="footer-block footer__block-info">
-          <li class="footer-item footer__item-info">
-            Соглашение о конфиденциальности
-          </li>
-          <li class="footer-item footer__item-info">
-            ООО «Школа Будущего Онлайн»
-          </li>
-          <li class="footer-item footer__item-info">
-            Российская Федерация, 141804, Московская обл.,<br />
-            г. Дмитров, ул&nbsp;Московская, дом&nbsp;23
-          </li>
-          <li class="footer-item footer__item-info">Возрастной рейтинг 6+</li>
-        </ul>
-      </div>
-    </footer>
+                  " target="_blank"></a>
+						</li>
+						<li class="footer-item footer__item-social">
+							<a class="footer-link footer__link-social footer__link-social--youtube" href="https://yotube.com"
+								style="background-image: url(./images/icon/youtube.svg)" target="_blank"></a>
+						</li>
+						<li class="footer-item footer__item-social">
+							<a class="footer-link footer__link-social footer__link-social--vk" href="https://vk.com"
+								style="background-image: url(./images/icon/vk-icon.svg)" target="_blank"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-block footer__block-contacts">
+					<address class="footer__address">
+						<a class="footer-link footer__link-contacts" href="#">г. Дмитров ул&nbsp;Московская,&nbsp;дом&nbsp;23</a>
+					</address>
+					<address class="footer__tel">
+						<a class="footer-link footer__link-contacts" href="tel:88003003791">8 (800) 300-37-91</a>
+					</address>
+				</div>
+			</div>
+			<ul class="footer-block footer__block-info">
+				<li class="footer-item footer__item-info">
+					Соглашение о конфиденциальности
+				</li>
+				<li class="footer-item footer__item-info">
+					ООО «Школа Будущего Онлайн»
+				</li>
+				<li class="footer-item footer__item-info">
+					Российская Федерация, 141804, Московская обл.,<br />
+					г. Дмитров, ул&nbsp;Московская, дом&nbsp;23
+				</li>
+				<li class="footer-item footer__item-info">Возрастной рейтинг 6+</li>
+			</ul>
+		</div>
+	</footer>
 
-    <script type="module" src="js/main.js"></script>
-    <script type="module" src="js/reviews-slider.js"></script>
-  </body>
+	<script type="module" src="js/main.js"></script>
+	<script type="module" src="js/reviews-slider.js"></script>
+</body>
+
 </html>
