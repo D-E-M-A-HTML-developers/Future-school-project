@@ -2376,6 +2376,36 @@ body {
     margin: 0 0 4px 0;
   }
 }
+@media (min-width: 1000px) {
+  .accordion {
+    padding: 80px 0;
+  }
+  .accordion__item {
+    margin-bottom: 31px;
+  }
+  .accordion__button {
+    font-size: 28px;
+    padding: 32px 20px 35px 60px;
+    margin: 0 0 30px;
+  }
+  .accordion__input:checked ~ .accordion__button {
+    padding: 32px 20px 35px 30px;
+  }
+  .accordion__text {
+    font-size: 16px;
+    padding: 0 0 20px;
+  }
+  .accordion__text-list-wrp {
+    padding: 0 0 20px;
+  }
+  .accordion__body {
+    padding-bottom: 123px;
+    padding-right: 0;
+  }
+  .prelast {
+    padding: 22px 20px 27px 60px;
+  }
+}
 .application {
   padding: 0 0 50px;
 }
