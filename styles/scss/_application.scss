@@ -182,7 +182,7 @@
     padding: 0 0 80px;
     &__wrapper {
       max-width: 537px;
-      width:100%;
+      width: 100%;
       margin: 0 auto;
     }
     &__offer {
@@ -194,16 +194,60 @@
     }
     &__form-wrapper {
       position: relative;
-      &::before{
+      &::before {
         position: absolute;
-        content: '';
-        background: url(../../images/application/backround-form-image.svg) no-repeat center / cover;
+        content: "";
+        background: url(../../images/application/backround-form-image.svg)
+          no-repeat center / cover;
         width: 331.62px;
         height: 402px;
         left: -94px;
         top: -80px;
       }
-
+    }
+  }
+}
+@media (min-width: 1000px) {
+  .application {
+    .center {
+      padding: 0 20px 0 90px;
+    }
+    &__offer {
+      grid-area: offer;
+      margin: 0 0 22px;
+      max-width: 450px;
+    }
+    &__title {
+      font-size: 40px;
+      text-align: start;
+      padding: 0 0 0 5px;
+    }
+    &__text {
+      text-align: start;
+      padding: 0 0 0 5px;
+    }
+    &__form-wrapper {
+      grid-area: form;
+      margin: 75px auto 25px;
+      &::before {
+        left: -75px;
+        top: -75px;
+      }
+    }
+    &__image-wrapper {
+      grid-area: image;
+      max-width: 485px;
+      margin: 0;
+    }
+    &__wrapper {
+      max-width: 100%;
+      min-width: 890px;
+      display: grid;
+      grid-template: auto auto / minmax(349px, 1fr) minmax(485px, 645px);
+      grid-template-areas:
+        "form offer"
+        "form image";
+      column-gap: 56px;
     }
   }
 }
