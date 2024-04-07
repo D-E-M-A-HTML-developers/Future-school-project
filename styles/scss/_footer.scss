@@ -300,3 +300,43 @@
     }
   }
 }
+@media (min-width: 1000px) {
+  .footer {
+    padding: 40px 0 14px;
+    .center {
+      padding: 0 50px;
+    }
+    &__position-wrapper {
+      column-gap: 40px;
+      grid-template-columns:
+        minmax(170px, auto)
+        minmax(100px, auto)
+        minmax(118px, auto)
+        minmax(120px, auto)
+        minmax(214px, auto);
+      grid-template-areas: "logo classes documents social contacts";
+    }
+    &__logo {
+      margin: -19px 0 0 0;
+    }
+    &__block-classes {
+      margin: 0 0 5px;
+    }
+    &__block-classes,
+    &__block-social {
+      padding: 0 0 0 9px;
+    }
+    &__block-contacts {
+      flex-direction: column;
+      gap: 6px;
+      padding: 0 0 0 39px;
+      margin: -5px 0 0;
+    }
+    &__tel {
+      padding: 0 0 0 50px;
+    }
+    &__item-info {
+      text-align: start;
+    }
+  }
+}

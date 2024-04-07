@@ -155,8 +155,9 @@
       &::before {
         z-index: -1;
         position: absolute;
-        content: '';
-        background: url(../../images/compare-schools/img-before.svg) no-repeat center / cover;
+        content: "";
+        background: url(../../images/compare-schools/img-before.svg) no-repeat
+          center / cover;
         width: 228.51px;
         height: 210px;
         top: 48px;
@@ -165,18 +166,19 @@
       &::after {
         z-index: -1;
         position: absolute;
-        content: '';
-        background: url(../../images/compare-schools/img-after.svg) no-repeat center / cover;
+        content: "";
+        background: url(../../images/compare-schools/img-after.svg) no-repeat
+          center / cover;
         width: 228.51px;
         height: 210px;
         bottom: 20px;
-        right: -184px;
+        right: -175px;
       }
     }
   }
   .about-schools {
     &__title {
-      margin:0 0 26px;
+      margin: 0 0 26px;
     }
     &--online .about-schools__title {
       margin: 0 0 22px;
