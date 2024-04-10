@@ -126,3 +126,33 @@
     }
   }
 }
+@media (min-width: 1920px) {
+  .online-learning {
+    .center {
+      padding: 0;
+    }
+    padding: 58px 0 80px;
+    &__title {
+      margin: 0 0 60px;
+    }
+    &__list {
+      min-width: 1045px;
+      min-height: 144px;
+      column-gap: 75px;
+      align-items: start;
+      &-wrapper {
+        margin: 0 0 92px;
+      }
+    }
+    &__item {
+      max-width: 150px;
+      padding: 103px 0 0;
+      font-size: 15px;
+      &::before {
+        left: 38px;
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+}
