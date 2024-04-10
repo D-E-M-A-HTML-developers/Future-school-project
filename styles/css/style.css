@@ -56,6 +56,14 @@ body {
     width: 100%;
   }
 }
+@media (min-width: 1920px) {
+  .center {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1140px;
+    width: 100%;
+  }
+}
 .promotion {
   min-width: 280px;
   min-height: 445px;
@@ -586,7 +594,7 @@ body {
   }
   .header__banner-image {
     margin: 0 auto 50px;
-    max-width: 642px;
+    max-width: 673px;
   }
   .header__banner-text-wrp {
     max-width: 592px;
@@ -753,7 +761,7 @@ body {
     max-width: 445px;
   }
   .header__banner-txt_bold {
-    margin: 0 0 40px;
+    margin: 0 0 39px;
     letter-spacing: -0.2px;
   }
   .header__banner .sign-up-lesson {
@@ -766,6 +774,64 @@ body {
     left: 273px;
     top: -25px;
     transform: rotate(-2deg);
+  }
+}
+@media (min-width: 1920px) {
+  .header {
+    padding: 8px 0 60px;
+  }
+  .header__wrapper {
+    height: 84px;
+    margin: 0 0 20px;
+  }
+  .header__wrapper::after {
+    bottom: -5px;
+  }
+  .header__contacts {
+    max-width: 437px;
+    align-items: center;
+  }
+  .header__button-sign-up {
+    padding: 23px 31px 21px;
+  }
+  .header__nav {
+    row-gap: 50px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    margin: 0 0 12px;
+  }
+  .header__banner-image-wrp {
+    max-width: 673px;
+    width: 100%;
+    min-height: 400px;
+    bottom: 10px;
+  }
+  .header__banner-title {
+    font-size: 84px;
+    margin: 0 0 23px;
+  }
+  .header__banner-txt {
+    min-width: 486px;
+    font-size: 17px;
+  }
+  .header__banner .sign-up-lesson__btn {
+    padding: 27px 57px;
+  }
+  .header__banner .sign-up-lesson .contact-us {
+    padding: 0 0 0 20px;
+  }
+  .header__banner .sign-up-lesson .contact-us__txt {
+    font-size: 17px;
+  }
+  .logo, .logo__link, .logo__image {
+    max-width: 236px;
+    height: 67px;
+  }
+  .menu-item-tel {
+    padding: 10px 0 0;
+  }
+  .menu-item-tel .menu-link {
+    font-size: 20px;
   }
 }
 .online-learning {
