@@ -248,7 +248,6 @@ body {
     grid-template-areas: "image description" "image sign-up";
   }
   .promotion__image-wrapper {
-    margin: -41px 0 0;
     width: 168px;
     height: 253px;
   }
@@ -301,6 +300,42 @@ body {
   }
   .promotion .contact-us__txt {
     font-size: 16px;
+  }
+}
+@media (min-width: 1920px) {
+  .promotion {
+    max-width: 1140px;
+    min-height: 160px;
+    padding: 15px 47px 0 55px;
+  }
+  .promotion__wrapper {
+    -moz-column-gap: 32px;
+         column-gap: 32px;
+  }
+  .promotion__description-wrapper {
+    max-width: 524px;
+  }
+  .promotion__title {
+    font-size: 32px;
+    margin: 0 0 5px;
+  }
+  .promotion__text {
+    font-size: 16px;
+  }
+  .promotion__image-wrapper {
+    width: 139px;
+    height: 209.43px;
+    top: 0;
+    margin: -80px 0 0 0;
+  }
+  .promotion .sign-up-lesson {
+    max-width: 273px;
+    height: 117px;
+    align-items: center;
+    margin: 5px 0 0;
+  }
+  .promotion .sign-up-lesson__btn {
+    padding: 27px 56px;
   }
 }
 .header {
@@ -817,6 +852,9 @@ body {
   .header__banner .sign-up-lesson__btn {
     padding: 27px 57px;
   }
+  .header__banner .sign-up-lesson__btn-wrp::after {
+    left: 303px;
+  }
   .header__banner .sign-up-lesson .contact-us {
     padding: 0 0 0 20px;
   }
@@ -962,6 +1000,37 @@ body {
   }
   .online-learning__item::before {
     left: 40px;
+  }
+}
+@media (min-width: 1920px) {
+  .online-learning {
+    padding: 58px 0 80px;
+  }
+  .online-learning .center {
+    padding: 0;
+  }
+  .online-learning__title {
+    margin: 0 0 60px;
+  }
+  .online-learning__list {
+    min-width: 1045px;
+    min-height: 144px;
+    -moz-column-gap: 75px;
+         column-gap: 75px;
+    align-items: start;
+  }
+  .online-learning__list-wrapper {
+    margin: 0 0 92px;
+  }
+  .online-learning__item {
+    max-width: 150px;
+    padding: 103px 0 0;
+    font-size: 15px;
+  }
+  .online-learning__item::before {
+    left: 38px;
+    width: 70px;
+    height: 70px;
   }
 }
 .online-lessons {
