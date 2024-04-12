@@ -60,8 +60,10 @@
       height: 156px;
       margin: 0 0 30px 0;
     }
-    &__item &__item-text {
-      line-height: 150%;
+    &__item {
+      &-text {
+        line-height: 150%;
+      }
     }
   }
 }
@@ -109,10 +111,12 @@
         line-height: 103%;
         margin: 0 0 10px 0;
       }
-      & &-text {
-        font-size: 14px;
-        line-height: 157%;
-        margin: 0;
+      & {
+        &-text {
+          font-size: 14px;
+          line-height: 157%;
+          margin: 0;
+        }
       }
     }
   }
@@ -170,6 +174,72 @@
       width: 225px;
       height: 185px;
       margin: 0;
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .online-lessons {
+    &__title {
+      margin: 0 0 60px;
+    }
+    &__info {
+      background-size: 747px 133px;
+    }
+    &__list {
+      max-width: 1131px;
+    }
+    &__item {
+      max-width: 310px;
+      gap: 49px;
+      &-description {
+        padding: 0;
+        gap: 10px;
+      }
+      &-name {
+        font-size: 20px;
+        line-height: 103%;
+        max-width: 300px;
+      }
+      &-text {
+        font-size: 15px;
+      }
+    }
+    &__item:nth-child(2n) {
+      gap: 90px;
+      .online-lessons__item-description {
+        margin: 0;
+        padding: 55px 0 0 0;
+      }
+    }
+    &__item:nth-child(1) {
+      > .online-lessons__img {
+        width: 251px;
+        height: 227px;
+      }
+    }
+    &__item:nth-child(2) {
+      > .online-lessons__img {
+        width: 267px;
+        height: 217px;
+      }
+      .online-lessons__item-name {
+        white-space: nowrap;
+      }
+      .online-lessons__item-text {
+        min-width: 310px;
+      }
+    }
+    &__item:nth-child(3) {
+      > .online-lessons__img {
+        width: 247px;
+        height: 217px;
+      }
+    }
+    &__item:nth-child(4) {
+      > .online-lessons__img {
+        width: 248px;
+        height: 217px;
+      }
     }
   }
 }
