@@ -189,3 +189,52 @@
     top: -23px;
   }
 }
+@media (min-width: 1920px) {
+  .lesson-advantages {
+    padding: 60px 0 54px;
+    &__title {
+      margin: 0 0 69px;
+      padding: 0;
+    }
+    &__cards-wrapper {
+      margin: 0 0 15px;
+    }
+    &__image {
+      min-width: 594px;
+      height: 387.8px;
+      left: 546px;
+      bottom: -47px;
+    }
+    &__card {
+      padding: 13px 24px 8px 26px;
+    }
+    &__card:first-child {
+      margin: 0 0 8px;
+    }
+    &__card:nth-child(3) {
+      margin: 0 0 26px;
+    }
+    &__card:last-child {
+      max-width: 465px;
+    }
+    &__name {
+      margin: 0 0 6px;
+    }
+    &__text {
+      font-size: 15px;
+    }
+    .sign-up-lesson {
+      min-height: 117px;
+      &__btn {
+        padding: 27px 54.4px;
+        &::after {
+          top: -7px;
+          right: -90px;
+        }
+      }
+      .contact-us {
+        padding: 0 0 0 22px;
+      }
+    }
+  }
+}
