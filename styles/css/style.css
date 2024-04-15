@@ -1896,6 +1896,57 @@ body {
     margin: 20px 0 0;
   }
 }
+@media (min-width: 1920px) {
+  .advantages-school__title {
+    max-width: 615px;
+    margin: 0 auto 60px;
+  }
+  .advantages-school__list {
+    row-gap: 71px;
+    margin: 0 0 74px;
+  }
+  .advantages-school__item {
+    max-width: 350px;
+  }
+  .advantages-school__item:nth-child(4) {
+    max-width: 315px;
+  }
+  .advantages-school__item:nth-child(5) .advantages-school__subtitle {
+    max-width: 275px;
+  }
+  .advantages-school__image {
+    width: 160px;
+    height: 160px;
+    margin: 0 0 43px;
+  }
+  .advantages-school__subtitle {
+    font-size: 20px;
+    margin: 0 0 13px;
+  }
+  .advantages-school__txt {
+    font-size: 15px;
+    width: 100%;
+    max-width: 311px;
+  }
+  .advantages-school .promotion {
+    min-height: 160px;
+    padding: 0 48px;
+  }
+  .advantages-school .promotion__image-wrapper {
+    top: 21px;
+    width: 130px;
+    height: 199px;
+  }
+  .advantages-school .promotion__description-wrapper {
+    max-width: 570px;
+  }
+  .advantages-school .promotion__title {
+    margin: 0 0 -15px;
+  }
+  .advantages-school .promotion .sign-up-lesson {
+    margin: 24px 0 0;
+  }
+}
 .education-price {
   padding: 30px 0 40px;
   background: #eff2fd;
