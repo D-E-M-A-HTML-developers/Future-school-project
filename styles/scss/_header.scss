@@ -111,6 +111,8 @@
   ~ .mobile-menu__wrapper
   .mobile-menu__box {
   visibility: visible;
+  opacity: 1;
+  // transition: all 0.8s linear;
 }
 #menu-switch[type="checkbox"]:checked ~ .mobile-menu__wrapper {
   z-index: 4;
@@ -165,6 +167,8 @@
     border-top: 1px solid $border-color;
     padding: 120px 20px 75px;
     background-color: $background-light-blue;
+    opacity: 0;
+    transition: all 0.8s ease-out 0.3s;
   }
 }
 

@@ -92,11 +92,13 @@
     transform: rotate(-90deg);
     background-color: transparent;
     border: none;
+    cursor: pointer;
   }
   &__btn-next {
     transform: rotate(90deg);
     background-color: transparent;
     border: none;
+    cursor: pointer;
   }
   &__btn-img {
     width: 50px;
