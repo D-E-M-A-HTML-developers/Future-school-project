@@ -12,6 +12,12 @@
     &:checked ~ .accordion__body {
       display: block;
       margin: 0 0 15px;
+
+      // Плавное появление
+      opacity: 1;
+      @starting-style {
+        opacity: 0;
+      }
     }
     &:checked ~ .accordion__button {
       margin: 0;
@@ -20,7 +26,7 @@
       border-left: 15px solid $text-color-blue;
     }
     &:checked + .accordion__button > span {
-      transform: rotate(45deg);
+      transform: rotate(405deg); // Красивее анимация
     }
   }
 
@@ -37,6 +43,8 @@
     font-size: 18px;
     line-height: 100%;
     cursor: pointer;
+    // Убирает выделение при двойном клике на лайбл
+    user-select: none;
 
     span {
       display: block;
@@ -44,6 +52,7 @@
       height: 20px;
       border-radius: 100%;
       background: url(../../images/accordion/plus.png) no-repeat center / cover;
+      transition: all 0.8s ease-in-out; //плавность
     }
   }
 
@@ -53,7 +62,10 @@
     border-radius: 0 0 25px 25px;
     background-color: #eff2fd;
     display: none;
-    transition: all 0.8s ease-in-out;
+    // Плавное появление
+    transition: all 0.3s ease-in;
+    opacity: 0;
+    transition-behavior: allow-discrete; // Свойство не работает в firefox https://developer.mozilla.org/en-US/docs/Web/CSS/transition-behavior
   }
 
   &__text {
@@ -182,7 +194,8 @@
     }
     &__button {
       font-size: 28px;
-      padding: 32px 20px 35px 60px;
+      // padding: 32px 20px 35px 60px; Текст скачит, да знаю в макете такой отступ)
+      padding: 32px 20px 35px 55px;
       margin: 0 0 30px;
       &_more-content {
         padding: 22px 20px 27px 60px;

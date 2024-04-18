@@ -443,6 +443,7 @@ body {
 
 #menu-switch[type=checkbox]:checked ~ .mobile-menu__wrapper .mobile-menu__box {
   visibility: visible;
+  opacity: 1;
 }
 
 #menu-switch[type=checkbox]:checked ~ .mobile-menu__wrapper {
@@ -498,6 +499,8 @@ body {
   border-top: 1px solid #c5cff399;
   padding: 120px 20px 75px;
   background-color: #eff2fd;
+  opacity: 0;
+  transition: all 0.8s ease-out 0.3s;
 }
 
 #menu-switch[type=checkbox]:checked ~ .mobile-menu__burger > .mobile-menu__burger-element, #menu-switch[type=checkbox]:checked ~ .mobile-menu__burger > .mobile-menu__burger-element::before, #menu-switch[type=checkbox]:checked ~ .mobile-menu__burger > .mobile-menu__burger-element::after {
@@ -2374,11 +2377,13 @@ body {
   transform: rotate(-90deg);
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 .slider__btn-next {
   transform: rotate(90deg);
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 .slider__btn-img {
   width: 50px;
@@ -2578,6 +2583,12 @@ body {
 .accordion__input:checked ~ .accordion__body {
   display: block;
   margin: 0 0 15px;
+  opacity: 1;
+}
+@starting-style {
+  .accordion__input:checked ~ .accordion__body {
+    opacity: 0;
+  }
 }
 .accordion__input:checked ~ .accordion__button {
   margin: 0;
@@ -2586,7 +2597,7 @@ body {
   border-left: 15px solid #243976;
 }
 .accordion__input:checked + .accordion__button > span {
-  transform: rotate(45deg);
+  transform: rotate(405deg);
 }
 .accordion__button {
   min-height: 76px;
@@ -2603,6 +2614,10 @@ body {
   font-size: 18px;
   line-height: 100%;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .accordion__button span {
   display: block;
@@ -2610,6 +2625,7 @@ body {
   height: 20px;
   border-radius: 100%;
   background: url(../../images/accordion/plus.png) no-repeat center/cover;
+  transition: all 0.8s ease-in-out;
 }
 .accordion__body {
   padding: 0 13px 37px;
@@ -2617,7 +2633,9 @@ body {
   border-radius: 0 0 25px 25px;
   background-color: #eff2fd;
   display: none;
-  transition: all 0.8s ease-in-out;
+  transition: all 0.3s ease-in;
+  opacity: 0;
+  transition-behavior: allow-discrete;
 }
 .accordion__text {
   color: #243976;
@@ -2729,7 +2747,7 @@ body {
   }
   .accordion__button {
     font-size: 28px;
-    padding: 32px 20px 35px 60px;
+    padding: 32px 20px 35px 55px;
     margin: 0 0 30px;
   }
   .accordion__button_more-content {
@@ -2836,6 +2854,12 @@ body {
   line-height: 16px;
   color: #9e9e9e;
 }
+.application__input:-ms-input-placeholder {
+  font-family: "Gotham400" sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  color: #9e9e9e;
+}
 .application__input::placeholder {
   font-family: "Gotham400" sans-serif;
   font-size: 13px;
@@ -2866,7 +2890,8 @@ body {
   text-align: center;
 }
 .application__agreement-text a {
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   color: #9e9e9e;
 }
 .application__image-wrapper {
