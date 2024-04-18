@@ -209,7 +209,6 @@
     &__list {
       flex-direction: row;
       flex-wrap: wrap;
-      // gap: 0;
       row-gap: 90px;
       column-gap: 68px;
       justify-content: center;
@@ -222,7 +221,6 @@
     &__list {
       flex-wrap: nowrap;
       column-gap: 30px;
-
     }
     &__card {
       max-width: 280px;
@@ -236,7 +234,6 @@
           right: -39px;
         }
       }
-  
     }
  
   }
@@ -250,6 +247,65 @@
     }
     &__list {
       margin: 0 0 22px;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .education-price {
+    padding: 60px 0 100px;
+    &__title {
+      margin: 0 0 138px;
+    }
+    &__list {
+      column-gap: 97px;
+    }
+    &__card {
+      padding: 51px 38px 26px 35px;
+      max-width: 293px;
+      &:nth-child(1) {
+        .price-card__image {
+          width: 131px;
+          height: 199px;
+        }
+      }
+      &:nth-child(2) {
+        .price-card__image {
+        width: 125px;
+        height: 271px;
+          right: -41px;
+        }
+      }
+      &:nth-child(3) {
+        .price-card__image {
+          width: 125px;
+          height: 349px;
+          right: -43px;
+        }
+      }
+    }
+  }
+  .price-card {
+    &__heading {
+      margin: 0 0 5px;
+    }
+    &__subtitle {
+      font-size: 17px;
+    }
+    &__list {
+      gap: 19px;
+      margin: 0 0 18px;
+    }
+    &__banner {
+      padding: 30px 35px;
+      right: 13px;
+      top: -80px;
+      > span {
+        font-size: 36px;
+        span:first-child {
+          margin-right: 3px;
+        }
+      }
     }
   }
 }
