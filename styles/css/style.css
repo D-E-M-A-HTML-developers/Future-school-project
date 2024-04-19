@@ -2334,6 +2334,30 @@ body {
     height: 334px;
   }
 }
+@media (min-width: 1920px) {
+  .education-document__wrp {
+    max-width: 1140px;
+    width: 100%;
+    gap: 112px;
+  }
+  .education-document__desc {
+    max-width: 488px;
+    width: 100%;
+    height: inherit;
+    padding: 61px 0 0;
+  }
+  .education-document__title {
+    font-size: 48px;
+    margin: 0 auto 17px 0;
+  }
+  .education-document__txt {
+    font-size: 20px;
+  }
+  .education-document__img {
+    width: 457px;
+    height: 402px;
+  }
+}
 .reviews__title {
   text-align: center;
 }
@@ -2619,6 +2643,22 @@ body {
   .slider__card {
     max-width: 617px;
     margin: 0 2.6vw;
+  }
+}
+@media (min-width: 1920px) {
+  .reviews {
+    background-position: 62% 46%;
+    background-size: 640px 549px;
+  }
+  .reviews__title {
+    margin: 0 0 199px;
+    letter-spacing: -1px;
+  }
+  .slider {
+    max-width: 1920px;
+  }
+  .slider__line {
+    margin: 0 11.5vw 198px;
   }
 }
 .accordion {
