@@ -2334,6 +2334,30 @@ body {
     height: 334px;
   }
 }
+@media (min-width: 1920px) {
+  .education-document__wrp {
+    max-width: 1140px;
+    width: 100%;
+    gap: 112px;
+  }
+  .education-document__desc {
+    max-width: 488px;
+    width: 100%;
+    height: inherit;
+    padding: 61px 0 0;
+  }
+  .education-document__title {
+    font-size: 48px;
+    margin: 0 auto 17px 0;
+  }
+  .education-document__txt {
+    font-size: 20px;
+  }
+  .education-document__img {
+    width: 457px;
+    height: 402px;
+  }
+}
 .reviews__title {
   text-align: center;
 }
