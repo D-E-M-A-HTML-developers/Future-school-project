@@ -15,8 +15,12 @@ function showSliderWidth() {
 	if (sliderWidth < 1000) {
 		sliderLine.style.width = sliderWidth * sliderItems.length + "px";
 		sliderItems.forEach((sliderItem) => (sliderItem.style.width = sliderWidth + "px"));
+	} if (sliderWidth < 1920) {
+		sliderWidth = sliderWidth * 0.667;
+		sliderLine.style.width = sliderWidth * sliderItems.length + "px";
+		sliderItems.forEach((sliderItem) => (sliderItem.style.width = sliderWidth + "px"));
 	} else {
-		sliderWidth = sliderWidth * 0.667;// на 1920px = 0.767 
+		sliderWidth = sliderWidth * 0.767;
 		sliderLine.style.width = sliderWidth * sliderItems.length + "px";
 		sliderItems.forEach((sliderItem) => (sliderItem.style.width = sliderWidth + "px"));
 	}

@@ -2645,6 +2645,22 @@ body {
     margin: 0 2.6vw;
   }
 }
+@media (min-width: 1920px) {
+  .reviews {
+    background-position: 62% 46%;
+    background-size: 640px 549px;
+  }
+  .reviews__title {
+    margin: 0 0 199px;
+    letter-spacing: -1px;
+  }
+  .slider {
+    max-width: 1920px;
+  }
+  .slider__line {
+    margin: 0 11.5vw 198px;
+  }
+}
 .accordion {
   padding: 50px 0 35px;
 }
