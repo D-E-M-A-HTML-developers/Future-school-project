@@ -26,7 +26,7 @@
       border-left: 15px solid $text-color-blue;
     }
     &:checked + .accordion__button > span {
-      transform: rotate(405deg); // Красивее анимация
+      transform: rotate(405deg);
     }
   }
 
@@ -194,8 +194,7 @@
     }
     &__button {
       font-size: 28px;
-      // padding: 32px 20px 35px 60px; Текст скачит, да знаю в макете такой отступ)
-      padding: 32px 20px 35px 55px;
+      padding: 32px 20px 35px 54px;
       margin: 0 0 30px;
       &_more-content {
         padding: 22px 20px 27px 60px;
@@ -219,6 +218,37 @@
     &__body {
       padding-bottom: 123px;
       padding-right: 0;
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .accordion {
+    &__button {
+      font-size: 32px;
+      padding: 34px 47px 35px 54px;
+      span {
+        min-width: 50px;
+        height: 50px;
+        &_more-content {
+          padding: 28px 47px 22px 54px;
+        }
+      }
+    }
+    &__input:checked ~ .accordion__button {
+      padding: 36px 47px 30px 34px;
+    }
+    &__body {
+      padding-bottom: 170px;
+    }
+    &__text {
+      max-width: 917px;
+      padding: 0 0 22px;
+      &-list {
+        margin: 0;
+        &-wrp {
+          padding: 0 0 16px;
+        }
+      }
     }
   }
 }
