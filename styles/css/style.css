@@ -2837,7 +2837,7 @@ body {
   }
   .accordion__button {
     font-size: 28px;
-    padding: 32px 20px 35px 55px;
+    padding: 32px 20px 35px 54px;
     margin: 0 0 30px;
   }
   .accordion__button_more-content {
@@ -2859,6 +2859,35 @@ body {
   .accordion__body {
     padding-bottom: 123px;
     padding-right: 0;
+  }
+}
+@media (min-width: 1920px) {
+  .accordion__button {
+    font-size: 32px;
+    padding: 34px 47px 35px 54px;
+  }
+  .accordion__button span {
+    min-width: 50px;
+    height: 50px;
+  }
+  .accordion__button span_more-content {
+    padding: 28px 47px 22px 54px;
+  }
+  .accordion__input:checked ~ .accordion__button {
+    padding: 36px 47px 30px 34px;
+  }
+  .accordion__body {
+    padding-bottom: 170px;
+  }
+  .accordion__text {
+    max-width: 917px;
+    padding: 0 0 22px;
+  }
+  .accordion__text-list {
+    margin: 0;
+  }
+  .accordion__text-list-wrp {
+    padding: 0 0 16px;
   }
 }
 .application {
