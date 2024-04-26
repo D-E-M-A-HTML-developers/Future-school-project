@@ -159,6 +159,16 @@
     }
     &__body {
       border-left: 15px solid $text-color-blue;
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 23.9px;
+        height: 3px;
+        top: -1px;
+        left: -24.3px;
+        background-color: $text-color-blue;
+      }
     }
   }
 }
@@ -235,7 +245,7 @@
       }
     }
     &__input:checked ~ .accordion__button {
-      padding: 36px 47px 30px 34px;
+      padding: 34px 47px 30px 29px;
     }
     &__body {
       padding-bottom: 170px;
