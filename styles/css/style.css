@@ -2806,6 +2806,16 @@ body {
   }
   .accordion__body {
     border-left: 15px solid #243976;
+    position: relative;
+  }
+  .accordion__body::before {
+    position: absolute;
+    content: "";
+    width: 23.9px;
+    height: 3px;
+    top: -1px;
+    left: -24.3px;
+    background-color: #243976;
   }
 }
 @media (min-width: 768px) {
@@ -2874,7 +2884,7 @@ body {
     padding: 28px 47px 22px 54px;
   }
   .accordion__input:checked ~ .accordion__button {
-    padding: 36px 47px 30px 34px;
+    padding: 34px 47px 30px 29px;
   }
   .accordion__body {
     padding-bottom: 170px;
