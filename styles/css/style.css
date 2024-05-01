@@ -2872,6 +2872,9 @@ body {
   }
 }
 @media (min-width: 1920px) {
+  .accordion {
+    padding: 80px 0 46px;
+  }
   .accordion__button {
     font-size: 32px;
     padding: 34px 47px 35px 54px;
@@ -3167,7 +3170,7 @@ body {
     padding: 0;
   }
   .application__wrapper {
-    grid-template: auto auto/minmax(466px, 1fr) 645px;
+    grid-template: auto auto/minmax(464px, 1fr) 645px;
     grid-template-areas: "form offer" "form image";
     -moz-column-gap: 32px;
          column-gap: 32px;
@@ -3175,14 +3178,17 @@ body {
   }
   .application__form-wrapper {
     justify-self: end;
-    margin: 110px 0 63px;
-    padding: 35px 26px 18px;
+    margin: 112px 0 79px;
+    padding: 36px 22px 18px 24px;
   }
   .application__form-wrapper::before {
     width: 429px;
     height: 520px;
     left: -115px;
-    top: -94px;
+    top: -95px;
+  }
+  .application__button-wrapper {
+    padding: 11px 0 20px;
   }
   .application__offer {
     justify-self: end;
@@ -3190,7 +3196,7 @@ body {
   }
   .application__title {
     font-size: 50px;
-    margin: 0 auto 10px;
+    margin: 0 auto 12px;
   }
   .application__text {
     font-size: 20px;
@@ -3520,5 +3526,58 @@ body {
   }
   .footer__item-info {
     text-align: start;
+  }
+}
+@media (min-width: 1920px) {
+  .footer {
+    padding: 49px 0 12px;
+  }
+  .footer .center {
+    padding: 0;
+  }
+  .footer__position-wrapper {
+    grid-template-columns: minmax(250px, auto) minmax(88px, auto) minmax(138px, auto) minmax(153px, auto) minmax(321px, auto);
+    grid-template-areas: "logo classes documents social contacts";
+  }
+  .footer__logo {
+    width: 236px;
+    height: 67px;
+    margin: 0;
+  }
+  .footer__title, .footer__title-documents {
+    font-size: 20px;
+  }
+  .footer__title-classes {
+    margin: 0 0 18px;
+  }
+  .footer__item-classes {
+    margin: 0 0 9px;
+  }
+  .footer__link-social {
+    width: 34px;
+    height: 34px;
+  }
+  .footer__block-info {
+    max-width: 254px;
+    width: 100%;
+    margin-top: -22px;
+  }
+  .footer__block-contacts {
+    margin-top: -10px;
+    gap: 8px;
+  }
+  .footer__link-contacts {
+    font-size: 16px;
+    line-height: 169%;
+  }
+  .footer__address::before, .footer__tel::before {
+    width: 46px;
+    height: 46px;
+  }
+  .footer__address {
+    padding: 0 0 0 53px;
+  }
+  .footer__tel {
+    padding: 0 0 0 56px;
   }
 }
