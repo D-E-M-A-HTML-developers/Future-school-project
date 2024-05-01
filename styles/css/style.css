@@ -3528,3 +3528,56 @@ body {
     text-align: start;
   }
 }
+@media (min-width: 1920px) {
+  .footer {
+    padding: 49px 0 12px;
+  }
+  .footer .center {
+    padding: 0;
+  }
+  .footer__position-wrapper {
+    grid-template-columns: minmax(250px, auto) minmax(88px, auto) minmax(138px, auto) minmax(153px, auto) minmax(321px, auto);
+    grid-template-areas: "logo classes documents social contacts";
+  }
+  .footer__logo {
+    width: 236px;
+    height: 67px;
+    margin: 0;
+  }
+  .footer__title, .footer__title-documents {
+    font-size: 20px;
+  }
+  .footer__title-classes {
+    margin: 0 0 18px;
+  }
+  .footer__item-classes {
+    margin: 0 0 9px;
+  }
+  .footer__link-social {
+    width: 34px;
+    height: 34px;
+  }
+  .footer__block-info {
+    max-width: 254px;
+    width: 100%;
+    margin-top: -22px;
+  }
+  .footer__block-contacts {
+    margin-top: -10px;
+    gap: 8px;
+  }
+  .footer__link-contacts {
+    font-size: 16px;
+    line-height: 169%;
+  }
+  .footer__address::before, .footer__tel::before {
+    width: 46px;
+    height: 46px;
+  }
+  .footer__address {
+    padding: 0 0 0 53px;
+  }
+  .footer__tel {
+    padding: 0 0 0 56px;
+  }
+}
