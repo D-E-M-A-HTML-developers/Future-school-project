@@ -350,6 +350,9 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.header__wrapper_grade-1-4 {
+  margin: 0 0 20px;
+}
 .header__nav, .header__contacts {
   display: none;
 }
@@ -368,6 +371,11 @@ body {
   top: -46px;
   right: 26px;
   transform: rotate(-71deg);
+}
+.header .sign-up-lesson__btn-wrp_grade-1-4::after {
+  top: -37px;
+  right: 24px;
+  transform: rotate(-75deg);
 }
 
 .logo, .logo__image, .logo__link {
@@ -548,6 +556,12 @@ body {
   min-height: 167px;
   margin: 0 0 40px 0;
 }
+.header__banner-image_grade-1-4 {
+  min-width: 212px;
+  width: 76%;
+  min-height: 199px;
+  margin: 0 auto 17px;
+}
 .header__banner-title {
   min-width: 280px;
   width: 100%;
@@ -567,10 +581,17 @@ body {
   text-align: center;
   margin: 0 0 10px 0;
 }
+.header__banner-txt_grade-1-4 {
+  font-size: 14px;
+}
 .header__banner-txt_bold {
   font-family: "Gotham700", sans-serif;
-  margin: 0 0 48px 0;
+  margin: 0 0 48px;
   min-height: 45px;
+}
+.header__banner-txt_bold_grade-1-4 {
+  font-size: 14px;
+  margin: 0 0 17px;
 }
 
 .color-blue {
@@ -581,12 +602,23 @@ body {
   .header {
     padding: 15px 0 27px;
   }
+  .header__wrapper_grade-1-4 {
+    margin: 0 0 46px;
+  }
+  .header .sign-up-lesson_grade-1-4 {
+    min-height: 121px;
+  }
   .header .sign-up-lesson__btn-wrp::after {
     content: "";
     height: 34.42px;
     top: -36px;
     right: 45px;
     transform: rotate(-71deg);
+  }
+  .header .sign-up-lesson__btn-wrp_grade-1-4::after {
+    top: -38px;
+    right: 42px;
+    transform: rotate(-76deg);
   }
   .logo, .logo__link, .logo__image {
     max-width: 170px;
@@ -612,12 +644,27 @@ body {
   .menu-list::before {
     top: -38px;
   }
+  .header__banner-image_grade-1-4 {
+    min-width: 235.7px;
+    width: 63%;
+    min-height: 223.41px;
+    margin: 0 auto 40px;
+  }
   .header__banner-title {
     font-size: 40px;
     margin: 0 0 30px;
   }
+  .header__banner-txt_grade-1-4 {
+    font-size: 15px;
+    margin: 0 0 12px;
+    padding: 0 10px;
+  }
   .header__banner-txt_bold {
     margin: 0 0 25px 0;
+  }
+  .header__banner-txt_bold_grade-1-4 {
+    font-size: 15px;
+    margin: 0 0 23px;
   }
 }
 @media (min-width: 480px) {
@@ -627,12 +674,23 @@ body {
   .header .sign-up-lesson__btn-wrp::after {
     display: none;
   }
+  .header .sign-up-lesson_grade-1-4 {
+    min-height: 116px;
+  }
   .header__wrapper {
     margin: 0 0 44px;
+  }
+  .header__wrapper_grade-1-4 {
+    margin: 0 0 11px;
   }
   .header__banner-image {
     margin: 0 auto 50px;
     max-width: 673px;
+  }
+  .header__banner-image_grade-1-4 {
+    min-width: 308.62px;
+    width: 70%;
+    min-height: 293.23px;
   }
   .header__banner-text-wrp {
     max-width: 592px;
@@ -642,8 +700,14 @@ body {
   .header__banner-title {
     margin: 0 0 23px;
   }
+  .header__banner-title_grade-1-4 {
+    margin: 0 0 26px;
+  }
   .header__banner-txt {
     margin: 0 0 23px;
+  }
+  .header__banner-txt_grade-1-4 {
+    padding: 0;
   }
   .header__banner-txt_bold {
     margin: 0 0 30px;
