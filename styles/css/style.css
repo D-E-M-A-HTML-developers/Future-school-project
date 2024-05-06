@@ -849,8 +849,17 @@ body {
   .header__wrapper {
     height: 79px;
   }
+  .header__wrapper_grades-1-4 {
+    margin: 0 0 12px;
+  }
   .header__contacts {
     max-width: 420px;
+  }
+  .header__contacts_grades-1-4 {
+    max-width: 542px;
+  }
+  .header .contact-us__icons-wrapper_header_grades-1-4 {
+    gap: 15px;
   }
   .header__nav {
     margin: 0 0 42px;
@@ -858,6 +867,9 @@ body {
   }
   .header__nav-items {
     max-width: 554px;
+  }
+  .header__nav-cabinet_grades-1-4::before {
+    height: 18.51px;
   }
   .menu-item-tel .menu-link {
     font-size: 18px;
@@ -872,8 +884,16 @@ body {
     max-width: 481px;
     min-height: 286px;
   }
+  .header__banner-image-wrp_grades-1-4 {
+    right: -58px;
+    bottom: -2px;
+  }
   .header__banner-image {
     margin: 0;
+  }
+  .header__banner-image_grades-1-4 {
+    min-width: 452.9px;
+    min-height: 426.88px;
   }
   .header__banner-text-wrp {
     max-width: 100%;

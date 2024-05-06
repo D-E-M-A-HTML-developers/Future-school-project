@@ -539,15 +539,29 @@
     padding: 7px 0 50px;
     &__wrapper {
       height: 79px;
+      &_grades-1-4 {
+        margin: 0 0 12px;
+      }
     }
     &__contacts {
       max-width: 420px;
+      &_grades-1-4 {
+        max-width: 542px;
+      }
+    }
+    .contact-us__icons-wrapper {
+      &_header_grades-1-4 {
+        gap: 15px;
+      }
     }
     &__nav {
       margin: 0 0 42px;
       row-gap: 43px;
       &-items {
         max-width: 554px;
+      }
+      &-cabinet_grades-1-4::before {
+        height: 18.51px;
       }
     }
   }
@@ -566,9 +580,17 @@
       bottom: 80px;
       max-width: 481px;
       min-height: 286px;
+      &_grades-1-4 {
+        right: -58px;
+        bottom: -2px;
+      }
     }
     &-image {
       margin: 0;
+      &_grades-1-4 {
+        min-width: 452.9px;
+        min-height: 426.88px;
+      }
     }
     &-text-wrp {
       max-width: 100%;
