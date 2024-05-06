@@ -321,10 +321,10 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.header__wrapper_grade-1-4 {
+.header__wrapper_grades-1-4 {
   margin: 0 0 20px;
 }
-.header__nav, .header__contacts {
+.header__nav, .header__contacts, .header__contacts_grades-1-4 {
   display: none;
 }
 .header .sign-up-lesson__btn-wrp {
@@ -343,7 +343,7 @@ body {
   right: 26px;
   transform: rotate(-71deg);
 }
-.header .sign-up-lesson__btn-wrp_grade-1-4::after {
+.header .sign-up-lesson__btn-wrp_grades-1-4::after {
   top: -37px;
   right: 24px;
   transform: rotate(-75deg);
@@ -527,7 +527,7 @@ body {
   min-height: 167px;
   margin: 0 0 40px 0;
 }
-.header__banner-image_grade-1-4 {
+.header__banner-image_grades-1-4 {
   min-width: 212px;
   width: 76%;
   min-height: 199px;
@@ -552,7 +552,7 @@ body {
   text-align: center;
   margin: 0 0 10px 0;
 }
-.header__banner-txt_grade-1-4 {
+.header__banner-txt_grades-1-4 {
   font-size: 14px;
 }
 .header__banner-txt_bold {
@@ -560,7 +560,7 @@ body {
   margin: 0 0 48px;
   min-height: 45px;
 }
-.header__banner-txt_bold_grade-1-4 {
+.header__banner-txt_bold_grades-1-4 {
   font-size: 14px;
   margin: 0 0 17px;
 }
@@ -573,10 +573,10 @@ body {
   .header {
     padding: 15px 0 27px;
   }
-  .header__wrapper_grade-1-4 {
+  .header__wrapper_grades-1-4 {
     margin: 0 0 46px;
   }
-  .header .sign-up-lesson_grade-1-4 {
+  .header .sign-up-lesson_grades-1-4 {
     min-height: 121px;
   }
   .header .sign-up-lesson__btn-wrp::after {
@@ -586,7 +586,7 @@ body {
     right: 45px;
     transform: rotate(-71deg);
   }
-  .header .sign-up-lesson__btn-wrp_grade-1-4::after {
+  .header .sign-up-lesson__btn-wrp_grades-1-4::after {
     top: -38px;
     right: 42px;
     transform: rotate(-76deg);
@@ -615,7 +615,7 @@ body {
   .menu-list::before {
     top: -38px;
   }
-  .header__banner-image_grade-1-4 {
+  .header__banner-image_grades-1-4 {
     min-width: 235.7px;
     width: 63%;
     min-height: 223.41px;
@@ -625,7 +625,7 @@ body {
     font-size: 40px;
     margin: 0 0 30px;
   }
-  .header__banner-txt_grade-1-4 {
+  .header__banner-txt_grades-1-4 {
     font-size: 15px;
     margin: 0 0 12px;
     padding: 0 10px;
@@ -633,7 +633,7 @@ body {
   .header__banner-txt_bold {
     margin: 0 0 25px 0;
   }
-  .header__banner-txt_bold_grade-1-4 {
+  .header__banner-txt_bold_grades-1-4 {
     font-size: 15px;
     margin: 0 0 23px;
   }
@@ -645,20 +645,20 @@ body {
   .header .sign-up-lesson__btn-wrp::after {
     display: none;
   }
-  .header .sign-up-lesson_grade-1-4 {
+  .header .sign-up-lesson_grades-1-4 {
     min-height: 116px;
   }
   .header__wrapper {
     margin: 0 0 44px;
   }
-  .header__wrapper_grade-1-4 {
+  .header__wrapper_grades-1-4 {
     margin: 0 0 11px;
   }
   .header__banner-image {
     margin: 0 auto 50px;
     max-width: 673px;
   }
-  .header__banner-image_grade-1-4 {
+  .header__banner-image_grades-1-4 {
     min-width: 308.62px;
     width: 70%;
     min-height: 293.23px;
@@ -671,13 +671,13 @@ body {
   .header__banner-title {
     margin: 0 0 23px;
   }
-  .header__banner-title_grade-1-4 {
+  .header__banner-title_grades-1-4 {
     margin: 0 0 26px;
   }
   .header__banner-txt {
     margin: 0 0 23px;
   }
-  .header__banner-txt_grade-1-4 {
+  .header__banner-txt_grades-1-4 {
     padding: 0;
   }
   .header__banner-txt_bold {
@@ -696,11 +696,16 @@ body {
     padding: 0 0 15px;
     width: 100%;
     position: relative;
-    margin: 0 0 12px 0;
+    margin: 0 0 12px;
     height: 81px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .header__wrapper_grades-1-4 {
+    height: 78px;
+    margin: 0 0 14px;
+    padding: 0 0 12px;
   }
   .header__wrapper::after {
     display: block;
@@ -721,13 +726,23 @@ body {
     justify-content: space-between;
     align-items: center;
   }
+  .header__contacts_grades-1-4 {
+    max-width: 478px;
+  }
+  .header .contact-us__icons-wrapper_header_grades-1-4 {
+    gap: 10px;
+  }
   .header__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     row-gap: 40px;
-    margin: 0 0 63px 0;
+    margin: 0 0 63px;
+  }
+  .header__nav_grades-1-4 {
+    row-gap: 41px;
+    margin: 0 0 53px;
   }
   .header__nav-items {
     display: flex;
@@ -753,6 +768,9 @@ body {
   .menu-item-tel .menu-link {
     font-size: 16px;
   }
+  .menu-item-tel_grades-1-4 .menu-link {
+    font-size: 14px;
+  }
   .menu-buttons-group {
     max-width: 420px;
     width: 100%;
@@ -768,6 +786,12 @@ body {
   .header__banner-image {
     margin: 0 auto 40px;
   }
+  .header__banner-image_grades-1-4 {
+    min-width: 411.82px;
+    width: 60%;
+    min-height: 390.98px;
+    margin: 0 auto 37px;
+  }
   .header__banner-title {
     font-size: 60px;
     margin: 0 0 34px;
@@ -778,6 +802,9 @@ body {
   }
   .header__banner-txt_bold {
     margin: 0 0 28px;
+  }
+  .header__banner-txt_bold_grades-1-4 {
+    margin: 0 0 30px;
   }
   .header__banner .sign-up-lesson {
     min-height: 121px;
