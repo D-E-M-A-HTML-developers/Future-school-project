@@ -6,12 +6,13 @@
     min-width: 280px;
     width: 100%;
     @include flexSpaceBetween;
-    &_grade-1-4 {
+    &_grades-1-4 {
       margin: 0 0 20px;
     }
   }
   &__nav,
-  &__contacts {
+  &__contacts,
+  &__contacts_grades-1-4 {
     display: none;
   }
   .sign-up-lesson__btn-wrp {
@@ -29,7 +30,7 @@
       right: 26px;
       transform: rotate(-71deg);
     }
-    &_grade-1-4::after {
+    &_grades-1-4::after {
       top: -37px;
       right: 24px;
       transform: rotate(-75deg);
@@ -220,7 +221,7 @@
     width: 100%;
     min-height: 167px;
     margin: 0 0 40px 0;
-    &_grade-1-4 {
+    &_grades-1-4 {
       min-width: 212px;
       width: 76%;
       min-height: 199px;
@@ -245,7 +246,7 @@
     line-height: 165%;
     text-align: center;
     margin: 0 0 10px 0;
-    &_grade-1-4 {
+    &_grades-1-4 {
       font-size: 14px;
     }
   }
@@ -253,7 +254,7 @@
     font-family: "Gotham700", sans-serif;
     margin: 0 0 48px;
     min-height: 45px;
-    &_grade-1-4 {
+    &_grades-1-4 {
       font-size: 14px;
       margin: 0 0 17px;
     }
@@ -268,12 +269,12 @@
   .header {
     padding: 15px 0 27px;
     &__wrapper {
-      &_grade-1-4 {
+      &_grades-1-4 {
         margin: 0 0 46px;
       }
     }
     .sign-up-lesson {
-      &_grade-1-4 {
+      &_grades-1-4 {
         min-height: 121px;
       }
       &__btn-wrp {
@@ -284,7 +285,7 @@
           right: 45px;
           transform: rotate(-71deg);
         }
-        &_grade-1-4::after {
+        &_grades-1-4::after {
           top: -38px;
           right: 42px;
           transform: rotate(-76deg);
@@ -322,7 +323,7 @@
   }
   .header__banner {
     &-image {
-      &_grade-1-4 {
+      &_grades-1-4 {
         min-width: 235.7px;
         width: 63%;
         min-height: 223.41px;
@@ -334,7 +335,7 @@
       margin: 0 0 30px;
     }
     &-txt {
-      &_grade-1-4 {
+      &_grades-1-4 {
         font-size: 15px;
         margin: 0 0 12px;
         padding: 0 10px;
@@ -342,7 +343,7 @@
     }
     &-txt_bold {
       margin: 0 0 25px 0;
-      &_grade-1-4 {
+      &_grades-1-4 {
         font-size: 15px;
         margin: 0 0 23px;
       }
@@ -358,13 +359,13 @@
           display: none;
         }
       }
-      &_grade-1-4 {
+      &_grades-1-4 {
         min-height: 116px;
       }
     }
     &__wrapper {
       margin: 0 0 44px;
-      &_grade-1-4 {
+      &_grades-1-4 {
         margin: 0 0 11px;
       }
     }
@@ -372,7 +373,7 @@
       &-image {
         margin: 0 auto 50px;
         max-width: 673px;
-        &_grade-1-4 {
+        &_grades-1-4 {
           min-width: 308.62px;
           width: 70%;
           min-height: 293.23px;
@@ -387,14 +388,14 @@
 
     &__banner-title {
       margin: 0 0 23px;
-      &_grade-1-4 {
+      &_grades-1-4 {
         margin: 0 0 26px;
       }
     }
 
     &__banner-txt {
       margin: 0 0 23px;
-      &_grade-1-4 {
+      &_grades-1-4 {
         padding: 0;
       }
       &_bold {
@@ -414,9 +415,14 @@
       padding: 0 0 15px;
       width: 100%;
       position: relative;
-      margin: 0 0 12px 0;
+      margin: 0 0 12px;
       height: 81px;
       @include flexSpaceBetween;
+      &_grades-1-4 {
+        height: 78px;
+        margin: 0 0 14px;
+        padding: 0 0 12px;
+      }
       &::after {
         display: block;
         position: absolute;
@@ -434,12 +440,24 @@
       max-width: 397px;
       width: 100%;
       @include flexSpaceBetween;
+      &_grades-1-4 {
+        max-width: 478px;
+      }
+    }
+    .contact-us__icons-wrapper {
+      &_header_grades-1-4 {
+        gap: 10px;
+      }
     }
     &__nav {
       @include flexSpaceBetween;
       flex-wrap: wrap;
       row-gap: 40px;
-      margin: 0 0 63px 0;
+      margin: 0 0 63px;
+      &_grades-1-4 {
+        row-gap: 41px;
+        margin: 0 0 53px;
+      }
       &-items {
         @include flexSpaceBetween;
         max-width: 514px;
@@ -464,6 +482,11 @@
       .menu-link {
         font-size: 16px;
       }
+      &_grades-1-4 {
+        .menu-link {
+          font-size: 14px;
+        }
+      }
     }
     &-buttons-group {
       max-width: 420px;
@@ -482,6 +505,12 @@
   .header__banner {
     &-image {
       margin: 0 auto 40px;
+      &_grades-1-4 {
+        min-width: 411.82px;
+        width: 60%;
+        min-height: 390.98px;
+        margin: 0 auto 37px;
+      }
     }
     &-title {
       font-size: 60px;
@@ -492,6 +521,9 @@
       margin: 0 0 22px;
       &_bold {
         margin: 0 0 28px;
+        &_grades-1-4 {
+          margin: 0 0 30px;
+        }
       }
     }
     .sign-up-lesson {
@@ -507,15 +539,29 @@
     padding: 7px 0 50px;
     &__wrapper {
       height: 79px;
+      &_grades-1-4 {
+        margin: 0 0 12px;
+      }
     }
     &__contacts {
       max-width: 420px;
+      &_grades-1-4 {
+        max-width: 542px;
+      }
+    }
+    .contact-us__icons-wrapper {
+      &_header_grades-1-4 {
+        gap: 15px;
+      }
     }
     &__nav {
       margin: 0 0 42px;
       row-gap: 43px;
       &-items {
         max-width: 554px;
+      }
+      &-cabinet_grades-1-4::before {
+        height: 18.51px;
       }
     }
   }
@@ -534,9 +580,17 @@
       bottom: 80px;
       max-width: 481px;
       min-height: 286px;
+      &_grades-1-4 {
+        right: -58px;
+        bottom: -2px;
+      }
     }
     &-image {
       margin: 0;
+      &_grades-1-4 {
+        min-width: 452.9px;
+        min-height: 426.88px;
+      }
     }
     &-text-wrp {
       max-width: 100%;
