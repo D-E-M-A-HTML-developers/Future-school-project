@@ -2,6 +2,34 @@
 @import "../css/nulling-styles.css";
 @import "../css/fonts.css";
 @import "animation-hover.css";
+.consists-of-education__title {
+  font-family: "ALSSchlangesans-Bold", sans-serif;
+  margin: 0 0 30px;
+  text-align: center;
+  font-size: 28px;
+  line-height: 100%;
+}
+
+@media (min-width: 415px) {
+  .consists-of-education__title {
+    font-size: 34px;
+  }
+}
+@media (min-width: 768px) {
+  .consists-of-education__title {
+    font-size: 38px;
+  }
+}
+@media (min-width: 1000px) {
+  .consists-of-education__title {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1920px) {
+  .consists-of-education__title {
+    font-size: 50px;
+  }
+}
 body {
   font-family: "Gotham400", sans-serif;
   font-size: 14px;
@@ -997,6 +1025,32 @@ body {
     font-size: 20px;
   }
 }
+.consists-of-education {
+  padding: 40px 0 52px;
+}
+.consists-of-education__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.consists-of-education__item:first-child .consists-of-education__button {
+  padding: 19px 34.4px;
+}
+.consists-of-education__button {
+  display: inline-block;
+  font-family: "Gotham700", sans-serif;
+  color: #fff;
+  padding: 19px 33px;
+  border-radius: 15px;
+  background: #eff2fd;
+  font-size: 24px;
+  line-height: 103%;
+  font-family: "ALSSchlangesans-Bold", sans-serif;
+  color: #243976;
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
 .footer {
   padding: 30px 0 14px;
   background: #eff2fd;
