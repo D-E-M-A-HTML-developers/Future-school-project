@@ -628,6 +628,9 @@
 @media (min-width: 1920px) {
   .header {
     padding: 8px 0 60px;
+    &_grades-1-4 {
+      padding: 8px 0 40px;
+    }
     &__wrapper {
       height: 84px;
       margin: 0 0 20px;
@@ -638,29 +641,62 @@
     &__contacts {
       max-width: 437px;
       align-items: center;
+      &_grades-1-4 {
+        max-width: 547px;
+      }
+    }
+    .contact-us__icons-wrapper {
+      &_header_grades-1-4 {
+        gap: 13px;
+      }
     }
     &__button-sign-up {
       padding: 23px 31px 21px;
+      &-wrp_grades-1-4 {
+        margin: -9px 0 0;
+      }
     }
     &__nav {
       row-gap: 50px;
       column-gap: 20px;
       margin: 0 0 12px;
+      &_grades-1-4 {
+        row-gap: 29px;
+        margin: 0 0 32px;
+      }
     }
+
     &__banner {
-      &-image-wrp {
-        max-width: 673px;
-        width: 100%;
-        min-height: 400px;
-        bottom: 10px;
+      &-image {
+        &-wrp {
+          max-width: 673px;
+          width: 100%;
+          min-height: 400px;
+          bottom: 10px;
+          &_grades-1-4 {
+            right: -156px;
+            bottom: 4px;
+          }
+        }
+        &_grades-1-4 {
+          min-width: 518.83px;
+          min-height: 492.71px;
+        }
       }
       &-title {
         font-size: 84px;
         margin: 0 0 23px;
+        &_grades-1-4 {
+          margin: 0 0 24px;
+        }
       }
       &-txt {
         min-width: 486px;
+        max-width: 607px;
         font-size: 17px;
+        &_grades-1-4 {
+          margin: 0 0 24px;
+        }
       }
       .sign-up-lesson {
         &__btn {
@@ -669,10 +705,16 @@
             left: 303px;
           }
         }
+        &_grades-1-4 {
+          height: 123px;
+        }
         .contact-us {
           padding: 0 0 0 20px;
           &__txt {
             font-size: 17px;
+          }
+          &_grades-1-4 {
+            gap: 17px;
           }
         }
       }
@@ -685,6 +727,9 @@
   .menu {
     &-item-tel {
       padding: 10px 0 0;
+      &_grades-1-4 {
+        padding: 0;
+      }
     }
     &-item-tel .menu-link {
       font-size: 20px;

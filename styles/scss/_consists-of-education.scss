@@ -1,0 +1,101 @@
+.consists-of-education {
+  padding: 40px 0 52px;
+  &__title {
+    @extend %main-titles;
+  }
+  &__list {
+    @include flexColumnCenter;
+    gap: 30px;
+  }
+  &__item {
+    &:first-child .consists-of-education__button {
+      padding: 19px 34.4px;
+    }
+  }
+  &__button {
+    display: inline-block;
+    @include button(19px 33px, 15px, #eff2fd, 24px, 103%);
+    font-family: "ALSSchlangesans-Bold", sans-serif;
+    color: #243976;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+}
+@media (min-width: 415px) {
+  .consists-of-education {
+    padding: 50px 0;
+    &__item {
+      &:first-child .consists-of-education__button {
+        padding: 16px 24px;
+      }
+    }
+    &__button {
+      font-size: 30px;
+      padding: 16px 24px;
+    }
+  }
+}
+@media (min-width: 480px) {
+  .consists-of-education {
+    padding: 60px 0 70px;
+    &__title {
+      margin: 0 0 32px;
+    }
+    &__list {
+      flex-direction: row;
+      gap: 16px;
+    }
+    &__item {
+      &:first-child .consists-of-education__button {
+        padding: 15px 20px;
+      }
+    }
+    &__button {
+      font-size: 18px;
+      padding: 15px 20px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .consists-of-education {
+    padding: 60px 0 80px;
+    &__title {
+      margin: 0 0 42px;
+    }
+    &__list {
+      gap: 37px;
+    }
+    &__item {
+      &:first-child .consists-of-education__button {
+        padding: 16px 24px;
+      }
+    }
+    &__button {
+      font-size: 30px;
+      padding: 16px 24px;
+    }
+  }
+}
+@media (min-width: 1000px) {
+  .consists-of-education {
+    padding: 70px 0 80px;
+    &__list {
+      gap: 28px;
+      margin: 0 auto;
+      max-width: 662px;
+      width: 100%;
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .consists-of-education {
+    padding: 40px 0 57px;
+    &__title {
+      margin: 0 0 31px;
+      text-align: start;
+    }
+    &__list {
+      gap: 16px;
+      max-width: 100%;
+    }
+  }
+}
