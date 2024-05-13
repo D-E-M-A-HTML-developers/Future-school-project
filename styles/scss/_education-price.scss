@@ -112,21 +112,6 @@
     position: absolute;
     top: -49px;
     right: 10px;
-    @include button(20px 31px, 25px, $color-gradient01, 26px, 37px);
-    font-family: "Gotham500", sans-serif;
-    > span {
-      span:first-child {
-        font-size: 24px;
-        line-height: 141%;
-        margin-right: 3px;
-      }
-      span:last-child {
-        vertical-align: bottom;
-        font-family: "Gotham400", sans-serif;
-        font-size: 14px;
-        line-height: 142%;
-      }
-    }
   }
 }
 
@@ -160,14 +145,6 @@
   }
 
   .price-card {
-    &__banner {
-      padding: 18px 27px;
-
-      > span {
-        font-size: 32px;
-      }
-    }
-
     &__image {
       width: 128px;
       height: 195px;
@@ -194,7 +171,6 @@
       margin: 0 0 20px 0;
     }
     &__banner {
-      padding: 20px 25px;
       right: 22px;
       top: -47px;
     }
@@ -214,7 +190,6 @@
       justify-content: center;
     }
   }
-  
 }
 @media (min-width: 1000px) {
   .education-price {
@@ -235,7 +210,6 @@
         }
       }
     }
- 
   }
   .price-card {
     &__banner {
@@ -271,8 +245,8 @@
       }
       &:nth-child(2) {
         .price-card__image {
-        width: 125px;
-        height: 271px;
+          width: 125px;
+          height: 271px;
           right: -41px;
         }
       }
@@ -297,15 +271,8 @@
       margin: 0 0 18px;
     }
     &__banner {
-      padding: 30px 35px;
       right: 13px;
       top: -80px;
-      > span {
-        font-size: 36px;
-        span:first-child {
-          margin-right: 3px;
-        }
-      }
     }
   }
 }
