@@ -1,8 +1,9 @@
+@charset "UTF-8";
 @import "../css/normalize.css";
 @import "../css/nulling-styles.css";
 @import "../css/fonts.css";
 @import "animation-hover.css";
-.consists-of-education__title {
+.programm__title, .consists-of-education__title {
   font-family: "ALSSchlangesans-Bold", sans-serif;
   margin: 0 0 30px;
   text-align: center;
@@ -11,22 +12,22 @@
 }
 
 @media (min-width: 415px) {
-  .consists-of-education__title {
+  .programm__title, .consists-of-education__title {
     font-size: 34px;
   }
 }
 @media (min-width: 768px) {
-  .consists-of-education__title {
+  .programm__title, .consists-of-education__title {
     font-size: 38px;
   }
 }
 @media (min-width: 1000px) {
-  .consists-of-education__title {
+  .programm__title, .consists-of-education__title {
     font-size: 40px;
   }
 }
 @media (min-width: 1920px) {
-  .consists-of-education__title {
+  .programm__title, .consists-of-education__title {
     font-size: 50px;
   }
 }
@@ -1355,11 +1356,6 @@ body {
 }
 
 .programm__title {
-  font-family: "ALSSchlangesans-Bold", sans-serif;
-  margin: 0 0 30px;
-  text-align: center;
-  font-size: 30px;
-  line-height: 100%;
   letter-spacing: -1px;
 }
 .programm__title_secondary {
@@ -1484,6 +1480,142 @@ body {
   padding-left: 16px;
 }
 
+@media (min-width: 415px) {
+  .about-programm {
+    padding: 30px 0;
+  }
+  .about-programm__image {
+    min-width: 293px;
+    min-height: 196px;
+    width: 78%;
+    margin: 0 auto;
+  }
+  .about-programm__form-block-heading {
+    font-size: 20px;
+    line-height: 103%;
+    margin: 0 0 30px;
+  }
+  .about-programm__form-wrapper {
+    margin: 0 auto;
+    padding: 36px 26px;
+  }
+  .about-programm__form .form__agreement-text_small-version {
+    display: none;
+  }
+}
+@media (min-width: 415px) and (min-width: 768px) {
+  .about-programm__form .form__agreement-text_small-version {
+    display: block;
+  }
+}
+@media (min-width: 415px) {
+  .about-programm__form .form__button {
+    padding: 28px 87px;
+    color: transparent;
+    background: linear-gradient(273deg, #864ff1 0%, #49b3f7 100%);
+    box-shadow: 0 6px 21px 0 rgba(104, 130, 245, 0.67);
+  }
+  .about-programm__form .form__button-wrapper {
+    position: relative;
+    padding: 10px 0 0;
+  }
+}
+@media (min-width: 415px) and (min-width: 768px) {
+  .about-programm__form .form__button-wrapper {
+    padding: 10px 0 20px;
+  }
+}
+@media (min-width: 415px) {
+  .about-programm__form .form__button-wrapper::before {
+    position: absolute;
+    content: "Записаться на урок";
+    font-family: "Gotham700", sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    line-height: 118%;
+    letter-spacing: 0.12em;
+    color: #fff;
+  }
+}
+@media (min-width: 415px) and (min-width: 768px) {
+  .about-programm__form .form__button-wrapper::before {
+    display: none;
+  }
+}
+@media (min-width: 415px) and (min-width: 768px) {
+  .about-programm__form .form__button {
+    color: #fff;
+    background: linear-gradient(27deg, #4271df 16.72%, #789cf1 95.45%);
+    box-shadow: none;
+    padding: 22px 37px;
+  }
+}
+@media (min-width: 415px) {
+  .programm__title {
+    letter-spacing: 0;
+  }
+  .programm__title_secondary {
+    margin: 1px 0 30px;
+  }
+  .programm__description {
+    font-size: 15px;
+    padding: 0 31px;
+    line-height: 153%;
+  }
+  .programm__banner {
+    gap: 31px;
+  }
+  .programm__feature {
+    font-size: 20px;
+  }
+  .programm__feature-list {
+    min-height: 148px;
+    max-width: 266px;
+    align-items: start;
+  }
+  .programm__feature-list .programm__feature-item:last-child {
+    padding-left: 62px;
+  }
+  .programm__feature-item {
+    padding-left: 62px;
+  }
+  .programm__feature-item:nth-child(1)::before, .programm__feature-item:nth-child(2)::before, .programm__feature-item:nth-child(3)::before {
+    width: 32px;
+    height: 32px;
+  }
+  .programm__feature-item:nth-child(1)::before {
+    left: 2px;
+    top: 1px;
+  }
+  .programm__feature-item:nth-child(2)::before {
+    height: 25.59px;
+    width: 34px;
+    height: 30px;
+  }
+  .programm__feature-item:nth-child(3)::before {
+    background-image: url(../../images/icon/weeked-icon.svg);
+    width: 28px;
+    height: 33px;
+  }
+  .subjects__title {
+    font-family: "Gotham500", sans-serif;
+    font-size: 20px;
+    line-height: 100%;
+  }
+  .subjects__item {
+    max-width: 262px;
+    height: 68px;
+    padding: 24px 34px 24px 16px;
+  }
+  .subjects__name {
+    font-size: 20px;
+    min-width: 190px;
+    letter-spacing: 0;
+  }
+  .subjects__name_secondary-programm {
+    padding-left: 30px;
+  }
+}
 .footer {
   padding: 30px 0 14px;
   background: #eff2fd;
