@@ -47,11 +47,7 @@
 }
 .programm {
   &__title {
-    font-family: "ALSSchlangesans-Bold", sans-serif;
-    margin: 0 0 30px;
-    text-align: center;
-    font-size: 30px;
-    line-height: 100%;
+    @extend %main-titles;
     letter-spacing: -1px;
     &_secondary {
       margin: -4px 0 30px;
@@ -174,12 +170,139 @@
   }
 }
 
-// @media (min-width: 415px) {
-//   .about-programm {
-//   }
-//   .programm {
-//   }
-// }
+@media (min-width: 415px) {
+  .about-programm {
+    padding: 30px 0;
+    &__image {
+      min-width: 293px;
+      min-height: 196px;
+      width: 78%;
+      margin: 0 auto;
+    }
+    &__form-block {
+      &-heading {
+        font-size: 20px;
+        line-height: 103%;
+        margin: 0 0 30px;
+      }
+    }
+    &__form {
+      &-wrapper {
+        margin: 0 auto;
+        padding: 36px 26px;
+      }
+      .form__agreement-text_small-version {
+        display: none;
+        @media (min-width: 768px) {
+          display: block;
+        }
+      }
+      .form__button {
+        padding: 28px 87px;
+        color: transparent;
+        background: $color-gradient01;
+        box-shadow: 0 6px 21px 0 rgba(104, 130, 245, 0.67);
+        &-wrapper {
+          position: relative;
+          padding: 10px 0 0;
+          @media (min-width: 768px) {
+            padding: 10px 0 20px;
+          }
+          &::before {
+            position: absolute;
+            content: "Записаться на урок";
+            font-family: "Gotham700", sans-serif;
+            font-size: 11px;
+            text-transform: uppercase;
+            line-height: 118%;
+            letter-spacing: 0.12em;
+            color: #fff;
+            @media (min-width: 768px) {
+              display: none;
+            }
+          }
+        }
+        @media (min-width: 768px) {
+          color: #fff;
+          background: $color-gradient02;
+          box-shadow: none;
+          padding: 22px 37px;
+        }
+      }
+    }
+  }
+
+  .programm {
+    &__title {
+      letter-spacing: 0;
+      &_secondary {
+        margin: 1px 0 30px;
+      }
+    }
+    &__description {
+      font-size: 15px;
+      padding: 0 31px;
+      line-height: 153%;
+    }
+    &__banner {
+      gap: 31px;
+    }
+    &__feature {
+      font-size: 20px;
+      &-list {
+        min-height: 148px;
+        max-width: 266px;
+        align-items: start;
+        & .programm__feature-item:last-child {
+          padding-left: 62px;
+        }
+      }
+      &-item {
+        padding-left: 62px;
+        &:nth-child(1)::before,
+        &:nth-child(2)::before,
+        &:nth-child(3)::before {
+          width: 32px;
+          height: 32px;
+        }
+        &:nth-child(1)::before {
+          left: 2px;
+          top: 1px;
+        }
+        &:nth-child(2)::before {
+          height: 25.59px;
+          width: 34px;
+          height: 30px;
+        }
+        &:nth-child(3)::before {
+          background-image: url(../../images/icon/weeked-icon.svg);
+          width: 28px;
+          height: 33px;
+        }
+      }
+    }
+  }
+  .subjects {
+    &__title {
+      font-family: "Gotham500", sans-serif;
+      font-size: 20px;
+      line-height: 100%;
+    }
+    &__item {
+      max-width: 262px;
+      height: 68px;
+      padding: 24px 34px 24px 16px;
+    }
+    &__name {
+      font-size: 20px;
+      min-width: 190px;
+      letter-spacing: 0;
+      &_secondary-programm {
+        padding-left: 30px;
+      }
+    }
+  }
+}
 // @media (min-width: 480px) {
 //   .about-programm {
 //   }
