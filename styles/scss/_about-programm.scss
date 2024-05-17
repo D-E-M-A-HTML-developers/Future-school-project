@@ -392,12 +392,111 @@
     }
   }
 }
-// @media (min-width: 768px) {
-//   .about-programm {
-//   }
-//   .programm {
-//   }
-// }
+@media (min-width: 768px) {
+  .about-programm {
+    padding: 38px 0 40px;
+    .center {
+      row-gap: 60px;
+    }
+    border-radius: 100px;
+    &__image {
+      min-width: 489px;
+      min-height: 310px;
+      width: 71%;
+      margin: -13px auto 1px;
+    }
+    &__secondary-programm {
+      @include flexCenter;
+      flex-wrap: wrap;
+      column-gap: 54px;
+      padding: 19px 0 21px;
+    }
+    &__form-block-heading {
+      margin: 0 0 40px;
+    }
+  }
+  .programm {
+    &__title {
+      margin: 0 0 41px;
+      &_secondary-programm {
+        margin: 0 0 42px;
+      }
+    }
+    &__description {
+      font-size: 15px;
+      line-height: 127%;
+      margin: 0 0 40px;
+      &_secondary-programm {
+        max-width: 409px;
+        width: 100%;
+        min-height: 126px;
+        font-size: 14px;
+        line-height: 130%;
+        text-align: start;
+        margin: 0;
+      }
+    }
+    &__banner {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__feature {
+      font-size: 20px;
+      &-list {
+        align-items: start;
+      }
+      &-item {
+        &:nth-child(2)::before {
+          left: 0px;
+          top: 1px;
+        }
+      }
+    }
+    &__price {
+      padding: 29px 23px 31px 34px;
+      margin: -11px 0 0;
+      > span {
+        font-size: 36px;
+        span:first-child {
+          margin-right: 0;
+          margin-left: 0;
+          position: relative;
+          top: -2px;
+          left: -2px;
+        }
+        span:last-child {
+          margin-left: 0;
+          position: relative;
+          top: -4px;
+          left: -12px;
+        }
+      }
+    }
+  }
+  .subjects {
+    &__list {
+      row-gap: 20px;
+      column-gap: 70px;
+      &_secondary {
+        flex-direction: column;
+      }
+    }
+    &__item {
+      max-width: 225px;
+      min-width: 144px;
+    }
+    &__name {
+      font-size: 16px;
+      position: relative;
+      top: -1px;
+      &_secondary-programm {
+        font-size: 18px;
+        padding-left: 10px;
+      }
+    }
+  }
+}
 // @media (min-width: 1000px) {
 //   .about-programm {
 //   }

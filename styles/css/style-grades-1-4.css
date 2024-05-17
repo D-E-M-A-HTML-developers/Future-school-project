@@ -1697,6 +1697,108 @@ body {
     letter-spacing: 0.5px;
   }
 }
+@media (min-width: 768px) {
+  .about-programm {
+    padding: 38px 0 40px;
+    border-radius: 100px;
+  }
+  .about-programm .center {
+    row-gap: 60px;
+  }
+  .about-programm__image {
+    min-width: 489px;
+    min-height: 310px;
+    width: 71%;
+    margin: -13px auto 1px;
+  }
+  .about-programm__secondary-programm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    -moz-column-gap: 54px;
+         column-gap: 54px;
+    padding: 19px 0 21px;
+  }
+  .about-programm__form-block-heading {
+    margin: 0 0 40px;
+  }
+  .programm__title {
+    margin: 0 0 41px;
+  }
+  .programm__title_secondary-programm {
+    margin: 0 0 42px;
+  }
+  .programm__description {
+    font-size: 15px;
+    line-height: 127%;
+    margin: 0 0 40px;
+  }
+  .programm__description_secondary-programm {
+    max-width: 409px;
+    width: 100%;
+    min-height: 126px;
+    font-size: 14px;
+    line-height: 130%;
+    text-align: start;
+    margin: 0;
+  }
+  .programm__banner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .programm__feature {
+    font-size: 20px;
+  }
+  .programm__feature-list {
+    align-items: start;
+  }
+  .programm__feature-item:nth-child(2)::before {
+    left: 0px;
+    top: 1px;
+  }
+  .programm__price {
+    padding: 29px 23px 31px 34px;
+    margin: -11px 0 0;
+  }
+  .programm__price > span {
+    font-size: 36px;
+  }
+  .programm__price > span span:first-child {
+    margin-right: 0;
+    margin-left: 0;
+    position: relative;
+    top: -2px;
+    left: -2px;
+  }
+  .programm__price > span span:last-child {
+    margin-left: 0;
+    position: relative;
+    top: -4px;
+    left: -12px;
+  }
+  .subjects__list {
+    row-gap: 20px;
+    -moz-column-gap: 70px;
+         column-gap: 70px;
+  }
+  .subjects__list_secondary {
+    flex-direction: column;
+  }
+  .subjects__item {
+    max-width: 225px;
+    min-width: 144px;
+  }
+  .subjects__name {
+    font-size: 16px;
+    position: relative;
+    top: -1px;
+  }
+  .subjects__name_secondary-programm {
+    font-size: 18px;
+    padding-left: 10px;
+  }
+}
 .footer {
   padding: 30px 0 14px;
   background: #eff2fd;
