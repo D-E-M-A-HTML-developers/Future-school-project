@@ -192,15 +192,15 @@
 
 		<section class="about-programm">
 			<div class="center">
-				<article class="about-programm__basic programm">
+				<article class="about-programm__basic-programm programm">
 					<h2 class="programm__title programm__title_basic-programm">Основная программа</h2>
 					<p class="programm__description">
-						Основная программа &laquo;Школы будущего&nbsp;Online&raquo; включает в&nbsp;себя все предметы
+						Основная программа "Школы будущего&nbsp;Online" включает в&nbsp;себя все предметы
 						предусмотренные
-						ФГОС. Мы&nbsp;используем только современные педагогические материалы и&nbsp;учебники в&nbsp;электронном виде
-						последнего доступного года издания.
-						В&nbsp;качестве&nbsp;образовательной программы используется &laquo;Школа России&raquo; с&nbsp;усиленным
-						английским языком. Все это позволяет сделать семейное образование эффективным, простым и&nbsp;интересным.
+						ФГОС. Мы&nbsp;используем только современные педагогические материалы и&nbsp;учебники в электронном виде
+						последнего доступного года издания. <br class="transfer-text">
+						В&nbsp;качестве&nbsp;образовательной программы используется "Школа России" с&nbsp;усиленным
+						английским языком. Все это позволяет сделать семейное образование эффективным, простым и интересным.
 					</p>
 
 					<div class="programm__banner">
@@ -279,12 +279,12 @@
 					<p class="programm__description programm__description_secondary-programm">
 						Дистанционное образование имеет свои особенности и одной из&nbsp;них является возможность отделить
 						некоторые второстепенные предметы в&nbsp;отдельную категорию. Рисование и&nbsp;музыка преподаются
-						на добровольной основе и&nbsp;не&nbsp;обязательны к&nbsp;посещению, но&nbsp;просмотреть запись урока
-						и&nbsp;выполнить домашнее задание все&nbsp;же&nbsp;придется.
+						на добровольной основе и&nbsp;не&nbsp;обязательны к посещению, но&nbsp;просмотреть запись урока
+						и выполнить домашнее задание все&nbsp;же&nbsp;придется.
 					</p>
 
-					<div class="about-programm__subjects subjects">
-						<ul class="subjects__list subjects__list_secondary">
+					<div class="about-programm__subjects subjects subjects_secondary-programm">
+						<ul class="subjects__list subjects__list_secondary-programm">
 							<li class="subjects__item">
 								<img class="subjects__image" width="40" height="40" src="images/icon/subjects-painting.png"
 									alt="Рисование">
@@ -303,23 +303,27 @@
 						Стоимость&nbsp;- включена в образовательный тариф.
 					</h2>
 
-					<div class="about-programm__form-wrapper form-wrapper">
-						<div class="about-programm__card-form form-card">
-							<form class="about-programm__form form" action="#" method="get" id="application-form">
-								<div class="form__input-wrapper">
-									<input class="form__input" type="text" name="class" placeholder="Класс" />
+					<div class="form-wrapper_grades-pages about-programm__form-wrapper form-wrapper form-wrapper_grades-pages">
+						<div class="form-card_grades-pages about-programm__card-form form-card">
+							<form class="form_grades-pages about-programm__form form" action="#" method="get" id="application-form">
+								<div class="form__input-wrapper form__input-wrapper_grades-pages">
+									<input class="form__input form__input_grades-pages" type="text" name="class" placeholder="Класс" />
 								</div>
-								<div class="form__input-wrapper">
-									<input class="form__input" type="text" name="parent-name" placeholder="Имя родителя" />
+								<div class="form__input-wrapper form__input-wrapper_grades-pages">
+									<input class="form__input form__input_grades-pages" type="text" name="parent-name"
+										placeholder="Имя родителя" />
 								</div>
-								<div class="form__input-wrapper">
-									<input class="form__input" type="tel" name="phone" placeholder="Телефон родителя" />
+								<div class="form__input-wrapper form__input-wrapper_grades-pages">
+									<input class="form__input form__input_grades-pages" type="tel" name="phone"
+										placeholder="Телефон родителя" />
 								</div>
 
-								<div class="form__button-wrapper">
-									<button class="form__button">Оставить заявку</button>
+								<div class="form__button-wrapper form__button-wrapper_grades-pages">
+									<button class="form__button form__button_change-content form__button_grades-pages">Оставить
+										заявку</button>
 								</div>
-								<p class="form__agreement-text form__agreement-text_small-version">
+
+								<p class="form__agreement-text form__agreement-text_visible">
 									Нажимая кнопку, вы&nbsp;даете согласие&nbsp;на
 									<a href="#">обработку&nbsp;своих&nbsp;персональных&nbsp;данных</a>
 								</p>
@@ -403,7 +407,8 @@
 	</footer>
 
 	<script type="module" src="js/main.js"></script>
-	<script type="module" src="js/reviews-slider.js"></script>
+	<script type="module" src="js/grades-1-4.js"></script>
+	<!-- <script type="module" src="js/reviews-slider.js"></script> -->
 </body>
 
 </html>

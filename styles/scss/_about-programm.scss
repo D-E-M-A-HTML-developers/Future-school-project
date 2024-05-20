@@ -13,7 +13,7 @@
       "form";
     row-gap: 50px;
   }
-  &__basic {
+  &__basic-programm {
     grid-area: basic-programm;
   }
   &__image {
@@ -40,15 +40,11 @@
       margin: 0 0 30px;
     }
   }
-  &__form-wrapper {
-    margin: 0;
-    background-color: #fff;
-  }
 }
 .programm {
   &__title {
     @extend %main-titles;
-    letter-spacing: -1px;
+    margin: 0 0 31px;
     &_secondary {
       margin: -4px 0 30px;
     }
@@ -57,6 +53,9 @@
     line-height: 129%;
     text-align: center;
     margin: 0 0 30px;
+    .transfer-text {
+      display: none;
+    }
   }
   &__banner {
     @include flexCenter;
@@ -186,62 +185,17 @@
         margin: 0 0 30px;
       }
     }
-    &__form {
-      &-wrapper {
-        margin: 0 auto;
-        padding: 36px 26px;
-      }
-      .form__agreement-text_small-version {
-        display: none;
-        @media (min-width: 768px) {
-          display: block;
-        }
-      }
-      .form__button {
-        padding: 28px 87px;
-        color: transparent;
-        background: $color-gradient01;
-        box-shadow: 0 6px 21px 0 rgba(104, 130, 245, 0.67);
-        &-wrapper {
-          position: relative;
-          padding: 10px 0 0;
-          @media (min-width: 768px) {
-            padding: 10px 0 20px;
-          }
-          &::before {
-            position: absolute;
-            content: "Записаться на урок";
-            font-family: "Gotham700", sans-serif;
-            font-size: 11px;
-            text-transform: uppercase;
-            line-height: 118%;
-            letter-spacing: 0.12em;
-            color: #fff;
-            @media (min-width: 768px) {
-              display: none;
-            }
-          }
-        }
-        @media (min-width: 768px) {
-          color: #fff;
-          background: $color-gradient02;
-          box-shadow: none;
-          padding: 22px 37px;
-        }
-      }
-    }
   }
 
   .programm {
     &__title {
-      letter-spacing: 0;
-      &_secondary {
-        margin: 1px 0 30px;
+      &_secondary-programm {
+        margin: 0 0 30px;
       }
     }
     &__description {
       font-size: 15px;
-      padding: 0 31px;
+      padding: 0 32px;
       line-height: 153%;
     }
     &__banner {
@@ -497,12 +451,84 @@
     }
   }
 }
-// @media (min-width: 1000px) {
-//   .about-programm {
-//   }
-//   .programm {
-//   }
-// }
+@media (min-width: 1000px) {
+  .about-programm {
+    padding: 57px 0 41px;
+    border-radius: 70px;
+    .center {
+      grid-template: repeat(4, auto) / minmax(400px, 1fr) minmax(480px, 1fr);
+      grid-template-areas:
+        "basic-programm image"
+        "basic-programm subjects"
+        "secondary-programm secondary-programm"
+        "form form";
+      row-gap: 78px;
+      column-gap: 20px;
+    }
+    &__image {
+      min-width: 369px;
+      min-height: 234px;
+      width: 71%;
+      margin: 2px auto 0;
+    }
+    &__secondary-programm {
+      column-gap: 30px;
+      padding: 0;
+    }
+    &__form-block {
+      &-heading {
+        font-size: 20px;
+        text-align: start;
+        margin: 1px 0 42px;
+      }
+    }
+  }
+  .programm {
+    &__title {
+      margin: 0 0 43px;
+      text-align: start;
+      &_secondary-programm {
+        width: 100%;
+      }
+    }
+    &__description {
+      text-align: start;
+      margin: 0 0 30px;
+      .transfer-text {
+        display: block;
+      }
+      &_secondary-programm {
+        max-width: 390px;
+        margin: 0;
+        font-size: 15px;
+        line-height: 126%;
+      }
+    }
+    &__banner {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 28px;
+    }
+  }
+  .subjects {
+    margin: -30px 0 0;
+    &__list {
+      column-gap: 30px;
+      row-gap: 30px;
+      &_secondary-programm {
+        flex-direction: row;
+      }
+    }
+    &_secondary-programm {
+      margin: 0;
+    }
+    &_name {
+      &_secondary-programm {
+        letter-spacing: 0;
+      }
+    }
+  }
+}
 // @media (min-width: 1920px) {
 //   .about-programm {
 //   }
