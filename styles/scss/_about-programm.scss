@@ -13,7 +13,7 @@
       "form";
     row-gap: 50px;
   }
-  &__basic {
+  &__basic-programm {
     grid-area: basic-programm;
   }
   &__image {
@@ -27,7 +27,7 @@
   &__subjects {
     grid-area: subjects;
   }
-  &__secondary {
+  &__secondary-programm {
     grid-area: secondary-programm;
   }
   &__form-block {
@@ -40,15 +40,11 @@
       margin: 0 0 30px;
     }
   }
-  &__form-wrapper {
-    margin: 0;
-    background-color: #fff;
-  }
 }
 .programm {
   &__title {
     @extend %main-titles;
-    letter-spacing: -1px;
+    margin: 0 0 31px;
     &_secondary {
       margin: -4px 0 30px;
     }
@@ -57,6 +53,9 @@
     line-height: 129%;
     text-align: center;
     margin: 0 0 30px;
+    .transfer-text {
+      display: none;
+    }
   }
   &__banner {
     @include flexCenter;
@@ -186,62 +185,17 @@
         margin: 0 0 30px;
       }
     }
-    &__form {
-      &-wrapper {
-        margin: 0 auto;
-        padding: 36px 26px;
-      }
-      .form__agreement-text_small-version {
-        display: none;
-        @media (min-width: 768px) {
-          display: block;
-        }
-      }
-      .form__button {
-        padding: 28px 87px;
-        color: transparent;
-        background: $color-gradient01;
-        box-shadow: 0 6px 21px 0 rgba(104, 130, 245, 0.67);
-        &-wrapper {
-          position: relative;
-          padding: 10px 0 0;
-          @media (min-width: 768px) {
-            padding: 10px 0 20px;
-          }
-          &::before {
-            position: absolute;
-            content: "Записаться на урок";
-            font-family: "Gotham700", sans-serif;
-            font-size: 11px;
-            text-transform: uppercase;
-            line-height: 118%;
-            letter-spacing: 0.12em;
-            color: #fff;
-            @media (min-width: 768px) {
-              display: none;
-            }
-          }
-        }
-        @media (min-width: 768px) {
-          color: #fff;
-          background: $color-gradient02;
-          box-shadow: none;
-          padding: 22px 37px;
-        }
-      }
-    }
   }
 
   .programm {
     &__title {
-      letter-spacing: 0;
-      &_secondary {
-        margin: 1px 0 30px;
+      &_secondary-programm {
+        margin: 0 0 30px;
       }
     }
     &__description {
       font-size: 15px;
-      padding: 0 31px;
+      padding: 0 32px;
       line-height: 153%;
     }
     &__banner {
@@ -257,6 +211,7 @@
           padding-left: 62px;
         }
       }
+
       &-item {
         padding-left: 62px;
         &:nth-child(1)::before,
@@ -270,12 +225,10 @@
           top: 1px;
         }
         &:nth-child(2)::before {
-          height: 25.59px;
           width: 34px;
           height: 30px;
         }
         &:nth-child(3)::before {
-          background-image: url(../../images/icon/weeked-icon.svg);
           width: 28px;
           height: 33px;
         }
@@ -283,11 +236,6 @@
     }
   }
   .subjects {
-    &__title {
-      font-family: "Gotham500", sans-serif;
-      font-size: 20px;
-      line-height: 100%;
-    }
     &__item {
       max-width: 262px;
       height: 68px;
@@ -303,24 +251,284 @@
     }
   }
 }
-// @media (min-width: 480px) {
-//   .about-programm {
-//   }
-//   .programm {
-//   }
-// }
-// @media (min-width: 768px) {
-//   .about-programm {
-//   }
-//   .programm {
-//   }
-// }
-// @media (min-width: 1000px) {
-//   .about-programm {
-//   }
-//   .programm {
-//   }
-// }
+@media (min-width: 480px) {
+  .about-programm {
+    border-radius: 50px;
+    &__image {
+      min-width: 415px;
+      min-height: 263px;
+    }
+    &__secondary-programm {
+      padding: 20px 0;
+    }
+    &__form-block {
+      &-heading {
+        font-size: 18px;
+        line-height: 103%;
+        margin: 0 0 29px;
+      }
+    }
+  }
+  .programm {
+    &__description {
+      font-size: 14px;
+      padding: 0;
+      line-height: 130%;
+    }
+    &__banner {
+      gap: 17px;
+    }
+    &__feature {
+      font-size: 20px;
+      &-list {
+        min-height: 138px;
+        max-width: 365px;
+        align-items: center;
+        & .programm__feature-item:nth-child(2) {
+          padding-top: 5px;
+        }
+        & .programm__feature-item:last-child {
+          padding-left: 44px;
+        }
+      }
+      &-item {
+        padding-left: 44px;
+        &:nth-child(1)::before,
+        &:nth-child(2)::before,
+        &:nth-child(3)::before {
+          width: 32px;
+          height: 32px;
+        }
+        &:nth-child(1)::before {
+          width: 29px;
+          height: 28px;
+          left: -1px;
+        }
+        &:nth-child(2)::before {
+          width: 30px;
+          left: -2px;
+          height: 26px;
+        }
+        &:nth-child(3)::before {
+          background-image: url(../../images/icon/weeked-icon.svg);
+          width: 22px;
+          height: 25px;
+          top: -2px;
+          left: -1px;
+        }
+      }
+    }
+  }
+  .subjects {
+    &__list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: 9px;
+      row-gap: 25px;
+    }
+    &__title {
+      margin: -1px 0 30px;
+    }
+    &__item {
+      max-width: 215px;
+      height: 60px;
+      padding: 24px 34px 24px 16px;
+    }
+    &__name {
+      font-size: 15px;
+      min-width: 130px;
+      line-height: 100%;
+      letter-spacing: 0;
+      &_secondary-programm {
+        padding-left: 16px;
+        letter-spacing: 0.5px;
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .about-programm {
+    padding: 38px 0 40px;
+    .center {
+      row-gap: 60px;
+    }
+    border-radius: 100px;
+    &__image {
+      min-width: 489px;
+      min-height: 310px;
+      width: 71%;
+      margin: -13px auto 1px;
+    }
+    &__secondary-programm {
+      @include flexCenter;
+      flex-wrap: wrap;
+      column-gap: 54px;
+      padding: 19px 0 21px;
+    }
+    &__form-block-heading {
+      margin: 0 0 40px;
+    }
+  }
+  .programm {
+    &__title {
+      margin: 0 0 41px;
+      &_secondary-programm {
+        margin: 0 0 42px;
+      }
+    }
+    &__description {
+      font-size: 15px;
+      line-height: 127%;
+      margin: 0 0 40px;
+      &_secondary-programm {
+        max-width: 409px;
+        width: 100%;
+        min-height: 126px;
+        font-size: 14px;
+        line-height: 130%;
+        text-align: start;
+        margin: 0;
+      }
+    }
+    &__banner {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__feature {
+      font-size: 20px;
+      &-list {
+        align-items: start;
+      }
+      &-item {
+        &:nth-child(2)::before {
+          left: 0px;
+          top: 1px;
+        }
+      }
+    }
+    &__price {
+      padding: 29px 23px 31px 34px;
+      margin: -11px 0 0;
+      > span {
+        font-size: 36px;
+        span:first-child {
+          margin-right: 0;
+          margin-left: 0;
+          position: relative;
+          top: -2px;
+          left: -2px;
+        }
+        span:last-child {
+          margin-left: 0;
+          position: relative;
+          top: -4px;
+          left: -12px;
+        }
+      }
+    }
+  }
+  .subjects {
+    &__list {
+      row-gap: 20px;
+      column-gap: 70px;
+      &_secondary {
+        flex-direction: column;
+      }
+    }
+    &__item {
+      max-width: 225px;
+      min-width: 144px;
+    }
+    &__name {
+      font-size: 16px;
+      position: relative;
+      top: -1px;
+      &_secondary-programm {
+        font-size: 18px;
+        padding-left: 10px;
+      }
+    }
+  }
+}
+@media (min-width: 1000px) {
+  .about-programm {
+    padding: 57px 0 41px;
+    border-radius: 70px;
+    .center {
+      grid-template: repeat(4, auto) / minmax(400px, 1fr) minmax(480px, 1fr);
+      grid-template-areas:
+        "basic-programm image"
+        "basic-programm subjects"
+        "secondary-programm secondary-programm"
+        "form form";
+      row-gap: 78px;
+      column-gap: 20px;
+    }
+    &__image {
+      min-width: 369px;
+      min-height: 234px;
+      width: 71%;
+      margin: 2px auto 0;
+    }
+    &__secondary-programm {
+      column-gap: 30px;
+      padding: 0;
+    }
+    &__form-block {
+      &-heading {
+        font-size: 20px;
+        text-align: start;
+        margin: 1px 0 42px;
+      }
+    }
+  }
+  .programm {
+    &__title {
+      margin: 0 0 43px;
+      text-align: start;
+      &_secondary-programm {
+        width: 100%;
+      }
+    }
+    &__description {
+      text-align: start;
+      margin: 0 0 30px;
+      .transfer-text {
+        display: block;
+      }
+      &_secondary-programm {
+        max-width: 390px;
+        margin: 0;
+        font-size: 15px;
+        line-height: 126%;
+      }
+    }
+    &__banner {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 28px;
+    }
+  }
+  .subjects {
+    margin: -30px 0 0;
+    &__list {
+      column-gap: 30px;
+      row-gap: 30px;
+      &_secondary-programm {
+        flex-direction: row;
+      }
+    }
+    &_secondary-programm {
+      margin: 0;
+    }
+    &_name {
+      &_secondary-programm {
+        letter-spacing: 0;
+      }
+    }
+  }
+}
 // @media (min-width: 1920px) {
 //   .about-programm {
 //   }
