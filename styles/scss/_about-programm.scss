@@ -112,6 +112,7 @@
   }
   &__price {
     padding: 20px 35px 23px 34px;
+    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.15);
     > span {
       font-family: "Gotham500", sans-serif;
       font-size: 30px;
@@ -432,7 +433,7 @@
     &__list {
       row-gap: 20px;
       column-gap: 70px;
-      &_secondary {
+      &_secondary-programm {
         flex-direction: column;
       }
     }
@@ -478,6 +479,7 @@
     &__form-block {
       &-heading {
         font-size: 20px;
+        font-weight: 500;
         text-align: start;
         margin: 1px 0 42px;
       }
@@ -529,9 +531,91 @@
     }
   }
 }
-// @media (min-width: 1920px) {
-//   .about-programm {
-//   }
-//   .programm {
-//   }
-// }
+@media (min-width: 1920px) {
+  .about-programm {
+    .center {
+      row-gap: 61px;
+    }
+    padding: 70px 0 60px;
+    border-radius: 192px;
+    max-width: 1648px;
+    margin: 0 auto;
+    &__image {
+      min-width: 384px;
+      min-height: 243.67px;
+      width: 68%;
+      margin: 0 auto;
+      position: relative;
+      top: -30px;
+      left: -7px;
+    }
+    &__secondary-programm {
+      justify-content: space-between;
+    }
+    &__form-block {
+      margin: -68px 0 0;
+      &-heading {
+        margin: 0 0 39px;
+      }
+    }
+    &__form-wrapper {
+      padding: 0;
+      min-height: 67px;
+    }
+  }
+  .programm {
+    &__title {
+      margin: 0px 0 22px;
+    }
+    &__description {
+      max-width: 457px;
+      margin: 0 0 42px;
+      line-height: 128%;
+    }
+    &__banner {
+      gap: 27px;
+      row-gap: 25px;
+    }
+    &__feature {
+      &-list {
+        min-height: 168px;
+        gap: 38px;
+        & .programm__feature-item:nth-child(2) {
+          padding-top: 3px;
+        }
+      }
+      &-item {
+        &:nth-child(2)::before {
+          top: -1px;
+          height: 25.6px;
+        }
+        &:nth-child(3)::before {
+          left: 0;
+        }
+      }
+    }
+  }
+  .subjects {
+    margin: -106px 0 0;
+    &_secondary-programm {
+      margin: -97px 0 0;
+    }
+    &__title {
+      margin: 0 0 35px;
+    }
+    &__item {
+      max-width: 262px;
+      padding: 24px 43px 24px 16px;
+      height: 68px;
+    }
+    &__name {
+      font-size: 20px;
+      min-width: 191px;
+      top: 0;
+      &_secondary-programm {
+        padding-left: 29px;
+        top: -2px;
+      }
+    }
+  }
+}
