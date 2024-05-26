@@ -86,3 +86,40 @@
     }
   }
 }
+@media (min-width: 480px) {
+  .advantages-grade {
+    padding: 69px 0 70px;
+    .center {
+      padding: 0 50px;
+    }
+    &__item {
+      padding: 29px 30px 30px;
+      &:nth-child(1) .advantages-grade__card-img_grades-1-4 {
+        width: 274px;
+        height: 166px;
+      }
+      &:nth-child(2) .advantages-grade__card-img {
+        width: 300px;
+        height: 186px;
+      }
+      &_right:nth-child(1) .advantages-grade__card-img {
+        width: 302.57px;
+        height: 219px;
+      }
+      &_right:nth-child(2) .advantages-grade__card-img {
+        width: 310px;
+        height: 176px;
+      }
+      &_right:nth-child(2) .advantages-grade__card-heading {
+        white-space: wrap;
+        left: 0;
+      }
+    }
+    &__card {
+      &-text {
+        font-size: 16px;
+        line-height: 131%;
+      }
+    }
+  }
+}
