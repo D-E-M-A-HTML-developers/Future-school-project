@@ -2,7 +2,7 @@
 @import "../css/nulling-styles.css";
 @import "../css/fonts.css";
 @import "animation-hover.css";
-.programm__title, .consists-of-education__title {
+.advantages-grade__card-heading, .programm__title, .consists-of-education__title {
   font-family: "ALSSchlangesans-Bold", sans-serif;
   margin: 0 0 30px;
   text-align: center;
@@ -11,22 +11,22 @@
 }
 
 @media (min-width: 415px) {
-  .programm__title, .consists-of-education__title {
+  .advantages-grade__card-heading, .programm__title, .consists-of-education__title {
     font-size: 34px;
   }
 }
 @media (min-width: 768px) {
-  .programm__title, .consists-of-education__title {
+  .advantages-grade__card-heading, .programm__title, .consists-of-education__title {
     font-size: 38px;
   }
 }
 @media (min-width: 1000px) {
-  .programm__title, .consists-of-education__title {
+  .advantages-grade__card-heading, .programm__title, .consists-of-education__title {
     font-size: 40px;
   }
 }
 @media (min-width: 1920px) {
-  .programm__title, .consists-of-education__title {
+  .advantages-grade__card-heading, .programm__title, .consists-of-education__title {
     font-size: 50px;
   }
 }
@@ -389,6 +389,15 @@ body {
   align-items: center;
   flex-direction: column;
 }
+.form_grades-pages {
+  max-width: 240px;
+  width: 100%;
+}
+@media (min-width: 415px) {
+  .form_grades-pages {
+    max-width: 299px;
+  }
+}
 @media (min-width: 1000px) {
   .form_grades-pages {
     flex-direction: row;
@@ -413,6 +422,8 @@ body {
 }
 .form-wrapper_grades-pages {
   margin: 0 auto;
+  padding: 30px 19px;
+  width: 100%;
 }
 @media (min-width: 415px) {
   .form-wrapper_grades-pages {
@@ -2032,6 +2043,59 @@ body {
     top: -2px;
   }
 }
+.advantages-grade {
+  padding: 50px 0;
+}
+.advantages-grade__inner, .advantages-grade__list {
+  min-width: 280px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.advantages-grade__item {
+  border-radius: 25px;
+  background-color: #eff2fd;
+  min-width: 280px;
+  width: 100%;
+  min-height: 422px;
+  padding: 29.3px 20px 30px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.advantages-grade__item:nth-child(1) .advantages-grade__card-img_grades-5-8 {
+  width: 237.82px;
+  height: 126.6px;
+}
+.advantages-grade__item:nth-child(2) .advantages-grade__card-img {
+  width: 240px;
+  height: 145.84px;
+}
+.advantages-grade__item_right:nth-child(1) .advantages-grade__card-img {
+  width: 239.63px;
+  height: 179.16px;
+}
+.advantages-grade__item_right:nth-child(2) .advantages-grade__card-img {
+  width: 240px;
+  height: 135px;
+}
+.advantages-grade__card-heading {
+  line-height: 103%;
+}
+.advantages-grade__card-text {
+  font-size: 15px;
+  line-height: 127%;
+  margin: 0 0 30px;
+  text-align: center;
+}
+.advantages-grade__card-img {
+  margin: 0 auto;
+}
+.advantages-grade__card-img-wrapper {
+  width: 100%;
+}
+
 .footer {
   padding: 30px 0 14px;
   background: #eff2fd;

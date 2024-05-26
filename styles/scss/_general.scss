@@ -336,6 +336,11 @@ body {
   @include flexCenter;
   flex-direction: column;
   &_grades-pages {
+    max-width: 240px;
+    width: 100%;
+    @media (min-width: 415px) {
+      max-width: 299px;
+    }
     @media (min-width: 1000px) {
       flex-direction: row;
       gap: 12px;
@@ -356,6 +361,8 @@ body {
     }
     &_grades-pages {
       margin: 0 auto;
+      padding: 30px 19px;
+      width: 100%;
       @media (min-width: 415px) {
         padding: 36px 26px;
       }

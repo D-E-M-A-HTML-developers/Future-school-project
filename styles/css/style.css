@@ -390,6 +390,15 @@ body {
   align-items: center;
   flex-direction: column;
 }
+.form_grades-pages {
+  max-width: 240px;
+  width: 100%;
+}
+@media (min-width: 415px) {
+  .form_grades-pages {
+    max-width: 299px;
+  }
+}
 @media (min-width: 1000px) {
   .form_grades-pages {
     flex-direction: row;
@@ -414,6 +423,8 @@ body {
 }
 .form-wrapper_grades-pages {
   margin: 0 auto;
+  padding: 30px 19px;
+  width: 100%;
 }
 @media (min-width: 415px) {
   .form-wrapper_grades-pages {

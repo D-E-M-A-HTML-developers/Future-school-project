@@ -1,0 +1,54 @@
+.advantages-grade {
+  padding: 50px 0;
+  &__inner,
+  &__list {
+    min-width: 280px;
+    width: 100%;
+    @include flexCenter;
+    flex-direction: column;
+    gap: 30px;
+  }
+  &__item {
+    border-radius: 25px;
+    background-color: #eff2fd;
+    min-width: 280px;
+    width: 100%;
+    min-height: 422px;
+    padding: 29.3px 20px 30px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    &:nth-child(1) .advantages-grade__card-img_grades-5-8 {
+      width: 237.82px;
+      height: 126.6px;
+    }
+    &:nth-child(2) .advantages-grade__card-img {
+      width: 240px;
+      height: 145.84px;
+    }
+    &_right:nth-child(1) .advantages-grade__card-img {
+      width: 239.63px;
+      height: 179.16px;
+    }
+    &_right:nth-child(2) .advantages-grade__card-img {
+      width: 240px;
+      height: 135px;
+    }
+  }
+  &__card {
+    &-heading {
+      @extend %main-titles;
+      line-height: 103%;
+    }
+    &-text {
+      font-size: 15px;
+      line-height: 127%;
+      margin: 0 0 30px;
+      text-align: center;
+    }
+    &-img {
+      margin: 0 auto;
+      &-wrapper {
+        width: 100%;
+      }
+    }
+  }
+}
