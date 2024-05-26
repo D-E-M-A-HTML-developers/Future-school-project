@@ -428,7 +428,7 @@ body {
 }
 @media (min-width: 415px) {
   .form-wrapper_grades-pages {
-    padding: 36px 26px;
+    padding: 36px 26px 34px;
   }
 }
 @media (min-width: 480px) {
