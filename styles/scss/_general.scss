@@ -335,6 +335,7 @@ body {
 .form {
   @include flexCenter;
   flex-direction: column;
+  margin: 0 auto;
   &_grades-pages {
     max-width: 240px;
     width: 100%;

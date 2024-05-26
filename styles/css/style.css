@@ -389,6 +389,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 0 auto;
 }
 .form_grades-pages {
   max-width: 240px;
