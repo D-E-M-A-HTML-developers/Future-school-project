@@ -405,6 +405,11 @@ body {
     gap: 12px;
   }
 }
+@media (min-width: 1920px) {
+  .form_grades-pages {
+    gap: 25px;
+  }
+}
 .form-wrapper {
   max-width: 349px;
   width: 100%;
@@ -549,10 +554,11 @@ body {
 @media (min-width: 1000px) {
   .form__input_grades-pages {
     max-width: 263px;
+    min-width: 209px;
     border: 1px solid rgba(36, 57, 118, 0.8);
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1920px) {
   .form__input_grades-pages {
     min-width: 263px;
   }
@@ -1983,7 +1989,7 @@ body {
     margin: -68px 0 0;
   }
   .about-programm__form-block-heading {
-    margin: 0 0 39px;
+    margin: 0 0 41px;
   }
   .about-programm__form-wrapper {
     padding: 0;
@@ -2186,7 +2192,6 @@ body {
     max-width: 327px;
   }
   .advantages-grade__item:nth-child(3) {
-    max-width: 327px;
     position: relative;
     top: -43px;
   }
@@ -2219,6 +2224,50 @@ body {
   }
   .advantages-grade__card-text .word-wrap {
     display: block;
+  }
+}
+@media (min-width: 1000px) {
+  .advantages-grade .center {
+    padding: 0 50px;
+  }
+  .advantages-grade__list {
+    gap: 30px;
+  }
+  .advantages-grade__item {
+    max-width: 420px;
+    padding: 38px 40px 40px;
+  }
+  .advantages-grade__item:nth-child(odd) {
+    max-width: 450px;
+  }
+  .advantages-grade__item:nth-child(3) {
+    top: -39px;
+    padding: 38px 40px 42px;
+  }
+  .advantages-grade__item:nth-child(4) {
+    padding: 38px 40px 40px;
+  }
+  .advantages-grade__item:nth-child(1) .advantages-grade__card-img_grades-1-4 {
+    width: 302px;
+    height: 185px;
+  }
+  .advantages-grade__item:nth-child(2) .advantages-grade__card-img {
+    width: 300px;
+    height: 183px;
+  }
+  .advantages-grade__item:nth-child(3) .advantages-grade__card-img {
+    width: 313px;
+    height: 231px;
+  }
+  .advantages-grade__item:nth-child(4) .advantages-grade__card-img {
+    width: 338px;
+    height: 193px;
+  }
+  .advantages-grade__card-heading {
+    font-size: 40px;
+  }
+  .advantages-grade__card-text .word-wrap {
+    display: none;
   }
 }
 .footer {

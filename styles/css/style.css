@@ -406,6 +406,11 @@ body {
     gap: 12px;
   }
 }
+@media (min-width: 1920px) {
+  .form_grades-pages {
+    gap: 25px;
+  }
+}
 .form-wrapper {
   max-width: 349px;
   width: 100%;
@@ -550,10 +555,11 @@ body {
 @media (min-width: 1000px) {
   .form__input_grades-pages {
     max-width: 263px;
+    min-width: 209px;
     border: 1px solid rgba(36, 57, 118, 0.8);
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1920px) {
   .form__input_grades-pages {
     min-width: 263px;
   }

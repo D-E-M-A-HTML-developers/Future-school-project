@@ -346,6 +346,9 @@ body {
       flex-direction: row;
       gap: 12px;
     }
+    @media (min-width: 1920px) {
+      gap: 25px;
+    }
   }
   &-wrapper {
     max-width: 349px;
@@ -470,9 +473,10 @@ body {
     &_grades-pages {
       @media (min-width: 1000px) {
         max-width: 263px;
+        min-width: 209px;
         border: 1px solid rgba(36, 57, 118, 0.8);
       }
-      @media (min-width: 1000px) {
+      @media (min-width: 1920px) {
         min-width: 263px;
       }
     }
