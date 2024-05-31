@@ -137,17 +137,14 @@
       padding: 0 40px;
     }
     &__list {
-      flex-wrap: wrap;
-      flex-direction: row;
+      display: grid;
+      grid-template: auto auto / minmax(327px, 450px) minmax(341px, 420px);
       gap: 20px;
-      align-items: flex-start;
     }
     &__item {
-      max-width: 341px;
+      align-self: start;
+      max-width: 100%;
       padding: 29px 30px 31px;
-      &:nth-child(odd) {
-        max-width: 327px;
-      }
       &:nth-child(3) {
         position: relative;
         top: -43px;
@@ -193,14 +190,11 @@
       padding: 0 50px;
     }
     &__list {
+      grid-template: auto auto / minmax(450px, 604px) minmax(420px, 496px);
       gap: 30px;
     }
     &__item {
-      max-width: 420px;
       padding: 38px 40px 40px;
-      &:nth-child(odd) {
-        max-width: 450px;
-      }
       &:nth-child(3) {
         top: -39px;
         padding: 38px 40px 42px;
@@ -233,6 +227,53 @@
         .word-wrap {
           display: none;
         }
+      }
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .advantages-grade {
+    padding: 41px 0 80px;
+    .center {
+      padding: 0 10px;
+      max-width: 1160px;
+    }
+    &__list {
+      gap: 40px;
+    }
+    &__item {
+      padding: 47px 43px 40px;
+      &:nth-child(2) {
+        padding: 47px 37px 40px;
+      }
+      &:nth-child(4) {
+        padding: 48px 33px 40px;
+      }
+      &:nth-child(4) .advantages-grade__card-heading {
+        margin: 0 0 10px;
+      }
+      &:nth-child(4) .advantages-grade__card-text {
+        margin: 0 0 28px;
+      }
+      &:nth-child(1) .advantages-grade__card-text {
+        margin: 0 0 52px;
+      }
+      &:nth-child(3) .advantages-grade__card-text {
+        margin: 0 0 30px;
+      }
+      &:nth-child(3) {
+        top: -39px;
+        padding: 34px 42px 42px;
+      }
+    }
+    &__card {
+      &-heading {
+        font-size: 50px;
+        margin: 0 0 20px;
+      }
+      &-text {
+        line-height: 130%;
+        margin: 0 0 35px;
       }
     }
   }
