@@ -389,11 +389,26 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 0 auto;
+}
+.form_grades-pages {
+  max-width: 240px;
+  width: 100%;
+}
+@media (min-width: 415px) {
+  .form_grades-pages {
+    max-width: 299px;
+  }
 }
 @media (min-width: 1000px) {
   .form_grades-pages {
     flex-direction: row;
     gap: 12px;
+  }
+}
+@media (min-width: 1920px) {
+  .form_grades-pages {
+    gap: 25px;
   }
 }
 .form-wrapper {
@@ -414,21 +429,18 @@ body {
 }
 .form-wrapper_grades-pages {
   margin: 0 auto;
+  padding: 30px 19px;
+  width: 100%;
 }
 @media (min-width: 415px) {
   .form-wrapper_grades-pages {
-    padding: 36px 26px;
+    padding: 36px 26px 34px;
   }
 }
 @media (min-width: 480px) {
   .form-wrapper_grades-pages {
-    margin: 0 auto 40px;
-    padding: 35px 26px;
-  }
-}
-@media (min-width: 760px) {
-  .form-wrapper_grades-pages {
     margin: 0 auto;
+    padding: 35px 26px;
   }
 }
 @media (min-width: 1000px) {
@@ -543,10 +555,11 @@ body {
 @media (min-width: 1000px) {
   .form__input_grades-pages {
     max-width: 263px;
+    min-width: 209px;
     border: 1px solid rgba(36, 57, 118, 0.8);
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1920px) {
   .form__input_grades-pages {
     min-width: 263px;
   }
@@ -1314,7 +1327,7 @@ body {
   }
   .header__banner-txt {
     min-width: 486px;
-    max-width: 607px;
+    max-width: 529px;
     font-size: 17px;
   }
   .header__banner-txt_grades-1-4 {

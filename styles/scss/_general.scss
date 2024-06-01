@@ -335,10 +335,19 @@ body {
 .form {
   @include flexCenter;
   flex-direction: column;
+  margin: 0 auto;
   &_grades-pages {
+    max-width: 240px;
+    width: 100%;
+    @media (min-width: 415px) {
+      max-width: 299px;
+    }
     @media (min-width: 1000px) {
       flex-direction: row;
       gap: 12px;
+    }
+    @media (min-width: 1920px) {
+      gap: 25px;
     }
   }
   &-wrapper {
@@ -356,15 +365,14 @@ body {
     }
     &_grades-pages {
       margin: 0 auto;
+      padding: 30px 19px;
+      width: 100%;
       @media (min-width: 415px) {
-        padding: 36px 26px;
+        padding: 36px 26px 34px;
       }
       @media (min-width: 480px) {
-        margin: 0 auto 40px;
-        padding: 35px 26px;
-      }
-      @media (min-width: 760px) {
         margin: 0 auto;
+        padding: 35px 26px;
       }
       @media (min-width: 1000px) {
         max-width: 1139px;
@@ -465,9 +473,10 @@ body {
     &_grades-pages {
       @media (min-width: 1000px) {
         max-width: 263px;
+        min-width: 209px;
         border: 1px solid rgba(36, 57, 118, 0.8);
       }
-      @media (min-width: 1000px) {
+      @media (min-width: 1920px) {
         min-width: 263px;
       }
     }

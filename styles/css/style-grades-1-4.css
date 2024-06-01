@@ -2,7 +2,7 @@
 @import "../css/nulling-styles.css";
 @import "../css/fonts.css";
 @import "animation-hover.css";
-.programm__title, .consists-of-education__title {
+.advantages-grade__card-heading, .programm__title, .consists-of-education__title {
   font-family: "ALSSchlangesans-Bold", sans-serif;
   margin: 0 0 30px;
   text-align: center;
@@ -11,22 +11,22 @@
 }
 
 @media (min-width: 415px) {
-  .programm__title, .consists-of-education__title {
+  .advantages-grade__card-heading, .programm__title, .consists-of-education__title {
     font-size: 34px;
   }
 }
 @media (min-width: 768px) {
-  .programm__title, .consists-of-education__title {
+  .advantages-grade__card-heading, .programm__title, .consists-of-education__title {
     font-size: 38px;
   }
 }
 @media (min-width: 1000px) {
-  .programm__title, .consists-of-education__title {
+  .advantages-grade__card-heading, .programm__title, .consists-of-education__title {
     font-size: 40px;
   }
 }
 @media (min-width: 1920px) {
-  .programm__title, .consists-of-education__title {
+  .advantages-grade__card-heading, .programm__title, .consists-of-education__title {
     font-size: 50px;
   }
 }
@@ -388,11 +388,26 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 0 auto;
+}
+.form_grades-pages {
+  max-width: 240px;
+  width: 100%;
+}
+@media (min-width: 415px) {
+  .form_grades-pages {
+    max-width: 299px;
+  }
 }
 @media (min-width: 1000px) {
   .form_grades-pages {
     flex-direction: row;
     gap: 12px;
+  }
+}
+@media (min-width: 1920px) {
+  .form_grades-pages {
+    gap: 25px;
   }
 }
 .form-wrapper {
@@ -413,21 +428,18 @@ body {
 }
 .form-wrapper_grades-pages {
   margin: 0 auto;
+  padding: 30px 19px;
+  width: 100%;
 }
 @media (min-width: 415px) {
   .form-wrapper_grades-pages {
-    padding: 36px 26px;
+    padding: 36px 26px 34px;
   }
 }
 @media (min-width: 480px) {
   .form-wrapper_grades-pages {
-    margin: 0 auto 40px;
-    padding: 35px 26px;
-  }
-}
-@media (min-width: 760px) {
-  .form-wrapper_grades-pages {
     margin: 0 auto;
+    padding: 35px 26px;
   }
 }
 @media (min-width: 1000px) {
@@ -542,10 +554,11 @@ body {
 @media (min-width: 1000px) {
   .form__input_grades-pages {
     max-width: 263px;
+    min-width: 209px;
     border: 1px solid rgba(36, 57, 118, 0.8);
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1920px) {
   .form__input_grades-pages {
     min-width: 263px;
   }
@@ -1313,7 +1326,7 @@ body {
   }
   .header__banner-txt {
     min-width: 486px;
-    max-width: 607px;
+    max-width: 529px;
     font-size: 17px;
   }
   .header__banner-txt_grades-1-4 {
@@ -1702,7 +1715,7 @@ body {
   .about-programm__form-block-heading {
     font-size: 18px;
     line-height: 103%;
-    margin: 0 0 29px;
+    margin: 0 0 31px;
   }
   .programm__description {
     font-size: 14px;
@@ -1976,7 +1989,7 @@ body {
     margin: -68px 0 0;
   }
   .about-programm__form-block-heading {
-    margin: 0 0 39px;
+    margin: 0 0 41px;
   }
   .about-programm__form-wrapper {
     padding: 0;
@@ -2030,6 +2043,270 @@ body {
   .subjects__name_secondary-programm {
     padding-left: 29px;
     top: -2px;
+  }
+}
+.advantages-grade {
+  padding: 50px 0;
+}
+.advantages-grade__list {
+  min-width: 280px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.advantages-grade__item {
+  border-radius: 25px;
+  background-color: #eff2fd;
+  min-width: 280px;
+  width: 100%;
+  min-height: 422px;
+  padding: 29.3px 20px 30px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.advantages-grade__item:nth-child(1) .advantages-grade__card-img_grades-5-8 {
+  width: 237.82px;
+  height: 126.6px;
+}
+.advantages-grade__item:nth-child(2) .advantages-grade__card-img {
+  width: 240px;
+  height: 145.84px;
+}
+.advantages-grade__item:nth-child(3) .advantages-grade__card-img {
+  width: 239.63px;
+  height: 178.16px;
+}
+.advantages-grade__item:nth-child(4) .advantages-grade__card-img {
+  width: 240px;
+  height: 135px;
+}
+.advantages-grade__card-heading {
+  line-height: 103%;
+}
+.advantages-grade__card-text {
+  font-size: 15px;
+  line-height: 127%;
+  margin: 0 0 30px;
+  text-align: center;
+}
+.advantages-grade__card-img {
+  margin: 0 auto;
+}
+.advantages-grade__card-img-wrapper {
+  width: 100%;
+}
+
+@media (min-width: 415px) {
+  .advantages-grade__item {
+    min-height: 418px;
+    padding: 30px 32px 30px 31px;
+  }
+  .advantages-grade__item:nth-child(1) .advantages-grade__card-img_grades-1-4 {
+    width: 240px;
+    height: 149px;
+  }
+  .advantages-grade__item:nth-child(2) .advantages-grade__card-img {
+    width: 252px;
+    height: 150.32px;
+  }
+  .advantages-grade__item:nth-child(3) .advantages-grade__card-img {
+    width: 213.28px;
+    height: 150px;
+    position: relative;
+    left: 2px;
+    top: 1px;
+  }
+  .advantages-grade__item:nth-child(4) .advantages-grade__card-img {
+    width: 256px;
+    height: 151px;
+  }
+  .advantages-grade__item:nth-child(4) .advantages-grade__card-heading {
+    white-space: nowrap;
+    position: relative;
+    left: -10px;
+  }
+  .advantages-grade__card-text {
+    line-height: 152%;
+  }
+  .advantages-grade__card-text .word-wrap {
+    display: none;
+  }
+}
+@media (min-width: 480px) {
+  .advantages-grade {
+    padding: 69px 0 70px;
+  }
+  .advantages-grade .center {
+    padding: 0 50px;
+  }
+  .advantages-grade__item {
+    padding: 29px 30px 30px;
+  }
+  .advantages-grade__item:nth-child(1) .advantages-grade__card-img_grades-1-4 {
+    width: 274px;
+    height: 166px;
+  }
+  .advantages-grade__item:nth-child(2) .advantages-grade__card-img {
+    width: 300px;
+    height: 186px;
+  }
+  .advantages-grade__item:nth-child(3) .advantages-grade__card-img {
+    width: 302.57px;
+    height: 219px;
+    left: 0;
+    top: 0;
+  }
+  .advantages-grade__item:nth-child(4) .advantages-grade__card-img {
+    width: 310px;
+    height: 176px;
+  }
+  .advantages-grade__item:nth-child(4) .advantages-grade__card-heading {
+    white-space: wrap;
+    left: 0;
+  }
+  .advantages-grade__card-text {
+    font-size: 16px;
+    line-height: 131%;
+  }
+}
+@media (min-width: 768px) {
+  .advantages-grade {
+    padding: 81px 0 80px;
+  }
+  .advantages-grade .center {
+    padding: 0 40px;
+  }
+  .advantages-grade__list {
+    display: grid;
+    grid-template: auto auto/minmax(327px, 450px) minmax(341px, 420px);
+    gap: 20px;
+  }
+  .advantages-grade__item {
+    align-self: start;
+    max-width: 100%;
+    padding: 29px 30px 31px;
+  }
+  .advantages-grade__item:nth-child(3) {
+    position: relative;
+    top: -43px;
+  }
+  .advantages-grade__item:nth-child(4) {
+    padding: 29px 30px 30px;
+  }
+  .advantages-grade__item:nth-child(1) .advantages-grade__card-img_grades-1-4 {
+    width: 267px;
+    height: 163px;
+  }
+  .advantages-grade__item:nth-child(2) .advantages-grade__card-img {
+    width: 281px;
+    height: 171px;
+  }
+  .advantages-grade__item:nth-child(3) .advantages-grade__card-img {
+    width: 267px;
+    height: 197px;
+    top: 1px;
+  }
+  .advantages-grade__item:nth-child(4) .advantages-grade__card-img {
+    width: 281px;
+    height: 158px;
+  }
+  .advantages-grade__card-heading {
+    font-size: 34px;
+    text-align: start;
+  }
+  .advantages-grade__card-text {
+    text-align: start;
+  }
+  .advantages-grade__card-text .word-wrap {
+    display: block;
+  }
+}
+@media (min-width: 1000px) {
+  .advantages-grade .center {
+    padding: 0 50px;
+  }
+  .advantages-grade__list {
+    grid-template: auto auto/minmax(450px, 604px) minmax(420px, 496px);
+    gap: 30px;
+  }
+  .advantages-grade__item {
+    padding: 38px 40px 40px;
+  }
+  .advantages-grade__item:nth-child(3) {
+    top: -39px;
+    padding: 38px 40px 42px;
+  }
+  .advantages-grade__item:nth-child(4) {
+    padding: 38px 40px 40px;
+  }
+  .advantages-grade__item:nth-child(1) .advantages-grade__card-img_grades-1-4 {
+    width: 302px;
+    height: 185px;
+  }
+  .advantages-grade__item:nth-child(2) .advantages-grade__card-img {
+    width: 300px;
+    height: 183px;
+  }
+  .advantages-grade__item:nth-child(3) .advantages-grade__card-img {
+    width: 313px;
+    height: 231px;
+  }
+  .advantages-grade__item:nth-child(4) .advantages-grade__card-img {
+    width: 338px;
+    height: 193px;
+  }
+  .advantages-grade__card-heading {
+    font-size: 40px;
+  }
+  .advantages-grade__card-text .word-wrap {
+    display: none;
+  }
+}
+@media (min-width: 1920px) {
+  .advantages-grade {
+    padding: 41px 0 80px;
+  }
+  .advantages-grade .center {
+    padding: 0 10px;
+    max-width: 1160px;
+  }
+  .advantages-grade__list {
+    gap: 40px;
+  }
+  .advantages-grade__item {
+    padding: 47px 43px 40px;
+  }
+  .advantages-grade__item:nth-child(2) {
+    padding: 47px 37px 40px;
+  }
+  .advantages-grade__item:nth-child(4) {
+    padding: 48px 33px 40px;
+  }
+  .advantages-grade__item:nth-child(4) .advantages-grade__card-heading {
+    margin: 0 0 10px;
+  }
+  .advantages-grade__item:nth-child(4) .advantages-grade__card-text {
+    margin: 0 0 28px;
+  }
+  .advantages-grade__item:nth-child(1) .advantages-grade__card-text {
+    margin: 0 0 52px;
+  }
+  .advantages-grade__item:nth-child(3) .advantages-grade__card-text {
+    margin: 0 0 30px;
+  }
+  .advantages-grade__item:nth-child(3) {
+    top: -39px;
+    padding: 34px 42px 42px;
+  }
+  .advantages-grade__card-heading {
+    font-size: 50px;
+    margin: 0 0 20px;
+  }
+  .advantages-grade__card-text {
+    line-height: 130%;
+    margin: 0 0 35px;
   }
 }
 .footer {
