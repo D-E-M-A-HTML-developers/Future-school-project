@@ -2330,6 +2330,7 @@ body {
   font-size: 15px;
   line-height: 127%;
   text-align: center;
+  margin: 0 0 2px;
 }
 .how-run-lesson__block-video {
   position: relative;
@@ -2343,7 +2344,7 @@ body {
   width: 280px;
   height: 165px;
   border-radius: 19px;
-  background-image: url(../../images/how-run-lesson/poster-image.jpg);
+  background-image: url(../../images/how-run-lesson/poster-image-320.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -2354,13 +2355,16 @@ body {
     border-radius: 23px;
     width: 375px;
     height: 221px;
+    background-image: url(../../images/how-run-lesson/poster-image-415.png);
   }
 }
 @media (min-width: 480px) {
   .how-run-lesson__poster-video-cover {
     border-radius: 21px;
-    width: 440px;
+    width: 443px;
     height: 248px;
+    background-image: url(../../images/how-run-lesson/poster-image-480.png);
+    left: -1px;
   }
 }
 @media (min-width: 768px) {
@@ -2388,9 +2392,21 @@ body {
   .how-run-lesson {
     padding: 0 0 47px;
   }
+  .how-run-lesson__title {
+    line-height: 100%;
+  }
   .how-run-lesson__description {
     padding: 0 25px;
     line-height: 152%;
+  }
+}
+@media (min-width: 480px) {
+  .how-run-lesson {
+    padding: 0 0 66px;
+  }
+  .how-run-lesson__description {
+    padding: 0;
+    line-height: 127%;
   }
 }
 .footer {
