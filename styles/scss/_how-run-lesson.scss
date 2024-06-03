@@ -47,11 +47,11 @@
     }
     @media (min-width: 768px) {
       border-radius: 23px;
-      width: 406px;
+      width: 407px;
       height: 228px;
     }
     @media (min-width: 1000px) {
-      width: 579px;
+      width: 580px;
       height: 325px;
     }
     @media (min-width: 1920px) {
@@ -82,15 +82,38 @@
     }
   }
 }
-// @media (min-width: 480px) {
-// 	.how-run-lesson {
-// 	}
-// }
-// @media (min-width: 480px) {
-// 	.how-run-lesson {
-// 	}
-// }
-// @media (min-width: 480px) {
+@media (min-width: 768px) {
+  .how-run-lesson {
+    padding: 0 0 76px;
+    &__wrapper {
+      flex-direction: row-reverse;
+      gap: 34px;
+    }
+    &__title {
+      margin: 0 0 41px;
+    }
+    &__description {
+      margin: 0;
+      text-align: start;
+      text-indent: 4%;
+      position: relative;
+      top: -2px;
+    }
+  }
+}
+@media (min-width: 1000px) {
+  .how-run-lesson {
+    &__wrapper {
+      gap: 39px;
+    }
+    &__description {
+      font-size: 18px;
+      line-height: 130%;
+      top: -6px;
+    }
+  }
+}
+// @media (min-width: 1920px) {
 // 	.how-run-lesson {
 // 	}
 // }

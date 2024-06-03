@@ -2370,13 +2370,13 @@ body {
 @media (min-width: 768px) {
   .how-run-lesson__poster-video-cover {
     border-radius: 23px;
-    width: 406px;
+    width: 407px;
     height: 228px;
   }
 }
 @media (min-width: 1000px) {
   .how-run-lesson__poster-video-cover {
-    width: 579px;
+    width: 580px;
     height: 325px;
   }
 }
@@ -2407,6 +2407,35 @@ body {
   .how-run-lesson__description {
     padding: 0;
     line-height: 127%;
+  }
+}
+@media (min-width: 768px) {
+  .how-run-lesson {
+    padding: 0 0 76px;
+  }
+  .how-run-lesson__wrapper {
+    flex-direction: row-reverse;
+    gap: 34px;
+  }
+  .how-run-lesson__title {
+    margin: 0 0 41px;
+  }
+  .how-run-lesson__description {
+    margin: 0;
+    text-align: start;
+    text-indent: 4%;
+    position: relative;
+    top: -2px;
+  }
+}
+@media (min-width: 1000px) {
+  .how-run-lesson__wrapper {
+    gap: 39px;
+  }
+  .how-run-lesson__description {
+    font-size: 18px;
+    line-height: 130%;
+    top: -6px;
   }
 }
 .footer {
