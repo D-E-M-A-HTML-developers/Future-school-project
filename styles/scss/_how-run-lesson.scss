@@ -1,0 +1,68 @@
+.how-run-lesson {
+  padding: 0 0 50px;
+  &__title {
+    @extend %main-titles;
+    line-height: 103%;
+  }
+  &__wrapper {
+    @include flexCenter;
+    flex-direction: column;
+    gap: 30px;
+  }
+  &__description {
+    font-size: 15px;
+    line-height: 127%;
+    text-align: center;
+  }
+  &__block-video {
+    position: relative;
+    margin: 0 auto;
+    z-index: 0;
+  }
+  &__poster-video-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 165px;
+    border-radius: 19px;
+    background-image: url(../../images/how-run-lesson/poster-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    cursor: pointer;
+    @media (min-width: 415px) {
+      border-radius: 23px;
+      width: 375px;
+      height: 221px;
+    }
+    @media (min-width: 480px) {
+      border-radius: 21px;
+      width: 440px;
+      height: 248px;
+    }
+    @media (min-width: 768px) {
+      border-radius: 23px;
+      width: 406px;
+      height: 228px;
+    }
+    @media (min-width: 1000px) {
+      width: 579px;
+      height: 325px;
+    }
+    @media (min-width: 1920px) {
+      border-radius: 22px;
+      width: 734px;
+      height: 413px;
+    }
+  }
+}
+@media (min-width: 415px) {
+  .how-run-lesson {
+    padding: 0 0 47px;
+    &__description {
+      padding: 0 25px;
+      line-height: 152%;
+    }
+  }
+}
