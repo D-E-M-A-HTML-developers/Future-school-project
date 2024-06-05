@@ -2,7 +2,7 @@
 @import "../css/nulling-styles.css";
 @import "../css/fonts.css";
 @import "animation-hover.css";
-.advantages-grade__card-heading, .programm__title, .consists-of-education__title {
+.how-run-lesson__title, .advantages-grade__card-heading, .programm__title, .consists-of-education__title {
   font-family: "ALSSchlangesans-Bold", sans-serif;
   margin: 0 0 30px;
   text-align: center;
@@ -11,22 +11,22 @@
 }
 
 @media (min-width: 415px) {
-  .advantages-grade__card-heading, .programm__title, .consists-of-education__title {
+  .how-run-lesson__title, .advantages-grade__card-heading, .programm__title, .consists-of-education__title {
     font-size: 34px;
   }
 }
 @media (min-width: 768px) {
-  .advantages-grade__card-heading, .programm__title, .consists-of-education__title {
+  .how-run-lesson__title, .advantages-grade__card-heading, .programm__title, .consists-of-education__title {
     font-size: 38px;
   }
 }
 @media (min-width: 1000px) {
-  .advantages-grade__card-heading, .programm__title, .consists-of-education__title {
+  .how-run-lesson__title, .advantages-grade__card-heading, .programm__title, .consists-of-education__title {
     font-size: 40px;
   }
 }
 @media (min-width: 1920px) {
-  .advantages-grade__card-heading, .programm__title, .consists-of-education__title {
+  .how-run-lesson__title, .advantages-grade__card-heading, .programm__title, .consists-of-education__title {
     font-size: 50px;
   }
 }
@@ -40,6 +40,10 @@ body {
 .center {
   padding: 0 20px;
   box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -2307,6 +2311,148 @@ body {
   .advantages-grade__card-text {
     line-height: 130%;
     margin: 0 0 35px;
+  }
+}
+.how-run-lesson {
+  padding: 0 0 50px;
+}
+.how-run-lesson__title {
+  line-height: 103%;
+}
+.how-run-lesson__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.how-run-lesson__description {
+  font-size: 15px;
+  line-height: 127%;
+  text-align: center;
+  margin: 0 0 2px;
+}
+.how-run-lesson__block-video {
+  position: relative;
+  margin: 0 auto;
+  z-index: 0;
+}
+.how-run-lesson__poster-video-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 165px;
+  border-radius: 19px;
+  background-image: url(../../images/how-run-lesson/poster-image-320.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+@media (min-width: 415px) {
+  .how-run-lesson__poster-video-cover {
+    border-radius: 23px;
+    width: 375px;
+    height: 221px;
+    background-image: url(../../images/how-run-lesson/poster-image-415.png);
+  }
+}
+@media (min-width: 480px) {
+  .how-run-lesson__poster-video-cover {
+    border-radius: 21px;
+    width: 443px;
+    height: 248px;
+    background-image: url(../../images/how-run-lesson/poster-image-480.png);
+    left: -1px;
+  }
+}
+@media (min-width: 768px) {
+  .how-run-lesson__poster-video-cover {
+    border-radius: 23px;
+    width: 407px;
+    height: 228px;
+    background-image: url(../../images/how-run-lesson/poster-image-768.png);
+  }
+}
+@media (min-width: 1000px) {
+  .how-run-lesson__poster-video-cover {
+    width: 580px;
+    height: 325px;
+    background-image: url(../../images/how-run-lesson/poster-image-1000.png);
+  }
+}
+@media (min-width: 1920px) {
+  .how-run-lesson__poster-video-cover {
+    border-radius: 22px;
+    width: 734px;
+    height: 413px;
+    top: -1px;
+    background-image: url(../../images/how-run-lesson/poster-image.png);
+  }
+}
+
+@media (min-width: 415px) {
+  .how-run-lesson {
+    padding: 0 0 47px;
+  }
+  .how-run-lesson__title {
+    line-height: 100%;
+  }
+  .how-run-lesson__description {
+    padding: 0 25px;
+    line-height: 152%;
+  }
+}
+@media (min-width: 480px) {
+  .how-run-lesson {
+    padding: 0 0 66px;
+  }
+  .how-run-lesson__description {
+    padding: 0;
+    line-height: 127%;
+  }
+}
+@media (min-width: 768px) {
+  .how-run-lesson {
+    padding: 0 0 76px;
+  }
+  .how-run-lesson__wrapper {
+    flex-direction: row-reverse;
+    gap: 34px;
+  }
+  .how-run-lesson__title {
+    margin: 0 0 41px;
+  }
+  .how-run-lesson__description {
+    margin: 0;
+    text-align: start;
+    text-indent: 4%;
+    position: relative;
+    top: -2px;
+  }
+}
+@media (min-width: 1000px) {
+  .how-run-lesson__wrapper {
+    gap: 39px;
+  }
+  .how-run-lesson__description {
+    font-size: 18px;
+    line-height: 130%;
+    top: -6px;
+  }
+}
+@media (min-width: 1920px) {
+  .how-run-lesson__title {
+    margin: 0 0 55px;
+    padding-left: 20px;
+  }
+  .how-run-lesson__wrapper {
+    gap: 48px;
+  }
+  .how-run-lesson__description {
+    font-size: 20px;
+    top: -15px;
   }
 }
 .footer {
