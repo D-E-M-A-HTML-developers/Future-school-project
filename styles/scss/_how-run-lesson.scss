@@ -49,15 +49,19 @@
       border-radius: 23px;
       width: 407px;
       height: 228px;
+      background-image: url(../../images/how-run-lesson/poster-image-768.png);
     }
     @media (min-width: 1000px) {
       width: 580px;
       height: 325px;
+      background-image: url(../../images/how-run-lesson/poster-image-1000.png);
     }
     @media (min-width: 1920px) {
       border-radius: 22px;
       width: 734px;
       height: 413px;
+      top: -1px;
+      background-image: url(../../images/how-run-lesson/poster-image.png);
     }
   }
 }
@@ -113,7 +117,18 @@
     }
   }
 }
-// @media (min-width: 1920px) {
-// 	.how-run-lesson {
-// 	}
-// }
+@media (min-width: 1920px) {
+  .how-run-lesson {
+    &__title {
+      margin: 0 0 55px;
+      padding-left: 20px;
+    }
+    &__wrapper {
+      gap: 48px;
+    }
+    &__description {
+      font-size: 20px;
+      top: -15px;
+    }
+  }
+}
